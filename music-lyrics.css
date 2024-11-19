@@ -1,0 +1,332 @@
+* {
+    box-sizing: border-box;
+  }
+    
+  .containers {
+    background: ;
+    width: 100%;
+    min-height: 700px;
+    padding: 10px;
+  }
+  
+  .main-thumbnail img {
+    width: 100%;
+    height: ;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 2px solid Magenta;
+    border-radius: 10px;
+  }
+    
+    
+    
+    
+  
+    
+  .content {
+    background: Green;
+    width: 100%;
+    height: 600px;
+  }
+    
+  .content .bg-image {
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHOURBkhU6p3J4oiw_71K7FOVpjnyvwNQydebB3sLCyo-njqE_c-hZB-7oG8WTsyyOBjJ_A-72i4LVdR2OkS7-SKwbVJqIFfTvbdQD5x3IKzq1jgkcc9_jJfSSlkpx-hdUSW0OHRv5pQ0UH6CHXgp1uqWOlFtyCC_JZfIuL4fKE160qEzC6MGg3GffLpQ/s1600/20240815_181425.jpg");
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+    
+  .content .bg-text {
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.7);
+    width: 95%;
+    height: 550px;
+    position: absolute;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: px solid Red;
+    box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
+    z-index: 2;
+  }
+    
+  .content .bg-text h1 {
+    color: Red;
+    margin: 10px;
+    text-shadow: -1px 1px 1px rgba(0,0,0,.4), -1px -1px 0 rgba(255,255,255,1);
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .content .bg-text p {
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    font-family: Solaimanlipi;
+    text-align: center;
+    line-height: 30px;
+  }
+  
+  .content .bg-text p span {
+    background: Yellow;
+    color: Red;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: Bold;
+    font-family: Solaimanlipi;
+    text-align: center;
+    border: px solid Red;
+    border-radius: 50px;
+  }
+  
+  
+    
+    
+    
+    
+  
+    
+  .HTML_Audio_player {
+    background: linear-gradient(135deg, Red 0, Green 49%, Yellow 49%, Blue 100%);
+    color: inherit;
+    width: 100%;
+    min-height:120p;
+    max-height:150p;
+    padding: 20px 10px 20px;
+    display:flex;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border: 1px solid Red;
+    flex-direction:row;
+    z-index:10;
+  } 
+       
+  .Audio_Player_image {
+    width: 180px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+  }
+    
+  .HTML_Audio_player .Audio_Player_image img {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      top:0;
+      bottom: 0;
+      display: block;
+      border: 2px solid Yellow;
+      object-fit: cover;
+    }
+    
+  .Audio_Player_image img:hover {
+    width: 113px;
+    height: 113px;
+    border: 2px solid Yellow;
+    border-radius: 50%;
+    animation:rotating 3s linear infinite
+  }
+    
+  @keyframes rotating {
+    from {
+      transform:rotate(0deg)
+    }
+    to {
+      transform:rotate(360deg)
+    }
+  }
+    
+  .player-content {
+    flex-grow:1;
+    display:flex;
+    flex-direction:column;
+  }
+       
+  .player-info { 
+    flex-grow:1; display:flex;
+    flex-direction:column;
+    justify-content:center;
+  } 
+       
+  .song-name {
+    color: White;
+    font-size: 40px;
+    font-weight: Bold;
+    text-shadow: 1px 1px 2px Black;
+  }
+    
+  .artist {
+    color: Cyan;
+    margin: 15px 0px 5px 0px;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px Black;
+  }
+    
+  .k2_audio_player {
+    display:flex;
+    outline: 2px solid Yellow;
+    border-radius: 50px;
+  } 
+       
+  audio {
+    flex-grow: 1;
+    height: 40px;
+  } 
+  
+  audio::-webkit-media-controls-panel {
+      background-color: Green;
+  }
+    
+  audio::-webkit-media-controls-play-button {
+      background-color: Yellow;
+      border-radius: 50%;
+  }
+    
+  audio::-webkit-media-controls-play-button:hover {
+    background-color: rgba(177,212,224, .7);
+  }
+    
+  audio::-webkit-media-controls-current-time-display {
+    color: White;
+  }
+    
+  audio::-webkit-media-controls-time-remaining-display {
+    color: Yellow;
+  }
+    
+  audio::-webkit-media-controls-timeline {
+    border-radius: 40px;
+    background-color: Blue;
+  }
+    
+  audio::-webkit-media-controls-volume-slider  {
+    background-color: Cyan;
+    border-radius: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+    
+  audio::-webkit-media-controls-mute-button {
+    background-color: Yellow;
+    border-radius: 50%;
+  }
+  
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    
+    
+  /* ==================== MOBILE SIZE ==================== */  
+    
+  @media only screen and (max-width: 400px) {
+    .content {
+      width: 100%;
+    }
+    
+    .content .bg-text h1 {
+      font-size: 20px;
+    }
+    
+    .content .bg-text p {
+      color: white;
+      font-size: 15px;
+      line-height: 30px;
+    }
+    
+    .HTML_Audio_player {
+      background: Red;
+      width: 100%;
+      height: 300px;
+      display: block;
+      border: 2px solid blue;
+      flex-direction:row;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      z-index:10;
+    }
+    
+    .HTML_Audio_player .Audio_Player_image {
+      width: 100%;
+      height: 150px;
+    }
+    
+    .HTML_Audio_player .Audio_Player_image img {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      top:0;
+      bottom: 0;
+      display: block;
+      border: 2px solid Yellow;
+      object-fit: cover;
+    }
+    
+    .Audio_Player_image img:hover {
+      width: 150px;
+      height: 150px;
+      border: 2px solid Yellow;
+      border-radius: 50%;
+      animation:rotating 3s linear infinite
+    }
+  
+    @keyframes rotating {
+      from {
+        transform:rotate(0deg)
+      }
+      to {
+        transform:rotate(360deg)
+      }
+    }
+    
+    .Audio_Player_image img:hover::after {
+      content: "";
+      background-color: #fff;
+      width: 20px;
+      height: 20px;
+      bottom: 100%;
+      left: 50%;
+      position: absolute;
+      border-radius: 50%;
+      transform: translate(-50%, 50%);
+      box-shadow: 0 0 0px 10px #000;
+    }
+    
+    .HTML_Audio_player audio {
+      width: 100%;
+      outline: 2px solid Yellow;
+      border-radius: 50px;
+    }
+    
+    .song-name {
+      margin-top: 10px;
+      font-size:20px;
+      font-weight: Bold;
+      text-align: center;
+      text-shadow: 1px 1px 2px Black;
+    }
+    
+    .artist {
+      color: Yellow;
+      margin: 5px 0px 5px 0px;
+      font-size:15px;
+      text-align: center;
+      text-shadow: 1px 1px 2px Black;
+    }
+    
+    .k2_audio_player {
+      margin-bottom: 10px;
+      display: ;
+    } 
+  }
