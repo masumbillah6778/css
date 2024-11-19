@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+.romzan-box {
+background: blue;
+box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
+}
+
+.romzan-box p {
+  background: red;
+  color: white;
+  padding: 10px 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.romzan-box p span {
+  color: yellow;
+  padding: 10px 20px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.table-box {
+  display: flex;
+  margin: 5px;
+}
+
+.table-column {
+  width: 50%;
+  padding: 5px;
+}
+
+.table-box table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 2px solid red;
+}
+
+.table-box table th {
+  background: #009879;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+}
+  
+.table-box table td {
+  background: white;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+
+#sehari {
+  background: black;
+  color: yellow;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+
+
+
+#iftar {
+  background: black;
+  color: yellow;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+}
+
+.iftar-item {
+  padding: 0px;
+}
