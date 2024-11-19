@@ -61,6 +61,7 @@ box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
   color: yellow;
   padding: 10px;
   font-size: 15px;
+  font-family: times;
   font-weight: bold;
 }
 
@@ -73,6 +74,7 @@ box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
   color: yellow;
   padding: 10px;
   font-size: 15px;
+  font-family: times;
   font-weight: bold;
   text-align: center;
   display: flex;
