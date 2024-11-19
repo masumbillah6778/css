@@ -1,11 +1,11 @@
 .K2_CBox {
   background: Gold;
   width: 99%;
-  margin: ;
+  margin-bottom: 30px;
   padding: 10px;
   position: relative;
   border-radius: 6px;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border: 2px solid red;
 }
   
 .K2_CBox .CB_Heading {
