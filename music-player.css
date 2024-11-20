@@ -8,6 +8,7 @@
 .audio-wrap audio {
   background-color: red;
   width: 100%;
+  border-top: 2px solid black;
 }
 
 .audio-wrap audio::-webkit-media-controls-panel {
