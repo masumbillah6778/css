@@ -110,6 +110,7 @@
      
 .Audio_Player_image {
   width: 180px;
+  aspect-ratio: 16 / 9;
   margin-right: 10px;
   display: flex;
   justify-content: center;
