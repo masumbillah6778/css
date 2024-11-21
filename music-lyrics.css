@@ -257,7 +257,7 @@
     width: 100%;
     height: 300px;
     display: block;
-    border: 2px solid blue;
+    border: 2px solid red;
     flex-direction:row;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     z-index:10;
@@ -311,8 +311,6 @@
   
   #audio-player audio {
     width: 100%;
-    outline: 2px solid Yellow;
-    border-radius: 50px;
   }
   
   .song-name {
