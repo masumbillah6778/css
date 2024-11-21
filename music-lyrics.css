@@ -186,7 +186,6 @@
 #audio-player audio {
     background-color: red;
     width: 100%;
-    border: 2px solid black;
 }
 
 #audio-player audio::-webkit-media-controls-panel {
@@ -254,7 +253,7 @@
   }
   
   .HTML_Audio_player {
-    background: Red;
+    background: green;
     width: 100%;
     height: 300px;
     display: block;
@@ -264,12 +263,12 @@
     z-index:10;
   }
   
-  .HTML_Audio_player .Audio_Player_image {
+  .Audio_Player_image {
     width: 100%;
     height: 150px;
   }
   
-  .HTML_Audio_player .Audio_Player_image img {
+  .Audio_Player_image img {
     width: 100%;
     height: auto;
     margin: 0 auto;
@@ -332,7 +331,7 @@
     text-shadow: 1px 1px 2px Black;
   }
   
-  .k2_audio_player {
+  #audio-player {
     margin-bottom: 10px;
     display: ;
   } 
