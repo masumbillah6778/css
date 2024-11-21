@@ -271,7 +271,7 @@ background-color: red;
   
   .Audio_Player_image img {
     width: 100%;
-    height: auto;
+    aspect-ratio: 16 / 9;
     margin: 0 auto;
     top:0;
     bottom: 0;
