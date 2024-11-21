@@ -116,15 +116,15 @@
 }
   
 .HTML_Audio_player .Audio_Player_image img {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    top:0;
-    bottom: 0;
-    display: block;
-    border: 2px solid Yellow;
-    object-fit: cover;
-  }
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  top:0;
+  bottom: 0;
+  display: block;
+  border: 2px solid Yellow;
+  object-fit: cover;
+}
   
 .Audio_Player_image img:hover {
   width: 113px;
@@ -177,61 +177,61 @@
 /*============================ audio-player ============================*/
 
 #audio-player {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
 }
     
 #audio-player audio {
-    background-color: red;
-    width: 100%;
+background-color: red;
+  width: 100%;
+  border: 2px solid white;
 }
 
 #audio-player audio::-webkit-media-controls-panel {
-    background: red; /*transparent*/
-    border-radius: 2px;
+  background: red; /*transparent*/
 }
       
 #audio-player audio::-webkit-media-controls-play-button {
-    background-color: Yellow;
-    border-radius: 50%;
+  background-color: Yellow;
+  border-radius: 50%;
 }
       
 #audio-player  audio::-webkit-media-controls-play-button:hover {
-    background-color: cyan;
+  background-color: cyan;
 }
       
 #audio-player audio::-webkit-media-controls-current-time-display {
-    color: White;
-    font-size: 15px;
-    font-family: times;
-    font-weight: bold;
+  color: White;
+  font-size: 15px;
+  font-family: times;
+  font-weight: bold;
 }
       
 #audio-player audio::-webkit-media-controls-time-remaining-display {
-    color: Yellow;
-    font-size: 15px;
-    font-family: times;
-    font-weight: bold;
+  color: Yellow;
+  font-size: 15px;
+  font-family: times;
+  font-weight: bold;
 }
       
 #audio-player audio::-webkit-media-controls-timeline {
-    background-color: Blue;
-    margin: 10px;
-    border-radius: ;
+  background-color: Blue;
+  margin: 10px;
+  border-radius: ;
 }
 
 #audio-player audio::-webkit-media-controls-volume-slider  {
-    background-color: green;
-    margin-right: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+  background-color: green;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #audio-player audio::-webkit-media-controls-mute-button {
-    background-color: Yellow;
-    border-radius: 50%;
+  background-color: Yellow;
+  border-radius: 50%;
 } 
   
   
@@ -334,7 +334,6 @@
     display: ;
   } 
 }
-
 
 
 /*
