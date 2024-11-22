@@ -1,45 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
-*::before,
-*::after {
-  padding: 0;
-  margin: 0;
-}
-
-:root {
-  --lightblack: #515C6F;
-  --white: #ffffff;
-  --lightbshadow: rgba(0, 0, 0, 0.15);
-}
-
-body {
-  display: flex;
-  min-height: 100vh;
-  background: #36353a;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.2fr 2fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  justify-items: center;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-}
-
-@keyframes changeBackgroundColor {
+/*@keyframes changeBackgroundColor {
 
   0%,
   100% {
@@ -155,16 +120,28 @@ body {
   grid-row-gap: 0px;
   width: 100%;
   justify-items: center;
-}
+}*/
 
+.content-box {
+background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHOURBkhU6p3J4oiw_71K7FOVpjnyvwNQydebB3sLCyo-njqE_c-hZB-7oG8WTsyyOBjJ_A-72i4LVdR2OkS7-SKwbVJqIFfTvbdQD5x3IKzq1jgkcc9_jJfSSlkpx-hdUSW0OHRv5pQ0UH6CHXgp1uqWOlFtyCC_JZfIuL4fKE160qEzC6MGg3GffLpQ/s1600/20240815_181425.jpg");
+  height: ;
+  margin: 0;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
 .wrapper {
-  width: 335px;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 90%;
+  margin: 30px;
   padding: 25px 30px;
   overflow: hidden;
   position: relative;
+  backdrop-filter: blur(10px);
   border-radius: 25px;
-  background: var(--white);
-  background: linear-gradient(0deg, #000, #262626);
+  border: 3px solid blue;
 }
 
 .wrapper i {
@@ -191,9 +168,10 @@ body {
 }
 
 .top-bar span {
-  color: red;
+  color: yellow;
   margin-left: -3px;
   font-size: 20px;
+  font-family: timse;
   font-weight: bold;
 }
 
@@ -203,6 +181,7 @@ body {
   /*height: 256px;*/
   overflow: hidden;
   margin-top: 25px;
+  border: 2px solid white;
   border-radius: 15px;
   box-shadow: 0px 6px 12px var(--lightbshadow);
 }
@@ -219,7 +198,6 @@ body {
 }
 
 .song-details p {
-  color: var(--lightblack);
   color: white;
 }
 
@@ -231,7 +209,7 @@ body {
 
 .song-details .artist {
   color: yellow;
-  font-size: 10px;
+  font-size: 15px;
   opacity: 0.9;
   line-height: 35px;
 }
@@ -279,14 +257,16 @@ body {
 }
 
 .song-timer .current-time {
-  font-size: 10px;
+  font-size: 20px;
   color: yellow;
+  font-family: times;
   font-weight: bold;
 }
 
 .song-timer .max-duration {
-  font-size: 10px;
+  font-size: 20px;
   color: white;
+  font-family: times;
   font-weight: bold;
 }
 
@@ -295,17 +275,33 @@ body {
 }
 
 .controls i {
-  background: white;
-  background-clip: text;
+  background: hite;
+  /*background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;*/
   font-size: 30px;
   user-select: none;
+}
+  
+.controls i:nth-child(1) {
+  /*background: lue;
+  color: yellow;
+  padding: 10px;
+  font-size: 30px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px yellow;*/
 }
 
 .controls i:nth-child(2),
 .controls i:nth-child(4) {
-  font-size: 43px;
+  background: green;
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px yellow;
 }
 
 .controls #prev {
@@ -348,9 +344,20 @@ body {
   -webkit-text-fill-color: transparent;
   position: absolute;
 }
+  
+.controls i:nth-child(5) {
+  background: gold;
+  color: red;
+  padding: 10px;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px red;
+}
 
 .music-list {
-  background: white;
+  background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   padding: 15px 30px;
   left: 0;
@@ -358,8 +365,10 @@ body {
   opacity: 0;
   position: absolute;
   pointer-events: none;
+  backdrop-filter: blur(10px);
   z-index: 5;
-  border-radius: 15px;
+  border: 2px solid yellow;
+  border-radius: 25px;
   box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.15s ease-out;
 }
@@ -371,8 +380,9 @@ body {
 }
 
 .header .row {
-  font-size: 20px;
-  color: blue;
+  font-size: 25px;
+  color: white;
+  font-family: times;
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -387,8 +397,13 @@ body {
 }
 
 .header #close {
-  font-size: 20px;
+  background: yellow;
   color: red;
+  font-size: 20px;
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 5px red;
 }
 
 .music-list ul {
@@ -396,20 +411,29 @@ body {
   max-height: 260px;
   overflow: auto;
 }
+  
+.widget .post-body ul {
+  padding: 0;
+}
 
 .music-list ul::-webkit-scrollbar {
   width: 0px;
 }
 
 .music-list ul li {
-  color: red;
+  color: white;
   font-size: 10px;
   list-style: none;
   display: flex;
   cursor: pointer;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   margin-bottom: 5px;
   border-bottom: 1px solid #E5E5E5;
+}
+  
+.music-list ul li:before {
+  content: "";
+  font-family: fontawesome;
 }
 
 .music-list ul li:last-child {
@@ -417,7 +441,7 @@ body {
 }
 
 .music-list ul li .row span {
-  color: black;
+  color: yellow;
   font-size: 15px;
   font-weight: bold;
 }
@@ -433,71 +457,13 @@ ul li .audio-duration {
 }
 
 ul li.playing {
-  background-color: gold;
+  background-color: white;
   color: green;
   padding: 12px;
   pointer-events: none;
   border-radius: 12px;
 }
-
-.modal {
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(77, 77, 77, .7);
-  transition: all .4s;
-}
-
-.modal:target {
-  visibility: visible;
-  opacity: 1;
-}
-
-.modal__content {
-  border-radius: 4px;
-  position: relative;
-  width: 500px;
-  max-width: 90%;
-  background: #fff;
-  padding: 1em 2em;
-  text-align: center;
-}
-
-.modal__content p {
-  padding: 30px;
-}
-
-.modal__footer p {
-  padding: 12px;
-  text-align: center;
-}
-
-.modal__footer {
-  a {
-    color: #585858;
-  }
-
-  i {
-    color: #d02d2c;
-  }
-}
-
-.modal__close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  color: #585858;
-  text-decoration: none;
-  font-size: 30px;
-}
-
+  
 @media (max-width: 687px) {
   body {
     display: grid;
