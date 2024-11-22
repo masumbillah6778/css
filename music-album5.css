@@ -428,7 +428,6 @@ background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvX
   cursor: pointer;
   padding-bottom: 20px;
   margin-bottom: 5px;
-  border-bottom: 1px solid #E5E5E5;
 }
   
 .music-list ul li:before {
@@ -442,17 +441,22 @@ background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvX
 
 .music-list ul li .row span {
   color: yellow;
+  padding: 10px;
   font-size: 15px;
   font-weight: bold;
 }
 
 .music-list ul li .row p {
+  padding: 0px 10px 10px 10px;
   opacity: 0.9;
 }
+  
+/*=================== Active Song ==============================*/
 
 ul li .audio-duration {
   color: blue;
-  font-size: 5px;
+  padding: 0px 10px 0px 0px;
+  font-size: 10px;
   font-weight: bold;
 }
 
@@ -461,8 +465,17 @@ ul li.playing {
   color: green;
   padding: 12px;
   pointer-events: none;
-  border-radius: 12px;
 }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+/*=================== Active Song ==============================*/
   
 @media (max-width: 687px) {
   body {
