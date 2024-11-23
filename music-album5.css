@@ -214,6 +214,7 @@ background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvX
   line-height: 35px;
 }
 
+/*=========== progress-area ==========*/
 .progress-area {
   height: 6px;
   width: 100%;
@@ -227,7 +228,8 @@ background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvX
   position: relative;
   border-radius: inherit;
   background: linear-gradient(90deg, green 0%, red 100%);
-  cursor: grabbing;
+  /*cursor: grabbing;*/
+  cursor: pointer;
 }
 
 .progress-bar::before {
@@ -244,7 +246,7 @@ background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvX
   transform: translateY(-50%);
   background: inherit;
   transition: opacity 0.2s ease;
-  cursor: grabbing;
+  cursor: pointer;
 }
 
 .progress-area:hover .progress-bar::before {
@@ -269,92 +271,102 @@ background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvX
   font-family: times;
   font-weight: bold;
 }
+  
+  
+/*=========== Volume ==========*/
+.volume-area {
+  color: white;
+  margin-top: 40px;
+  text-align: center;
+}
+.volume-area i {
+  background: red;
+  color: yellow;
+  padding: 5px;
+}
+  
+.volume-area #display1 {
+  background: red;
+  color: white;
+  padding: 5px;
+  font-size: 15px;
+  font-family: times;
+  font-weight: bold;
+}
+  
+  
+/*========== Control ==========*/
 
 .controls {
   margin: 40px 0 5px 0;
-}
-
-.controls i {
-  background: hite;
-  /*background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;*/
-  font-size: 30px;
-  user-select: none;
+  border: 2px solid cyan;
 }
   
-.controls i:nth-child(1) {
-  /*background: lue;
+.controls #repeat-plist {
+  background: blue;
   color: yellow;
   padding: 10px;
-  font-size: 30px;
-  border-radius: 50%;
-  box-shadow: 0px 0px 5px yellow;*/
-}
-
-.controls i:nth-child(2),
-.controls i:nth-child(4) {
-  background: green;
-  color: white;
-  padding: 10px;
-  font-size: 30px;
+  font-size: 20px;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   box-shadow: 0px 0px 5px yellow;
 }
-
+  
 .controls #prev {
-  margin-right: -13px;
-}
-
-.controls #next {
-  margin-left: -13px;
-}
-
-.controls .play-pause {
-  background: gold;
-  height: 54px;
-  width: 54px;
-  display: flex;
-  cursor: pointer;
+  background: green;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  box-shadow: 0px 0px 5px red;
-}
-
-.play-pause::before {
-  background: red;
-  position: absolute;
-  content: "";
-  height: 43px;
-  width: 43px;
-  border-radius: inherit;
-}
-
-.play-pause i {
-  height: 43px;
-  width: 43px;
-  line-height: 43px;
-  text-align: center;
-  background: inherit;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: absolute;
+  box-shadow: 0px 0px 5px yellow;
 }
   
-.controls i:nth-child(5) {
-  background: gold;
-  color: red;
+.controls .play-pause {
+  background: red;
+  color: gold;
+  width: 50px;
+  height: 50px;
   padding: 10px;
   font-size: 30px;
   align-items: center;
   justify-content: center;
+  border: 4px solid gold;
   border-radius: 50%;
   box-shadow: 0px 0px 5px red;
 }
+  
+.controls #next {
+  background: green;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px yellow;
+}
+  
+.controls #more-music {
+  background: gold;
+  color: red;
+  padding: 10px;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px red;
+}
+  
+.material-icons {
+  =
+}
+
+  
+  
+/*======== Music Header =======*/
 
 .music-list {
   background-color: rgba(0, 0, 0, 0.6);
@@ -405,7 +417,9 @@ background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvX
   border-radius: 50px;
   box-shadow: 0px 0px 5px red;
 }
-
+  
+ 
+/*======== Music List =======*/
 .music-list ul {
   margin: 10px 0;
   max-height: 260px;
@@ -418,6 +432,19 @@ background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvX
 
 .music-list ul::-webkit-scrollbar {
   width: 0px;
+}
+
+.music-list ul li .row span {
+  color: yellow;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px green, 0 0 2px blue, 0 0 2px red;
+}
+
+.music-list ul li .row p {
+  padding: 0px 10px 10px 10px;
+  opacity: 0.9;
 }
 
 .music-list ul li {
@@ -438,26 +465,13 @@ background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvX
 .music-list ul li:last-child {
   border-bottom: 0px;
 }
-
-.music-list ul li .row span {
-  color: yellow;
-  padding: 10px;
-  font-size: 15px;
-  font-weight: bold;
-}
-
-.music-list ul li .row p {
-  padding: 0px 10px 10px 10px;
-  opacity: 0.9;
-}
   
 /*=================== Active Song ==============================*/
 
-ul li .audio-duration {
-  color: blue;
-  padding: 0px 10px 0px 0px;
-  font-size: 10px;
-  font-weight: bold;
+ul li .row span {
+  color: black;
+  padding: 12px;
+  pointer-events: none;
 }
 
 ul li.playing {
@@ -467,6 +481,12 @@ ul li.playing {
   pointer-events: none;
 }
   
+ul li .audio-duration {
+  color: red;
+  padding: 0px 10px 0px 0px;
+  font-size: 10px;
+  font-weight: bold;
+}
   
   
   
@@ -474,8 +494,13 @@ ul li.playing {
   
   
   
+/* ==================== MOBILE SCREEN ==================== */  
   
-/*=================== Active Song ==============================*/
+@media only screen and (max-width: 400px) {
+  ..controls i {
+    font-size: 10px;
+  }
+}
   
 @media (max-width: 687px) {
   body {
