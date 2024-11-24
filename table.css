@@ -55,7 +55,7 @@ table span {
   font-size: 10px;
 }
 
-table tr:hover {
+table td:hover {
   background: #e9b10a;
   color: white;
 }
