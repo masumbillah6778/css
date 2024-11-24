@@ -1,8 +1,12 @@
 .content {
-  color: white;
   width: 600px;
   height: 4600px;
   margin: 10px;
+}
+
+.content p {
+  color: white;
+  padding: 30px;
   font-size: 50px;
   text-align: center;
 }
