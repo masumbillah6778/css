@@ -131,6 +131,34 @@ table td:hover {
   background-color: blue;
 }
 
+.score-value::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  margin-top: -4px;
+  top: 50%;
+  right: -16px;
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+}
+  
+.r::after {
+  background: Red;
+}
+
+.g::after {
+  background: green;
+}
+
+.b::after {
+  background: blue;
+}
+
+.y::after {
+  background: yellow;
+}
+
 /*.content td:nth-child(6n+1) {
   background: Cyan;
   color: Red;
