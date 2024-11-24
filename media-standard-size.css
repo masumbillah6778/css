@@ -1,0 +1,105 @@
+.content {
+  color: white;
+  width: 600px;
+  height: 4600px;
+  margin: 10px;
+  font-size: 50px;
+  text-align: center;
+}
+  
+.content .tv {
+  background: red;
+  width: 1201px;
+  height: 1026px;
+  border: 2px solid blue;
+}
+  
+.content .desktops {
+  background: green;
+  width: 1200px;
+  height: 1025px;
+  border: 2px solid red;
+}
+  
+.content .laptops {
+  background: blue;
+  width: 1024px;
+  height: 769px;
+  border: 2px solid red;
+}
+  
+.content .tablets {
+  background: yellow;
+  width: 481px;
+  height: 769px;
+  border: 2px solid black;
+}
+  
+.content .mobile  {
+  background: gray;
+  width: 320px;
+  height: 480px;
+  border: 2px solid red;
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+/*======== Extra large screens, TV =======*/
+@media screen and (max-width: 1201px) {
+  .content .tv {
+    background: red;
+    width: 1201px;
+    height: 320px;
+  }
+}
+  
+
+/*======== Desktops =======*/
+@media screen and (max-width: 1025px) {
+  .content .desktops {
+    background: red;
+    width: 480px;
+    height: 320px;
+  }
+}
+  
+  
+/*======== ilaptops =======*/
+@media screen and (max-width: 1024px) {
+  .content .laptops {
+    background: red;
+    width: 480px;
+    height: 320px;
+  }
+}
+  
+  
+/*======== iPads, Tablets =======*/
+@media screen and (max-width: 481px) {
+  .content .tablets {
+    background: red;
+    width: 480px;
+    height: 320px;
+  }
+}
+  
+/*======== Mobile devices =======*/
+@media screen and (max-width: 320px) {
+  .content .mobile {
+    background: red;
+    width: 480px;
+    height: 320px;
+  }
+}
+
+
+
