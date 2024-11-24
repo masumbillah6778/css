@@ -131,7 +131,7 @@ table td:hover {
   background-color: blue;
 }
 
-.score-value::after {
+table #advance-table .score-value::after {
   content: "";
   width: 10px;
   height: 10px;
@@ -143,19 +143,19 @@ table td:hover {
   border-radius: 50%;
 }
   
-.r::after {
+table #advance-table .r::after {
   background: Red;
 }
 
-.g::after {
+table #advance-table .g::after {
   background: green;
 }
 
-.b::after {
+table #advance-table .b::after {
   background: blue;
 }
 
-.y::after {
+table #advance-table .y::after {
   background: yellow;
 }
 
