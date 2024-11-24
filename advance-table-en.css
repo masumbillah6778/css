@@ -127,8 +127,8 @@ table td:hover {
   background-size: cover;
 }
 
- tr .active-row {
-  color: #009879;
+ .active-row {
+  background-color: blue;
 }
 
 /*.content td:nth-child(6n+1) {
