@@ -1,0 +1,162 @@
+.content {
+  background: ;
+  width: 100%;
+  height: 700px;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  box-sizing: border-box;
+  border: 9px;
+  border-style: groove;
+  border-left-color: Blue;
+  border-top-color: gold;
+  border-right-color: Green;
+  border-bottom-color: Red;
+}
+
+.content #myInput {
+  background-image: url('https://github.com/masumbillah6778/images/raw/main/bg3.pg');
+  background-position: 0px;
+  background-repeat: no-repeat;
+  background-color: black;
+  color: White;
+  width: 100%;
+  height: 10px;
+  padding: 14px 16px;
+  text-align: center;
+  font-size: 20px;
+  position: relative;
+  display: block;
+  align-items: center;
+  border:  2px solid black;
+}
+
+#myInput:active::after {
+  background: Yellow;
+}
+
+::placeholder {
+  color: Pink;
+  padding-left: 2px;
+  font-size: 15px;
+  font-style: itali;
+}
+
+table {
+  background: url('https://github.com/masumbillah6778/images/raw/main/bg3.pg');
+  background-position: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: lightgray;
+  width: 100%;
+  min-height: 300px;
+  font-size: 15px;
+  font-family: times;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid black;
+}
+
+table tr:nth-of-type(odd) {
+ background-color: #eee;
+}
+
+.ttrimg {
+  background: url("https://github.com/masumbillah6778/images/raw/main/bg3.jpg");
+  background-size: cover;
+  color: white;
+}
+
+table #advance-table {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid red;
+  border-radius: 50px;
+}
+
+table h4 {
+  color: Blue;
+}
+
+table span {
+  color: red;
+  font-size: 10px;
+}
+
+table th {
+  background: teal;
+  color: White;
+  padding: 5px;
+  top: 0;
+  position: sticky;
+  border-bottom: 2px solid red;
+}
+
+table td {
+  color: black;
+  padding: 10px;
+  font-weight: 600;
+  text-align: center;
+  border: 1px solid green;
+}
+
+table td:hover {
+  background: #e9b10a;
+  color: white;
+}
+ 
+#advance-table {
+ counter-reset: serial-number;
+}
+
+#advance-table td:first-child:before {
+  /*background: Red;*/
+  color: black;
+  min-width: 50px;
+  min-height: 50px;
+  padding: 5px;
+  border-radius: 50px;
+  counter-increment: serial-number;
+  content: counter(serial-number);
+}
+
+.ttdimg {
+  background: url("https://github.com/masumbillah6778/images/raw/main/bg3.jpg");
+  background-size: cover;
+}
+
+ tr .active-row {
+  color: #009879;
+}
+
+/*.content td:nth-child(6n+1) {
+  background: Cyan;
+  color: Red;
+}
+  
+.content td:nth-child(6n+2) {
+  background: Yellow;
+  color: Red;
+}
+  
+.content td:nth-child(6n+3) {
+  background: Pink;
+  color: Red;
+}
+  
+.content td:nth-child(6n+4) {
+  background: Lime;
+  color: Red;
+}
+  
+.content td:nth-child(6n+5) {
+  background: Blue;
+  color: Red;
+}
+  
+.content td:nth-child(6n+6) {
+  background: Orange;
+  color: Red;
+}*/
