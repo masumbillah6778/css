@@ -1,6 +1,14 @@
+@import url('https://fonts.maateen.me/bangla/font.css');
+
+@font-face {
+    font-family: 'bangla';
+    src: url('https://fonts.maateen.me/bangla/font.css');
+}
+
 .content {
-  counter-reset:paragraph;
   padding: 10px;
+  font-family: 'bangla';
+  counter-reset:paragraph;
 }
   
 .content p {
