@@ -83,15 +83,6 @@ table #advance-table {
   border-radius: 50px;
 }
 
-table h4 {
-  color: Blue;
-}
-
-table span {
-  color: red;
-  font-size: 10px;
-}
-
 table th {
   background: teal;
   color: White;
@@ -165,7 +156,7 @@ table td:hover {
 .r::after {
   background: Red;
 }
-
+;
 .g::after {
   background: green;
 }
@@ -176,6 +167,11 @@ table td:hover {
 
 .y::after {
   background: yellow;
+}
+
+table span {
+  color: red;
+  font-size: 10px;
 }
 
 /*.content td:nth-child(6n+1) {
