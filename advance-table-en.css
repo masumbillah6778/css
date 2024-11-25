@@ -76,15 +76,6 @@ table #advance-table {
   border-radius: 50px;
 }
 
-table h4 {
-  color: Blue;
-}
-
-table span {
-  color: red;
-  font-size: 10px;
-}
-
 table th {
   background: teal;
   color: White;
@@ -131,7 +122,15 @@ table td:hover {
   background-color: blue;
 }
 
-table #advance-table .score-value::after {
+.dot {
+  position: relative;
+  width: 65px;
+  margin: 0 auto;
+  font-size: 16px;
+  text-align: right;
+}
+
+.dot::after {
   content: "";
   width: 10px;
   height: 10px;
@@ -143,20 +142,25 @@ table #advance-table .score-value::after {
   border-radius: 50%;
 }
   
-table #advance-table .r::after {
+.r::after {
   background: Red;
 }
 
-table #advance-table .g::after {
+.g::after {
   background: green;
 }
 
-table #advance-table .b::after {
+.b::after {
   background: blue;
 }
 
-table #advance-table .y::after {
+.y::after {
   background: yellow;
+}
+
+table span {
+  color: red;
+  font-size: 10px;
 }
 
 /*.content td:nth-child(6n+1) {
