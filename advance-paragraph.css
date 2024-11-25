@@ -1,0 +1,48 @@
+.content {
+  counter-reset:paragraph;
+  padding: 10px;
+}
+  
+.content p {
+  color: re;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.content p:before {
+  color: red;
+  counter-increment:paragraph;
+  content: counter(paragraph, bengali) '. ';
+}
+  
+.content span {
+  color: red;
+  font-size: 20px;
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+/*========================================= MOBILE SCREEN =========================================*/
+  
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .content {
+    width: 100%;
+    display: block;
+  }
+  
+  .content p {
+    font-size: 15px;
+    line-height: 30px;
+  }
+  
+  .content p span {
+    color: red;
+    font-size: 15px;
+  }
+}
