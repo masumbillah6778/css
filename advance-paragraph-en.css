@@ -1,0 +1,56 @@
+@import url('https://fonts.maateen.me/bangla/font.css');
+
+@font-face {
+    font-family: 'bangla';
+    src: url('https://fonts.maateen.me/bangla/font.css');
+}
+
+.content {
+  padding: 10px;
+  font-family: 'times';
+  counter-reset:paragraph;
+}
+  
+.content p {
+  color: re;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.content p:before {
+  color: red;
+  counter-increment:paragraph;
+  content: counter(paragraph, english) '. ';
+}
+  
+.content span {
+  color: red;
+  font-size: 20px;
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+/*========================================= MOBILE SCREEN =========================================*/
+  
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .content {
+    width: 100%;
+    display: block;
+  }
+  
+  .content p {
+    font-size: 15px;
+    line-height: 30px;
+  }
+  
+  .content p span {
+    color: red;
+    font-size: 15px;
+  }
+}
