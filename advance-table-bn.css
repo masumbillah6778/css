@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+@import url('https://fonts.maateen.me/bangla/font.css');
 
 @font-face {
-    font-family: solaimanlipi;
-    src: url(your_font_url);
+    font-family: 'Bangla';
+    src: url('https://fonts.maateen.me/bangla/font.css');
 }
 
 .content {
@@ -58,7 +58,7 @@ table {
   width: 100%;
   min-height: 300px;
   font-size: 15px;
-  font-family: solaimanlipi;
+  font-family: 'Bangla';
   font-weight: bold;
   text-align: center;
   border: 2px solid black;
