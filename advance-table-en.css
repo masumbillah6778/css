@@ -1,3 +1,10 @@
+@import url('https://fonts.maateen.me/bangla/font.css');
+
+@font-face {
+    font-family: 'Bangla';
+    src: url('https://fonts.maateen.me/bangla/font.css');
+}
+
 .content {
   background: ;
   width: 100%;
@@ -51,7 +58,7 @@ table {
   width: 100%;
   min-height: 300px;
   font-size: 15px;
-  font-family: times;
+  font-family: 'times', Bangla;
   font-weight: bold;
   text-align: center;
   border: 2px solid black;
@@ -101,6 +108,10 @@ table td:hover {
 #advance-table {
  counter-reset: serial-number;
 }
+  
+#advance-table tr {
+    counter-increment: row;
+}
 
 #advance-table td:first-child:before {
   /*background: Red;*/
@@ -110,7 +121,7 @@ table td:hover {
   padding: 5px;
   border-radius: 50px;
   counter-increment: serial-number;
-  content: counter(serial-number);
+  content: counter(row, english) '. ';
 }
 
 .ttdimg {
