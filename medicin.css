@@ -1,0 +1,123 @@
+.content {
+  padding: 10px;
+  font-size: 20px;
+}
+  
+.content .medicin-box {
+  padding: 10px;
+  border: 2px solid blue;
+}
+  
+#text {
+  color: red;
+}
+  
+.content .medicin-box .tablet {
+  font-weight: bold;
+  
+}
+  
+.content .medicin-box .tablet::before {
+  background-image: url('https://github.com/masumbillah6778/images/raw/main/tablets.png');
+  background-size: 40px 40px;
+  display: inline-block;
+  width: 40px; 
+  height: 40px;
+  content:"";
+  border: 2px solid red;
+}
+  
+.content .medicin-box .capsule {
+  font-weight: bold;
+}
+  
+.content .medicin-box .capsule::before {
+  background-image: url('https://github.com/masumbillah6778/images/raw/main/capsule.png');
+  background-size: 40px 40px;
+  display: inline-block;
+  width: 40px; 
+  height: 40px;
+  content:"";
+  border: 2px solid red;
+}
+  
+.content .medicin-box .syrup {
+  font-weight: bold;
+}
+  
+.content .medicin-box .syrup::before {
+  background-image: url('https://github.com/masumbillah6778/images/raw/main/syrup.png');
+  background-size: 40px 40px;
+  display: inline-block;
+  width: 40px; 
+  height: 40px;
+  content:"";
+  border: 2px solid red;
+}
+  
+.content .medicin-box .cream {
+  font-weight: bold;
+}
+  
+.content .medicin-box .cream::before {
+  background-image: url('https://github.com/masumbillah6778/images/raw/main/cream.png');
+  background-size: 40px 40px;
+  display: inline-block;
+  width: 40px; 
+  height: 40px;
+  content:"";
+  border: 2px solid red;
+}
+  
+.content .medicin-box a {
+  --angle: to bottom;
+  --border-top-width: 0;
+  --border-right-width: 0;
+  --border-bottom-width: 0;
+  --border-left-width: 0.15em;
+  --border-bottom-width: 5px;
+  --border-left-width: 0;
+  --angle: to left;
+  color: blue;
+  border-width: 0;
+  border-style: solid;
+  border-top-width: var(--border-top-width);
+  border-right-width: var(--border-right-width);
+  border-bottom-width: var(--border-bottom-width);
+  border-left-width: var(--border-left-width);
+  border-image: linear-gradient(var(--angle), red, green, gold, blue) 1;
+}
+  
+.content .medicin-box a:after {
+  border-radius: 20px;
+}
+
+/*.content .medicin-box a:visited {
+    color: green;
+}*/
+
+
+.content .medicin-box a:hover {
+    color: hotpink;
+}
+
+
+.content .medicin-box a:active {
+    color: green;
+}
+
+
+.content .medicin-box lh {
+  background-color: yellow;
+  color: red;
+  padding: 5px 10px;
+}
+  
+.content .medicin-box sup {
+  color: red;
+  font-size: 10px;
+}
+  
+.content .medicin-box span {
+  text-decoration: underline wavy blue 2px;
+}
