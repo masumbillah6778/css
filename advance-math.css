@@ -1,0 +1,132 @@
+/*@import url('https://fonts.maateen.me/bangla/font.css');
+
+@font-face {
+    font-family: 'bangla';
+    src: url('https://fonts.maateen.me/bangla/font.css');
+}*/
+  
+.content {
+  padding: 10px;
+  font-size: 20px;
+  line-height: 30px;
+}
+  
+.content question {
+  color: black;
+  font-weight: bold;
+  
+}
+  
+.content answer {
+  color: black;
+}
+  
+.content span {
+  color: red;
+  font-weight: bold;
+}
+
+.content .fraction1 {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+}
+
+.content .numerator {
+  border-bottom: 2px solid red;
+}
+  
+.content .denominator {
+  border-top: 2px solid red;
+}
+
+.math-box {
+  display: inline-block;
+}
+.lob-hor {
+  display: inline-block;
+  position: relative;
+}
+  
+.math-box .vstack .lob {
+  height: 0;
+  color: green;
+  position: relative;
+  text-align: center;
+  top: 0.686em;
+  border-bottom: 2px solid red;
+}
+  
+.math-box .vstack .hor {
+  height: 0;
+  color: blue;
+  position: relative;
+  text-align: center;
+  top: -0.677em;
+}
+  
+.math-box .baseline-fix {
+  display: inline-table;
+  table-layout: fixed;
+}
+
+.fraction frac, lob, hor, fracsmall {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 2px; margin-right: 2px; 
+}
+
+.fraction frac, fracsmall {
+  display: inline-block;
+  text-align: center;    
+}
+  
+.fraction frac {
+  color: magenta;
+  font-weight: bold;
+}
+  
+.fraction lob {
+  color: blue;
+  font-weight: bold;
+  display: block;
+  border-bottom: 2px solid red;
+}
+ 
+.fraction hor {
+  color: green;
+  font-weight: bold;
+  display: block;
+}
+  
+.fraction sup {
+  color: orange;
+  font-size: 10px;
+}
+
+
+
+
+
+/*========================================= MOBILE SCREEN =========================================*/
+  
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .content {
+    width: 100%;
+    display: block;
+  }
+  
+  .content p {
+    font-size: 15px;
+    line-height: 30px;
+  }
+  
+  .content p span {
+    color: red;
+    font-size: 15px;
+  }
+}
+
+
+
