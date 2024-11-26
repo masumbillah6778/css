@@ -41,6 +41,18 @@
   border-top: 2px solid red;
 }
 
+.content sup {
+  color: Red;
+  font-size: 10px;
+  vertical-align: super;
+}
+  
+.content sub {
+  color: Green;
+  font-size: 10px;
+  vertical-align: sub;
+}
+
 .math-box {
   display: inline-block;
 }
