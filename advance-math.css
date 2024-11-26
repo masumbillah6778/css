@@ -26,6 +26,18 @@
   font-weight: bold;
 }
 
+.content sup {
+  color: Red;
+  font-size: 10px;
+  vertical-align: super;
+}
+  
+.content sub {
+  color: Green;
+  font-size: 10px;
+  vertical-align: sub;
+}
+
 .content .fraction1 {
   display: inline-flex;
   flex-direction: column;
@@ -39,18 +51,6 @@
   
 .content .denominator {
   border-top: 2px solid red;
-}
-
-.content sup {
-  color: Red;
-  font-size: 10px;
-  vertical-align: super;
-}
-  
-.content sub {
-  color: Green;
-  font-size: 10px;
-  vertical-align: sub;
 }
 
 .math-box {
@@ -110,11 +110,6 @@
   color: green;
   font-weight: bold;
   display: block;
-}
-  
-.fraction sup {
-  color: orange;
-  font-size: 10px;
 }
 
 .fraction .num {
