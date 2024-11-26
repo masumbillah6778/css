@@ -119,5 +119,9 @@
 }
   
 .content .medicin-box span {
+  color: Fuchsia;
+  padding-top: 20px;
+  font-size: 15px;
+  font-weight: normal;
   text-decoration: underline wavy blue 2px;
 }
