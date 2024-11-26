@@ -113,6 +113,7 @@
 .fraction .den {
   color: green;
   font-size: 20px;
+  vertical-align: sub;
 }
 .fraction .den:before {
   content: '\2044';
