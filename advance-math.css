@@ -107,12 +107,10 @@
 
 .fraction .num {
   color: blue;
-  font-size: 20px;
   vertical-align: super;
 }
 .fraction .den {
   color: green;
-  font-size: 20px;
   vertical-align: sub;
 }
 .fraction .den:before {
