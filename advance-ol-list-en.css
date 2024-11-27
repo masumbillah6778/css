@@ -1,11 +1,11 @@
 .content {
   font-size: 20px;
-  font-family: ;
+  font-family: times;
 }
   
 .content ol {
   counter-reset: section;
-  list-style-type: bengali;
+  list-style-type: none;
 }
 
 .content li::before {
