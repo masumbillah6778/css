@@ -129,6 +129,13 @@
   font-size: 30px;
 }
 
+.fraction .sup {
+  font-weight: bold;
+}
+
+.fraction .sub {
+  font-weight: bold;
+}
 
 
 /*========================================= MOBILE SCREEN =========================================*/
