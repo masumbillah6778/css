@@ -114,12 +114,15 @@
 
 .fraction .num {
   color: blue;
+  font-size: 20px;
   vertical-align: super;
 }
+  
 .fraction .den {
   color: green;
-  vertical-align: sub;
+  font-size: 20px;
 }
+  
 .fraction .den:before {
   content: '\2044';
   color: red;
