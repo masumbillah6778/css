@@ -5,7 +5,7 @@
   
 .content ol {
   counter-reset: section;
-  list-style-type: none;
+  list-style-type: bengali;
 }
 
 .content li::before {
