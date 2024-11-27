@@ -86,14 +86,14 @@
 @media only screen and (min-width: 300px) and (max-width: 600px) {
   .content {
     width: 98.5%;
-    height: 650px;
+    height: 620px;
     margin: 5px;
   }
   
   .content .birthday-box {
     background: green;
     width: 355px;
-    height: 650px;
+    height: 620px;
   }
   
   .content .birthday-info {
