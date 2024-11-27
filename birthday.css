@@ -83,8 +83,7 @@
 
 
 /* ==================== MOBILE SIZE ==================== */  
-  
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 300px) and (max-width: 600px) {
   .content .birthday-box {
   background: green;
   width: 355px;
@@ -101,10 +100,10 @@
   }
 
   #timer {
-    font-size: 20px;
+    font-size: 10px;
   }
   
   #timer div span {
-    font-size: 15px;
+    font-size: 8px;
   }
 }
