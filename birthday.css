@@ -4,7 +4,7 @@
   margin: 5px;
 }
   
-.content .death-box {
+.content .birthday-box {
   background: grey;
   width: 98%;
   height: 600px;
@@ -16,7 +16,7 @@
   border-radius: 20px;
 }
   
-.content .death-image {
+.content .birthday-image {
   width: 250px;
   height: 250px;
   margin-top: 5px;
@@ -27,7 +27,7 @@
   box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
 }
   
-.content .death-image img {
+.content .birthday-image img {
   width: 100%;
   height:100%;
     
@@ -38,7 +38,7 @@
   font-size: 20px;
 }
      
-.content .death-info {
+.content .birthday-info {
   color: white;
   margin-top: 10px;
   font-size: 20px;
@@ -47,7 +47,7 @@
   line-height: 30px;
 }
 
-.death-box {
+.birthday-box {
   text-align: center;
 }
 
@@ -85,13 +85,13 @@
 /* ==================== MOBILE SIZE ==================== */  
   
 @media only screen and (max-width: 400px) {
-  .content .death-box {
+  .content .birthday-box {
   background: green;
   width: 355px;
   height: 580px;
   }
   
-  .content .death-info {
+  .content .birthday-info {
     color: white;
     margin-top: 10px;
     font-size: 15px;
