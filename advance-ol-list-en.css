@@ -1,0 +1,38 @@
+.content {
+  font-size: 20px;
+  font-family: ;
+}
+  
+.content ol {
+  counter-reset: section;
+  list-style-type: bengali;
+}
+
+.content li::before {
+  background: Red;
+  color:white;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  padding: 5px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: Bold;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  counter-increment: section;
+  content: counters(section,".") " ";
+}
+  
+.content ol ol li::before {
+  background: green;
+}
+  
+.content ol ol ol li::before {
+  background: blue;
+}
+  
+.content ol ol ol ol li::before {
+  background: gold;
+}
