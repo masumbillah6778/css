@@ -84,10 +84,16 @@
 
 /* ==================== MOBILE SIZE ==================== */  
 @media only screen and (min-width: 300px) and (max-width: 600px) {
+  .content {
+    width: 98.5%;
+    height: 600px;
+    margin: 5px;
+  }
+  
   .content .birthday-box {
-  background: green;
-  width: 355px;
-  height: 580px;
+    background: green;
+    width: 355px;
+    height: 580px;
   }
   
   .content .birthday-info {
