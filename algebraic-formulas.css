@@ -1,0 +1,39 @@
+.content {
+  color: ;
+  padding: 10px;
+  font-size: 20px;
+  font-family: times;
+  font-weight: bold;
+}
+  
+.content number {
+  background-color: green;
+  color: yellow;
+  margin-right: 20px;
+  padding: 5px;
+  text-align: center;
+  line-height: 50px;
+  border: 2px solod red;
+  border-radius: 10px;
+}
+  
+.content sup {
+  color: red;
+  padding-top: -10px;
+  font-size: 10px;
+  vertical-align: super;
+}
+
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .content {
+    width: 100%;
+    font-size: 15px;
+    display: block;
+  }
+  
+  .content sup {
+    font-size: 10px;
+  }
+}
+
