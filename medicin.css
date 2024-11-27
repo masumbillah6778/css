@@ -121,11 +121,9 @@
 }
 
 
-.content .medicin-box lh content .medicin-box{
-  background-color: yellow;
-  color: red;
-  padding: 5px 10px;
-}details
+.content .medicin-box .details {
+  line-height: 30px;
+}
 
 .content .medicin-box lh {
   background-color: yellow;
