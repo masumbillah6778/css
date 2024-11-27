@@ -11,13 +11,13 @@
   counter-reset:paragraph;
 }
   
-.content .page p {
+.content p {
   color: re;
   font-size: 20px;
   line-height: 40px;
 }
 
-.content .page p:before {
+.content p:before {
   color: red;
   counter-increment:paragraph;
   content: counter(paragraph, english) '. ';
@@ -44,12 +44,12 @@
     display: block;
   }
   
-  .content .page p {
+  .content p {
     font-size: 15px;
     line-height: 30px;
   }
   
-  .content .page p span {
+  .content p span {
     color: red;
     font-size: 15px;
   }
