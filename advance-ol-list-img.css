@@ -1,0 +1,19 @@
+.content {
+  
+}
+  
+.content ul li {
+  font-size: 20px;
+  font-family: ;
+}
+  
+.content ul li::before {
+  background-image: url('https://github.com/masumbillah6778/images/raw/main/music-logo.jpg');
+  background-size: 10px 10px;
+  display: inline-block;
+  width: 10px; 
+  height: 10px;
+  margin: 0px 15px 0px -20px;
+  content:"";
+  border: 2px solid red;
+}
