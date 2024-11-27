@@ -68,6 +68,20 @@
   content:"";
   border: 2px solid red;
 }
+
+.content .medicin-box .parachute {
+  font-weight: bold;
+}
+  
+.content .medicin-box .parachute::before {
+  background-image: url('https://github.com/masumbillah6778/images/raw/main/parachute.png');
+  background-size: 40px 40px;
+  display: inline-block;
+  width: 40px; 
+  height: 40px;
+  content:"";
+  border: 2px solid red;
+}
   
 .content .medicin-box a {
   --angle: to bottom;
