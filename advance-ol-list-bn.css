@@ -1,38 +1,40 @@
 .content {
-  font-size: 20px;
-  font-family: ;
+  padding: 10px 10px 10px 20px;
 }
   
 .content ol {
   counter-reset: section;
   list-style-type: bengali;
 }
-
-.content li::before {
-  background: Red;
-  color:white;
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
-  padding: 5px;
-  display: inline-block;
+  
+.content li::marker {
+  color: red;
   font-size: 15px;
   font-weight: Bold;
   text-align: center;
   line-height: 40px;
-  border-radius: 50%;
-  counter-increment: section;
-  content: counters(section,".") " ";
 }
   
-.content ol ol li::before {
-  background: green;
+.content li li::marker {
+  color: green;
+  font-size: 15px;
+  font-weight: Bold;
+  text-align: center;
+  line-height: 40px;
 }
   
-.content ol ol ol li::before {
-  background: blue;
+.content li li li::marker {
+  color: blue;
+  font-size: 15px;
+  font-weight: Bold;
+  text-align: center;
+  line-height: 40px;
 }
   
-.content ol ol ol ol li::before {
-  background: gold;
+.content li li li li::marker {
+  color: gold;
+  font-size: 15px;
+  font-weight: Bold;
+  text-align: center;
+  line-height: 40px;
 }
