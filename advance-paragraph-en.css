@@ -44,12 +44,12 @@
     display: block;
   }
   
-  .content p {
+  .content .page p {
     font-size: 15px;
     line-height: 30px;
   }
   
-  .content p span {
+  .content .page p span {
     color: red;
     font-size: 15px;
   }
