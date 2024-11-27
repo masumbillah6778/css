@@ -106,6 +106,8 @@
   }
 
   #timer {
+    margin: 5px;
+    padding: 5px;
     font-size: 10px;
   }
   
