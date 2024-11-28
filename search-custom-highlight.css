@@ -11,7 +11,7 @@
   box-sizing: border-box;
 }
 .content {
-  margin: 10px 5px;
+  margin: 10px;
   font-family: ;
 }
 
@@ -95,6 +95,7 @@
   font-size: 20px;
   line-height: 30px;
   font-family: 'bangla', times;
+  text-align: justify;
 }
 
 
