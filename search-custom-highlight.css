@@ -82,7 +82,11 @@
   color: white;
 }
 
-
+.content article {
+  color: black;
+  font-size: 20px;
+  line-height: 30px;
+}
 
 
 
