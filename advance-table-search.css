@@ -5,7 +5,7 @@
 }
 .content {
   margin: 10px 5px;
-  font-family: times;
+  font-family: ;
 }
 
 .search-box {
@@ -21,7 +21,7 @@
   height: 100%;
   padding: 5px 0px 0px 10px;
   font-size: 18px;
-  font-family: times;
+  font-family: ;
   font-weight: bold;
   outline: none;
   border: 2px solid red;
