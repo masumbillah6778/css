@@ -1,0 +1,85 @@
+.content {
+  width: ;
+  height: ;
+  padding: 10px;
+}
+  
+.content input {
+  width: 100%;
+  height: 30px;
+  border: 2px solid green;
+}
+  
+.content h3 {
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+}
+  
+.box {
+  margin: 5px;
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+}
+  
+.content .green {
+  background-color: green;
+  width: 20px;
+  height: 20px;
+}
+  
+.content .red {
+  background-color: red;
+  width: 20px;
+  height: 20px;
+}
+  
+.content .gold {
+  background-color: gold;
+  width: 20px;
+  height: 20px;
+}
+  
+.content .blue {
+  background-color: blue;
+  width: 20px;
+  height: 20px;
+}
+  
+  
+  
+  
+  
+  
+  
+mark.a0 {
+  background: yellow;
+  color: white;
+  padding: 5px;
+}
+  
+mark.a1 {
+  background: green;
+  color: white;
+  padding: 5px;
+}
+  
+mark.a2 {
+  background: red;
+  color: white;
+  padding: 5px;
+}
+  
+mark.a3 {
+  background: gold;
+  color: red;
+  padding: 5px;
+}
+  
+mark.a4 {
+  background: blue;
+  color: white;
+  padding: 5px;
+}
