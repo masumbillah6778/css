@@ -1,4 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.content {
+  margin: 10px 5px;
+  font-family: ;
+}
+
+.search-box {
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+
+.search-box input {
+  background: transparent;
+  color: black;
+  width: 100%;
+  height: 100%;
+  padding: 5px 0px 0px 10px;
+  font-size: 18px;
+  font-family: 'bangla';
+  font-weight: bold;
+  outline: none;
+  border: 2px solid red;
+  border-radius: 10px 10px 0px 0px;
+}
+
+
+
+.search-box label {
+  background: linear-gradient(210deg, #fb0094, #ffff00, #00ff00, #0000ff, #fb0094, #ffff00, #00ff00, #0000ff, #fb0094);
+  -webkit-background-clip: text;
+  background-size: 500%;
+  color: transparent;
+  padding: 20px;
+  animation: colour-animate 30s linear infinite;
+  top: 15px;
+  left: 15px;
+  padding: 0 5px;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  text-transform: capitalize;
+  transition: top .3s;
+  pointer-events: none;
+}
+
+.search-box input:focus ~ label,
+.search-box input:valid ~ label {
+  background: white;
+  color: green;
+  font-size: 15px;
+  font-weight: bold;
+  top:-9px;
+  border-left: 2px solid red;
+  border-right: 2px solid red;
+}
+
+.search-box input:focus,
+.search-box input:valid {
+  border: 2px solid green;
+  animation-name: example;
+  animation-duration: 4s linear infinite;
+}
+
+@keyframes colour-animate {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 500% 0;
+    }
+}
+
+
+
 ::highlight(search-results) {
   background-color: #f06;
   color: white;
 }
+
+
+
+
+
+
+
+
+
+
+
