@@ -74,3 +74,129 @@
         background-position: 500% 0;
     }
 }
+
+
+table {
+  background: url('https://github.com/masumbillah6778/images/raw/main/bg3.pg');
+  background-position: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: lightgray;
+  width: 100%;
+  min-height: 300px;
+  font-size: 15px;
+  font-family: 'Bangla', times;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid black;
+}
+
+table tr:nth-of-type(odd) {
+ background-color: #eee;
+}
+
+.ttrimg {
+  background: url("https://github.com/masumbillah6778/images/raw/main/bg3.jpg");
+  background-size: cover;
+  color: white;
+}
+
+table #advance-table {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid red;
+  border-radius: 50px;
+}
+
+table th {
+  background: teal;
+  color: White;
+  padding: 5px;
+  top: 0;
+  position: sticky;
+  border-bottom: 2px solid red;
+}
+
+table td {
+  color: black;
+  padding: 10px;
+  font-weight: 600;
+  text-align: center;
+  border: 1px solid green;
+}
+
+table td:hover {
+  background: #e9b10a;
+  color: white;
+}
+ 
+#advance-table {
+ counter-reset: serial-number;
+}
+  
+#advance-table tr {
+    counter-increment: row;
+}
+
+#advance-table td:first-child:before {
+  /*background: Red;*/
+  color: black;
+  min-width: 50px;
+  min-height: 50px;
+  padding: 5px;
+  border-radius: 50px;
+  counter-increment: serial-number;
+  content: counter(row, bengali) '. ';
+}
+
+.ttdimg {
+  background: url("https://github.com/masumbillah6778/images/raw/main/bg3.jpg");
+  background-size: cover;
+}
+
+ .active-row {
+  background-color: blue;
+}
+
+.dot {
+  position: relative;
+  width: 65px;
+  margin: 0 auto;
+  font-size: 16px;
+  text-align: right;
+}
+
+.dot::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  margin-top: -4px;
+  top: 50%;
+  right: -16px;
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+}
+  
+.r::after {
+  background: Red;
+}
+;
+.g::after {
+  background: green;
+}
+
+.b::after {
+  background: blue;
+}
+
+.y::after {
+  background: yellow;
+}
+
+table span {
+  color: red;
+  font-size: 10px;
+}
