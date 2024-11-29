@@ -2,6 +2,7 @@
   width: ;
   height: ;
   padding: 10px;
+  font-family: Arial, times;
 }
   
 .container-fluid {
@@ -144,3 +145,15 @@ mark.a4 {
   color: white;
   padding: 5px;
 }
+
+.select {
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
