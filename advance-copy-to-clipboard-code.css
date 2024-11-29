@@ -108,6 +108,27 @@
   z-index: 99981;
 }
 
+.K2_CBox {
+  width: 100%;
+}
+  
+.hljs-ln-n:before {
+  content: attr(data-line-number);
+  color: Pink;
+  border-right: 2px solid Pink;
+  margin-right: 10px;
+  padding-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:500px) {
   .tNtf span{
     margin-bottom: 20px;
