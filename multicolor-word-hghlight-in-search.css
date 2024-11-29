@@ -44,8 +44,8 @@
   pointer-events: none;
 }
 
-.container-fluid:focus ~ label,
-.container-fluid:valid ~ label {
+.container-fluid input:focus ~ label,
+.container-fluid input:focus ~ label {
   background: white;
   color: green;
   font-size: 15px;
