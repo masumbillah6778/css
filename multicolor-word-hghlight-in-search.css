@@ -1,8 +1,15 @@
+@import url('https://fonts.maateen.me/bangla/font.css');
+
+@font-face {
+    font-family: 'Bangla';
+    src: url('https://fonts.maateen.me/bangla/font.css');
+}
+
 .content {
   width: ;
   height: ;
   padding: 10px;
-  font-family: Arial, times;
+  font-family: 'bangla', times;
 }
   
 .container-fluid {
