@@ -14,7 +14,7 @@
   border: 2px solid red;
 }
 
-.dropdown {
+.content .dropdown {
   background-color: pink;
   min-width: 200px;
   margin: 5px;
@@ -23,7 +23,7 @@
   position: relative;
 }
 
-.select {
+.content .select {
   background-color: red;
   color: yellow;
   padding: 10px;
@@ -36,16 +36,16 @@
   border-radius: 10px;
 }
 
-.select-clicked {
+.content .select-clicked {
   box-shadow: 0 0 0.8px red;
   border: 2px solid Magenta;
 }
 
-.select:hover {
+.content .select:hover {
   background-color: blue;
 }
 
-.caret {
+.content .caret {
   width: 0;
   height: 0;
   margin-left: 10px;
@@ -55,11 +55,11 @@
   transition: 0.3s;
 }
 
-.caret-rotate {
+.content .caret-rotate {
   transform: rotate(180deg);
 }
 
-.menu {
+.content .menu {
   background-color: green;
   color: white;
   width: 100%;
@@ -78,23 +78,23 @@
   z-index: 1;
 }
 
-.menu li {
+.content .menu li {
   margin: 10px 0px;
   padding: 10px 5px;
   cursor: pointer;
   border-radius: 10px;
 }
 
-.menu li:hover {
+.content .menu li:hover {
   background-color: orange;
 }
 
-.active {
+.content .active {
   background-color: yellow;
   color: red;
 }
 
-.menu-open {
+.content .menu-open {
   display: block;
   opacity: 1;
 }
