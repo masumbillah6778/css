@@ -59,7 +59,7 @@
   transform: rotate(180deg);
 }
 
-.content .menu {
+.dropdown .menu {
   background-color: green;
   color: white;
   width: 100%;
