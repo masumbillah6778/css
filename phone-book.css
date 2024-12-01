@@ -1,0 +1,391 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.content {
+  margin: 10px 5px;
+  font-family: ;
+}
+
+.search-bar {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 20px 20px 0px 0px;
+  border: 2px solid blue;
+}
+
+.dropdown {
+  background-color: red;
+  width: 200px;
+  height: 50px;
+  margin: 2px;
+  position: relative;
+  cursor: pointer;
+  border: 2px solid green;
+  border-radius: 20px 0px 0px 0px;
+}
+
+.dropdown-text {
+  background-color: transparent;
+  color: white;
+  padding: 10px 15px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropdown-list {
+  background-color: blue;
+  color: white;
+  width: 100%;
+  max-height: 0;
+  top: 4rem;
+  left: 0;
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  border-radius: 15px;
+  border: 2px solid red;
+}
+
+.dropdown-list-item {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 15px;
+  z-index: 2;
+  transition: background-color 0.2s ease, color 0.3s ease, margin-left 0.2s ease;
+}
+
+.dropdown-list-item:hover {
+  margin-left: 0.5rem;
+  color: yellow;
+}
+
+#list.show {
+  max-height: 300px;
+}
+
+
+
+
+.search-box {
+  width: 100%;
+  height: 50px;
+  margin: 2px;
+  position: relative;
+}
+
+.search-box input {
+  background: transparent;
+  color: black;
+  width: 100%;
+  height: 100%;
+  padding: 5px 0px 0px 10px;
+  font-size: 18px;
+  font-family: 'bangla';
+  font-weight: bold;
+  outline: none;
+  border: 2px solid red;
+  border-radius: 0px 20px 0px 0px;
+}
+
+
+
+.search-box label {
+  background: linear-gradient(210deg, #fb0094, #ffff00, #00ff00, #0000ff, #fb0094, #ffff00, #00ff00, #0000ff, #fb0094);
+  -webkit-background-clip: text;
+  background-size: 500%;
+  color: transparent;
+  padding: 20px;
+  animation: colour-animate 30s linear infinite;
+  top: 15px;
+  left: 15px;
+  padding: 0 5px;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  text-transform: capitalize;
+  transition: top .3s;
+  pointer-events: none;
+}
+
+.search-box input:focus ~ label,
+.search-box input:valid ~ label {
+  background: white;
+  color: green;
+  font-size: 15px;
+  font-weight: bold;
+  top:-9px;
+  border-left: 2px solid red;
+  border-right: 2px solid red;
+}
+
+.search-box input:focus,
+.search-box input:valid {
+  border: 2px solid green;
+  animation-name: example;
+  animation-duration: 4s linear infinite;
+}
+
+@keyframes colour-animate {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 500% 0;
+    }
+}
+
+@keyframes typing {
+  0.0000%, 25.0000% { content: ""; }
+  1.0000%, 24.0000% { content: "I"; }
+  2.0000%, 23.0000% { content: "In"; }
+  3.0000%, 22.0000% { content: "Ins"; }
+  4.0000%, 21.0000% { content: "Insp"; }
+  5.0000%, 20.0000% { content: "Inspe"; }
+  6.0000%, 19.000p% { content: "Inspec"; }
+  7.0000%, 18.0000% { content: "Inspect"; }
+  8.0000%, 17.0000% { content: "Inspecto"; }
+  9.0000%, 16.0000% { content: "Inspector"; }
+
+  
+  
+  
+  28.0000%, 39.0000% { content: ""; }
+  29.0000%, 38.0000% { content: "S"; }
+  30.0000%, 37.0000% { content: "Si"; }
+  
+
+  
+  
+  42.0000%, 55.0000% { content: ""; }
+  43.0000%, 54.0000% { content: "A"; }
+  44.0000%, 53.0000% { content: "As"; }
+  45.0000%, 52.0000% { content: "Asi"; }
+  
+  
+  
+
+  58.0000%, 69.0000% { content: ""; }
+  59.0000%, 68.0000% { content: "N"; }
+  60.0000%, 67.0000% { content: "Nk"; }
+  
+  
+  
+  
+  72.0000%, 97.0000% { content: ""; }
+  73.0000%, 96.0000% { content: "C"; }
+  74.0000%, 95.0000% { content: "Co"; }
+  75.0000%, 94.0000% { content: "Con"; }
+  76.0000%, 93.0000% { content: "Cons"; }
+  77.0000%, 92.0000% { content: "Const"; }
+  78.0000%, 91.0000% { content: "Consta"; }
+  79.0000%, 90.0000% { content: "Constab"; }
+  80.0000%, 89.0000% { content: "Constabl"; }
+  81.0000%, 88.0000% { content: "Constable"; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.typewriter {
+  --caret: currentcolor;
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 10s infinite;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 1px solid black;
+  animation: blink 0.5s linear infinite;
+}
+
+.typewriter .thick::after {
+  border-right: 1px solid black;
+}
+
+.typewriter .animation::after {
+  border-right: 0;
+}
+
+
+@media (prefers-reduced-motion) {
+  .typewriter::after {
+    animation: none;
+  }
+  
+  @keyframes sequencePopup {
+    0%, 100% { content: "Inspector"; }
+    20% { content: "Si"; }
+    40% { content: "Asi"; }
+    60% { content: "Nk"; }
+    80% { content: "Constable"; }
+  }
+
+  .typewriter::before {
+    content: "Inspector";
+    animation: sequencePopup 10s linear infinite;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+table {
+  background: url('https://github.com/masumbillah6778/images/raw/main/bg3.pg');
+  background-position: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: lightgray;
+  width: 100%;
+  min-height: 300px;
+  font-size: 15px;
+  font-family: 'Bangla', times;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid black;
+}
+
+table tr:nth-of-type(odd) {
+ background-color: #eee;
+}
+
+.ttrimg {
+  background: url("https://github.com/masumbillah6778/images/raw/main/bg3.jpg");
+  background-size: cover;
+  color: white;
+}
+
+table #advance-table {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid red;
+  border-radius: 50px;
+}
+
+table th {
+  background: teal;
+  color: White;
+  padding: 5px;
+  top: 0;
+  position: sticky;
+  border-bottom: 2px solid red;
+}
+
+table td {
+  color: black;
+  padding: 10px;
+  font-weight: 600;
+  text-align: center;
+  border: 1px solid green;
+}
+
+table td:hover {
+  background: #e9b10a;
+  color: white;
+}
+ 
+#advance-table {
+ counter-reset: serial-number;
+}
+  
+#advance-table tr {
+  counter-increment: row;
+}
+
+#advance-table td:first-child:before {
+  /*background: Red;*/
+  color: black;
+  min-width: 50px;
+  min-height: 50px;
+  padding: 5px;
+  border-radius: 50px;
+  counter-increment: serial-number;
+  content: counter(row, bengali) '. ';
+}
+
+#advance-table td img {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+
+.ttdimg {
+  background: url("https://github.com/masumbillah6778/images/raw/main/bg3.jpg");
+  background-size: cover;
+}
+
+ .active-row {
+  background-color: blue;
+}
+
+.dot {
+  position: relative;
+  width: 65px;
+  margin: 0 auto;
+  font-size: 16px;
+  text-align: right;
+}
+
+.dot::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  margin-top: -4px;
+  top: 50%;
+  right: -16px;
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+}
+  
+.r::after {
+  background: Red;
+}
+;
+.g::after {
+  background: green;
+}
+
+.b::after {
+  background: blue;
+}
+
+.y::after {
+  background: yellow;
+}
+
+table span {
+  color: red;
+  font-size: 10px;
+}
