@@ -1,2 +1,158 @@
 @import url('https://masumbillah6778.github.io/fonts/bangla/bangla-custom-font.css');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+  border: 2px solid red;
+}
+
+.table-body {
+    background-color: gol;
+    width: 100%;
+    max-height: 300px;
+    border-radius: 10px;
+    overflow: auto;
+    overflow: overlay;
+}
+
+.table-body::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+.table-body::-webkit-scrollbar-thumb {
+    background-color: blue;
+    visibility: hidden;
+    border-radius: 5px;
+}
+
+.table-body:hover::-webkit-scrollbar-thumb { 
+    visibility: visible;
+}
+
+.search-box {
+    background-color: green;
+    width: 100%;
+    height: ;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2ss
+    top: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    border-radius: 10px;
+}
+
+.search-box:hover {
+    background-color: red;
+    width: 100%;
+    box-shadow: 0 .1rem .4rem #0002;
+}
+
+.search-box img {
+    width: 50px;
+    height: 50px;
+}
+
+.search-box input {
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+table {
+  width: 100%
+}
+  
+#advance-table {
+ counter-reset: serial-number;
+}
+  
+#advance-table tr {
+    counter-increment: row;
+}
+
+#advance-table td:first-child:before {
+  /*background: Red;*/
+  color: black;
+  min-width: 50px;
+  min-height: 50px;
+  padding: 5px;
+  border-radius: 50px;
+  counter-increment: serial-number;
+  content: counter(row, bengali) '. ';
+}
+
+td img {
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+    border-radius: 50%;
+
+    vertical-align: middle;
+}
+
+table, th, td {
+    padding: 1rem;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+thead .sticky {
+    background-color: gold;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    position: -webkit-sticky;
+    position: sticky;
+    text-transform: capitalize;
+    z-index: 1;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #0000000b;
+}
+
+tbody tr {
+    --delay: .1s;
+    transition: .5s ease-in-out var(--delay), background-color 0s;
+}
+
+tbody tr.hide {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+tbody tr:hover {
+    background-color: #fff6 !important;
+}
+
+tbody tr td,
+tbody tr td p,
+tbody tr td img {
+    transition: .2s ease-in-out;
+}
+
+tbody tr.hide td,
+tbody tr.hide td p {
+    padding: 0;
+    font: 0 / 0 sans-serif;
+    transition: .2s ease-in-out .5s;
+}
+
+tbody tr.hide td img {
+    width: 0;
+    height: 0;
+    transition: .2s ease-in-out .5s;
+}
