@@ -1,5 +1,7 @@
 @import url('https://masumbillah6778.github.io/fonts/bangla/bangla-custom-font.css');
 
+@import url('#');
+
 * {
   margin: 0;
   padding: 0;
@@ -13,39 +15,46 @@
   border: 2px solid red;
 }
 
+
+
+
+
+
+
+
+
+
+/*===================================== Table Body =========================================*/
+
 .table-body {
-    background-color: gol;
-    width: 100%;
-    max-height: 300px;
-    border-radius: 0px;
-    overflow: auto;
-    overflow: overlay;
+  background-color: gol;
+  width: 100%;
+  max-height: 300px;
+  border-radius: 0px;
+  overflow: auto;
+  overflow: overlay;
 }
 
-.table-body::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
-}
 
-.table-body::-webkit-scrollbar-thumb {
-    background-color: blue;
-    visibility: hidden;
-    border-radius: 5px;
-}
 
-.table-body:hover::-webkit-scrollbar-thumb { 
-    visibility: visible;
-}
+
+
+
+
+
+/*===================================== Search Box =========================================*/
+
 
 .search-box {
-    background-color: green;
-    width: 100%;
-    height: ;
-    padding: 5px 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.2s;
+  background-color: green;
+  width: 100%;
+  height: ;
+  margin-top: 30px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
   top: 0;
   position: -webkit-sticky;
   position: sticky;
@@ -54,38 +63,186 @@
 }
 
 .search-box:hover {
-    background-color: red;
-    width: 100%;
-    box-shadow: 0 .1rem .4rem #0002;
+  background-color: red;
+  width: 100%;
+  box-shadow: 0 .1rem .4rem #0002;
 }
 
 .search-box img {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 .search-box input {
-    background-color: white;
-    width: 100%;
-    padding: 10px;
-    border: none;
-    outline: none;
+  background-color: white;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.search-box label {
+  background: linear-gradient(210deg, #fb0094, #ffff00, #00ff00, #0000ff, #fb0094, #ffff00, #00ff00, #0000ff, #fb0094);
+  -webkit-background-clip: text;
+  background-size: 500%;
+  color: transparent;
+  padding: 20px;
+  animation: colour-animate 30s linear infinite;
+  top: 15px;
+  left: 15px;
+  padding: 0 5px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'solaiman-lipi', Times;
+  position: absolute;
+  text-transform: capitalize;
+  transition: top .3s;
+  pointer-events: none;
+}
+
+.search-box input:focus ~ label,
+.search-box input:valid ~ label {
+  background: green;
+  color: yellow;
+  font-size: 15px;
+  font-weight: bold;
+  top:-9px;
+  border-left: 2px solid yellow;
+  border-right: 2px solid yellow;
+}
+
+.search-box input:focus,
+.search-box input:valid {
+  border: 2px solid green;
+  animation-name: example;
+  animation-duration: 4s linear infinite;
+}
+
+@keyframes colour-animate {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 500% 0;
+    }
+}
+
+@keyframes typing {
+  0.0000%, 25.0000% { content: ""; }
+  1.0000%, 24.0000% { content: "I"; }
+  2.0000%, 23.0000% { content: "In"; }
+  3.0000%, 22.0000% { content: "Ins"; }
+  4.0000%, 21.0000% { content: "Insp"; }
+  5.0000%, 20.0000% { content: "Inspe"; }
+  6.0000%, 19.000p% { content: "Inspec"; }
+  7.0000%, 18.0000% { content: "Inspect"; }
+  8.0000%, 17.0000% { content: "Inspecto"; }
+  9.0000%, 16.0000% { content: "Inspector"; }
+
+  
+  
+  
+  28.0000%, 39.0000% { content: ""; }
+  29.0000%, 38.0000% { content: "S"; }
+  30.0000%, 37.0000% { content: "Si"; }
+  
+
+  
+  
+  42.0000%, 55.0000% { content: ""; }
+  43.0000%, 54.0000% { content: "A"; }
+  44.0000%, 53.0000% { content: "As"; }
+  45.0000%, 52.0000% { content: "Asi"; }
+  
+  
+  
+
+  58.0000%, 69.0000% { content: ""; }
+  59.0000%, 68.0000% { content: "N"; }
+  60.0000%, 67.0000% { content: "Nk"; }
+  
+  
+  
+  
+  72.0000%, 97.0000% { content: ""; }
+  73.0000%, 96.0000% { content: "C"; }
+  74.0000%, 95.0000% { content: "Co"; }
+  75.0000%, 94.0000% { content: "Con"; }
+  76.0000%, 93.0000% { content: "Cons"; }
+  77.0000%, 92.0000% { content: "Const"; }
+  78.0000%, 91.0000% { content: "Consta"; }
+  79.0000%, 90.0000% { content: "Constab"; }
+  80.0000%, 89.0000% { content: "Constabl"; }
+  81.0000%, 88.0000% { content: "Constable"; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.typewriter {
+  --caret: currentcolor;
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 10s infinite;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 1px solid black;
+  animation: blink 0.5s linear infinite;
+}
+
+.typewriter .thick::after {
+  border-right: 1px solid black;
+}
+
+.typewriter .animation::after {
+  border-right: 0;
+}
+
+
+@media (prefers-reduced-motion) {
+  .typewriter::after {
+    animation: none;
+  }
+  
+  @keyframes sequencePopup {
+    0%, 100% { content: "Inspector"; }
+    20% { content: "Si"; }
+    40% { content: "Asi"; }
+    60% { content: "Nk"; }
+    80% { content: "Constable"; }
+  }
+
+  .typewriter::before {
+    content: "Inspector";
+    animation: sequencePopup 10s linear infinite;
+  }
 }
 
 
 
 
-/*======= TablE =============*/
+
+
+
+
+/*================================== TablE ==================================*/
+
 table {
   width: 100%
 }
   
 #advance-table {
- counter-reset: serial-number;
+  counter-reset: serial-number;
 }
   
 #advance-table tr {
-    counter-increment: row;
+  counter-increment: row;
 }
 
 #advance-table td:first-child:before {
@@ -100,11 +257,11 @@ table {
 }
 
 td img {
-    width: 36px;
-    height: 36px;
-    margin-right: 10px;
-    border-radius: 50%;
-    vertical-align: middle;
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+  border-radius: 50%;
+  vertical-align: middle;
 }
 
 .head-sticky {
@@ -112,7 +269,7 @@ td img {
   color: white;
   font-size: 20px;
   font-family: 'solaiman-lipi';
-  top: 60;
+  top: 45;
   position: -webkit-sticky;
   position: sticky;
 }
@@ -122,65 +279,65 @@ td img {
 }
 
 table, th, td {
-    padding: 10px;
-    font-family: 'solaiman-lipi';
-    text-align: center;
-    border-collapse: collapse;
+  padding: 10px;
+  font-family: 'solaiman-lipi';
+  text-align: center;
+  border-collapse: collapse;
 }
 
 thead .sticky {
-    background-color: gold;
-    top: 114;
-    left: 0;
-    cursor: pointer;
-    font-family: 'solaiman-lipi';
-    position: -webkit-sticky;
-    position: sticky;
-    text-transform: capitalize;
-    z-index: 1;
+  background-color: gold;
+  top: 90;
+  left: 0;
+  cursor: pointer;
+  font-family: 'solaiman-lipi';
+  position: -webkit-sticky;
+  position: sticky;
+  text-transform: capitalize;
+  z-index: 1;
 }
 
 tbody tr:nth-child(even) {
-    background-color: #0000000b;
+  background-color: #0000000b;
 }
 
 tbody tr {
-    --delay: .1s;
-    transition: .5s ease-in-out var(--delay), background-color 0s;
+  --delay: .1s;
+  transition: .5s ease-in-out var(--delay), background-color 0s;
 }
 
 tbody tr.hide {
-    opacity: 0;
-    transform: translateX(100%);
+  opacity: 0;
+  transform: translateX(100%);
 }
 
 tbody tr:hover {
-    background-color: #fff6 !important;
+  background-color: #fff6 !important;
 }
 
 tbody tr td,
 tbody tr td p,
 tbody tr td img {
-    transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
 }
 
 tbody tr.hide td,
 tbody tr.hide td p {
-    padding: 0;
-    font: 0 / 0 sans-serif;
-    transition: .2s ease-in-out .5s;
+  padding: 0;
+  font-family: 'solaiman-lipi';
+  transition: .2s ease-in-out .5s;
 }
 
 tbody tr.hide td img {
-    width: 0;
-    height: 0;
-    transition: .2s ease-in-out .5s;
+  width: 0;
+  height: 0;
+  transition: .2s ease-in-out .5s;
 }
 
 
 
 
-/*============= Tooltip Image =============*/
+/*================================== Tooltip Image ==================================*/
 .tooltip {
   margin-right: 20px;
   position: relative;
@@ -231,4 +388,29 @@ tbody tr.hide td img {
 .tooltip.top .tooltiptext {
   top: auto;
   bottom: 100%;
+}
+
+
+
+
+
+
+
+
+
+/*================================== Scroll Bar ==================================*/
+
+.table-body::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.table-body::-webkit-scrollbar-thumb {
+  background-color: blue;
+  visibility: hidden;
+  border-radius: 5px;
+}
+
+.table-body:hover::-webkit-scrollbar-thumb { 
+  visibility: visible;
 }
