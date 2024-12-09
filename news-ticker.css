@@ -1,0 +1,53 @@
+.news-container {
+  width: 100%;
+  border: 2px solid red;
+}
+  
+.ticker {
+  width: 100%;
+  height: px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+  
+.title {
+  background: red;
+  color: white;
+  width: 20%;
+  text-align: center;
+  position: relative;
+}
+  
+.title:after {
+  content: "";
+  top: 0;
+  right: -54%;
+  position: absolute;
+  border-left: 20px solid red;
+  border-top: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  z-index: 1;
+}
+
+.title h3 {
+  color: yellow;
+  margin: 0;
+  padding-top: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+  
+.news {
+  background: green;
+  width: 80%;
+  padding: 3px;
+}
+  
+.news marquee {
+  font-size: 15px;
+  color: white;
+  padding-top: 5px;
+  font-weight: bold;
+}
