@@ -1,0 +1,365 @@
+.content {
+  margin: 10px;
+}
+  
+.content h1 {
+  margin: 10px;
+}
+  
+/*================================================= Main Thumbnail ===================================================*/
+  
+.main-thumbnail img {
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;  
+  display: block;
+  box-shadow: 2px 2px 5px red, -2px -2px 5px green;
+  border-radius: 10px;
+}
+  
+.content .text h2 {
+  color: blue;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Solaiman-lipi;
+}
+  
+  
+  
+  
+  
+  
+/*================================================= Page ===================================================*/
+  
+  
+.page {
+  background: Gree;
+  width: 100%;
+  height: 500px;
+  overflow-y: scroll;
+  border: 2px solid red;
+}
+  
+.page::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+  
+.page::-webkit-scrollbar-track {
+  background: gray;
+  border: 2px solid Black;
+  border-radius: 20px;
+}
+  
+.page::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to top, red,orange,yellow,green,blue,indigo,violet);
+  min-height: 100px;
+  visibility: hidden;
+  border-radius: 5px;
+}
+  
+.page::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+  
+  
+  
+  
+  
+  
+/*================================================= Download Info ===================================================*/
+  
+.download-info {
+  k
+}
+  
+.download-info table {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  font-family: times;
+  font-weight: bold;
+  line-height: 30px;
+}
+  
+.download-info .name {
+  color: red;
+  padding-right: 20px;
+  text-align: right;
+}
+  
+.download-info .code {
+  color: Green;
+  text-align: left;
+}
+  
+.download-info .password {
+  color: pink;
+  padding-right: 20px;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+  
+.buttonwrap {
+  margin: 100px 0px;
+  display: flex;
+  justify-content: center;
+}
+  
+.buttonwrap .button {
+  background: red;
+  color: White;
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+  font-family: times;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  transition: all 0.4s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  box-shadow: 0px 1px 5px 1px #4f4f4f;
+}
+
+.download-info a::after {
+  content: '';
+  width: 40px;
+  height 40px;
+  border-radius: 100%;
+  border: 5px solid green;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+  animation: ring 1s infinite;
+}
+
+@keyframes ring {
+  0% {
+    width: 40px;
+    height: 40px;
+    opacity: 2;
+  }
+  100% {
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+  }
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+/*================================================= Apps Details ===================================================*/
+
+.apps-details {
+  margin: 10px;
+}
+  
+.apps-details h2 {
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+}
+  
+.apps-detailst ol {
+  counter-reset: section;
+  list-style-type: bengali;
+}
+  
+.apps-details li::marker {
+  color: red;
+  font-size: 15px;
+  font-weight: Bold;
+  text-align: center;
+  line-height: 30px;
+}
+  
+.apps-details li {
+  color: black;
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+}
+  
+  
+  
+  
+  
+/*================================================= Apps Update Info ===================================================*/
+  
+.content .apps-update-info {
+  background-color :#eeeeee;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  line-height: 30px;
+  border: 1px solid #eceff1;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 2px 2px 5px red, -2px -2px 5px green;
+}
+  
+.apps-update-info .fileType {
+    background: red;
+    color: White;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: times;
+    letter-spacing: 2px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+  
+.file-details {
+  padding: 0px 10px;
+}
+  
+.apps-update-info .name {
+  color: Green;
+  font-size: 20px;
+  font-weight: bold;
+}
+  
+.apps-update-info .file-size {
+  color: Red;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 20px;
+  opacity: .8;
+}
+  
+.apps-update-info .type {
+  color: Blue;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 20px;
+  opacity: .8;
+}
+  
+.apps-update-info .version {
+  color: olive;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 20px;
+  opacity: .8;
+}
+  
+.apps-update-info .date {
+  color: orange;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 20px;
+  opacity: .8;
+}
+  
+.apps-update-info .update {
+  background: blue;
+  width: 50px;
+  height: 50px;
+  padding: 10px 20px 10px 18px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+  
+.apps-update-info .update i {
+  color: yellow;
+  font-size: 15px;
+  font-weight: bold;
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+/*================================================= News Container ===================================================*/
+  
+.news-container {
+  width: 100%;
+  border: 2px solid red;
+}
+  
+.ticker {
+  width: 100%;
+  height: px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+  
+.title {
+  background: red;
+  color: white;
+  width: 20%;
+  text-align: center;
+  position: relative;
+}
+  
+.title:after {
+  content: "";
+  top: 0;
+  right: -34%;
+  position: absolute;
+  border-left: 20px solid red;
+  border-top: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  z-index: 1;
+}
+
+.title h3 {
+  color: yellow;
+  margin: 0;
+  padding-top: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+  
+.news {
+  background: green;
+  width: 80%;
+  padding: 3px;
+  border-left: 5px solid yellow;
+}
+  
+.news marquee {
+  font-size: 15px;
+  color: white;
+  padding-top: 5px;
+  font-weight: bold;
+}
+
+  
+  
+/* ============================================= MOBILE SCREEN ============================================= */
+
+@media only screen and (min-width: 300px) and (max-width: 576px) {
+
+}
