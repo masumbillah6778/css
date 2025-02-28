@@ -1,0 +1,134 @@
+.gradient-border {
+  margin: 10px;
+  --angle: 0deg;
+  text-align: center;
+  border: 10px solid;
+  border-image: linear-gradient(var(--angle), Red, Red, Green, Green, Blue, Blue, Yellow, Yellow) 1;
+  animation: 4s rotate linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+
+
+
+
+.img img {
+  text-align: center;
+  height: auto;
+  width: 100%;
+}
+
+
+
+main {
+  transition: all 0.5s;
+  -webkit-text-stroke: 1px White;
+  font-size: 60px;
+  text-align: center;
+  color: transparent;
+  line-height: 70px;
+  font-family: bangla;
+  cursor: pointer;
+  text-shadow: -1px -1px 3px #020202, 2px 2px 4px #1b1b1b;
+}
+
+main:hover {
+  font-variation-settings: "wght" 100, "ital" 0;
+  color: #121212;
+  text-align: center;
+  letter-spacing: 2px;
+  text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+}
+
+
+
+
+.table-box {
+  background: ;
+  width: 97%;
+  height: 500px;
+  overflow: scroll;
+  border: 9px;
+  border-style: groove;
+  border-left-color: Blue;
+  border-top-color: Yellow;
+  border-right-color: Green;
+  border-bottom-color: Red;
+}
+
+table {
+  font-family: ;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-box table th {
+  background: #007874;
+  color: White;
+  width: 160px;
+  min-width: 160px;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  border: 2px;
+  border-style: solid;
+  border-color: White;
+  z-index: 1;
+}
+
+td {
+  border: 2px solid red;
+  text-align: center;
+  padding: 8px;
+  font-size: 10px;
+}
+
+.table-box table .sticky {
+  background: red;
+  color: White;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0px;
+  border: 2px;
+  border-style: solid;
+  border-color: White;
+  z-index: 1;
+}
+  
+.table-box table tr:nth-child(even){
+  background-color: #dddddd;
+  background-colo: #f2f2f2;
+}
+
+#effect {
+  text-align: justify;
+}
+
+
+
+
+
+
+
+/* ========== MOBILE SCREEN ======SCREEN
+
+
+
