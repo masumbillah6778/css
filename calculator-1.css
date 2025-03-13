@@ -67,8 +67,8 @@
 
 .keys {
 	background-color: green;
-	padding: 1.5rem;
-	border-radius: 1.5rem 1.5rem 0 0;
+	padding: 15px;
+	border-radius: 25px 25pc 0 0;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(5, 1fr);
@@ -83,24 +83,26 @@
   color: White;
 	position: relative;
 	cursor: pointer;
-
 	display: block;
 	height: 0;
 	padding-top: 100%;
-	border-radius: 1rem;
+	border-radius: 15px;
 	transition: 0.2s;
 	user-select: none;
 }
 
+.keys .key ecq {
+	background-color: green;
+}
+
 .keys .key span {
-	position: absolute;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
 	top: 50%;
 	left: 50%;
+	position: absolute;
 	transform: translate(-50%, -50%);
-
-	font-size: 2rem;
-	font-weight: 700;
-	color: #FFF;
 }
 
 .keys .key:hover {
