@@ -62,7 +62,7 @@
 
 .display .brackets,
 .display .percent {
-	color: #26FED7;
+	color: cyan;
 }
 
 .keys {
@@ -91,7 +91,7 @@
 	user-select: none;
 }
 
-.keys .key ecq {
+.keys .key .ecq {
 	background-color: green;
 }
 
