@@ -27,6 +27,7 @@
 }
 
 .display {
+	background-color: #a7af7c;
 	min-height: 200px;
 	padding: 1.5rem;
 	display: flex;
@@ -47,15 +48,17 @@
 }
 
 .display .input {
+	color: green;
 	width: 100%;
-	font-size: 1.25rem;
-	margin-bottom: 0.5rem;
+	font-size: 20px;
+	margin-bottom: 10px;
 }
 
 .display .output {
-	font-size: 3rem;
-	font-weight: 700;
 	width: 100%;
+        color: red;
+	font-size: 50px;
+	font-weight: bold;
 	white-space: nowrap;
 }
 
