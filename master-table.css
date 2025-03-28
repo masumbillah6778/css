@@ -138,11 +138,11 @@ body {
   text-align: left;
   position: relative;
   border-collapse: collapse;
-	counter-reset: serial-number;
+  counter-reset: serial-number;
 }
 
 #advance-table tbody tr {
-	counter-increment: row;
+  counter-increment: row;
 }
 
 .table-box table tr:nth-child(even) {
@@ -159,12 +159,13 @@ body {
 }
 
 .table-box table th {
+  background: teal;
   width: 200p;
   min-width: 200p;
   padding: 10px;
   font-size: 14px;
   position: sticky;
-  top: 40px;
+  top: 0px;
   border: 1px solid black;
   box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
 }
@@ -291,6 +292,37 @@ body {
     position: sticky;
     left: 100px;
     z-index: 1;
+  }
+
+  #advance-table thead th {
+    background-color: teal;
+    width: 100px;
+    min-width: 100px;
+    font-size: 10px;
+    border: 2px solid red;
+    z-index: 1;
+  }
+  
+  #advance-table thead th:nth-child(2) {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+  }
+  
+  #advance-table tbody td {
+    font-size: 10px;
+    font-weight: bold;
+    border: 2px solid green;
+  }
+
+  #advance-table tbody td:nth-child(2) {
+    background-color: yellow;
+    color: red;
+    font-size: 10px;
+    font-weight: bold;
+    position: sticky;
+    left: 0;
+    z-index: ;
   }
   
   #advance-table tbody td {
