@@ -1,0 +1,316 @@
+@import url('https://masumbillah6778.github.io/fonts/bangla/bangla-custom-font.css');
+@import url('https://masumbillah6778.github.io/fonts/english/english-custom-font.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: ;
+  width: 100%;
+  height: 100vh;
+  font-family: "solaiman-lipi";
+  border: 2px solid red;
+}
+
+
+
+
+
+/* ============================================= Navbar ============================================= */
+
+#navbar {
+  background-color: black;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  z-index: 999;
+  border: 2px solid Yellow;
+}
+
+#navbar a {
+  width: 10%;
+  height: 50px;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 3px 5px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: red;
+  color: white;
+  font-size: px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+#navbar a.active en {
+  font-family: "times";
+}
+
+
+
+
+
+/* ============================================= Sharch ============================================= */
+
+#myInput {
+  background: green;
+  color: White;
+  width: 90%;
+  height: 50px;
+  margin: 00 10px;
+  padding: 14px 5px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "solaiman-lipi";
+  position: relative;
+  display: block;
+  border:  px solid Yellow;
+  border-radius: 0px;
+}
+
+#myInput:active::after {
+  background: pink;
+}
+
+::placeholder {
+  color: Yellow;
+  padding-left: 2px;
+  font-size: 15px;
+  font-family: "solaiman-lipi";
+  font-style: itali;
+}
+
+
+
+
+/*================================== Table Scroll Bar ==================================*/
+  
+.table-box::-webkit-scrollbar {
+	width: 2px;
+	height: 5px;
+}
+  
+.table-box::-webkit-scrollbar-thumb {
+	background-image: linear-gradient(to top, red,orange,yellow,green,blue,indigo,violet);
+	visibility: hidden;
+	border-radius: 5px;
+  }
+  
+.table-box::-webkit-scrollbar-thumb { 
+	visibility: visible;
+}
+
+
+
+
+/* ============================================= Table ============================================= */
+.table-box {
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  border: 2px solid red;
+}
+
+#advance-table {
+  width: 100%;
+  text-align: left;
+  position: relative;
+  border-collapse: collapse;
+	counter-reset: serial-number;
+}
+
+#advance-table tbody tr {
+	counter-increment: row;
+}
+
+.table-box table tr:nth-child(even) {
+  background-color: #a7af7c;
+}
+
+.table-box table .company th {
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+.table-box table th {
+  width: 200p;
+  min-width: 200p;
+  padding: 10px;
+  font-size: 14px;
+  position: sticky;
+  top: 40px;
+  border: 1px solid black;
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+}
+
+.table-box tr.red th {
+  background: red;
+  color: white;
+}
+
+.table-box tr.green th {
+  background: green;
+  color: white;
+}
+
+.table-box tr.purple th {
+  background: purple;
+  color: white;
+}
+
+
+
+.table-box tr.blue th {
+  background: blue;
+  color: white;
+}
+
+
+
+.table-box tr.teal th {
+  background: teal;
+  color: white;
+}
+
+.table-box table td {
+  font-size: 15px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+#advance-table td:first-child:before {
+	counter-increment: serial-number;
+	content: counter(row, bengali) '. ';
+}
+
+#advance-table .unit {
+  color: red;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#advance-table td en {
+  color: red;
+  font-size: 15px;
+  font-family: "times";
+  font-weight: bold;
+}
+
+
+
+
+/* ============================================= MOBILE VIEW ============================================= */
+@media only screen and (min-width: 300px) and (max-width: 576px) {
+
+  /* ============================================= Navbar ============================================= */
+
+  #navbar {
+    width: 100%;
+    background-color: black;
+    border: 2px solid Yellow;
+  }
+
+  #navbar a {
+    color: #f2f2f2;
+    width: 25%;
+    height: 50px;
+    padding: 12px 5px;
+    font-size: 10px;
+  }
+
+  /* ============================================= Sharch ============================================= */
+
+  #myInput {
+    background: green;
+    color: White;
+    width: 75%;
+    height: 50px;
+    margin: 00 10px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    border:  px solid Yellow;
+    border-radius: 0px;
+  }
+  
+  ::placeholder {
+  color: pink
+  padding-left: 2px;
+  font-size: 15px;
+  font-style: itali;
+}
+  
+  /* ============================================= Table ============================================= */
+  
+  .table-box {
+    width: 100%;
+    height: 690px;
+  }
+  
+  #advance-table thead th {
+    width: 100px;
+    min-width: 100px;
+    font-size: 7px;
+  }
+
+  #advance-table th.sticky-1 {
+    background-color: yello;
+    position: sticky;
+    left: 0;
+    z-index: 1;
+  }
+
+  #advance-table th.sticky-2 {
+    background-color: yello;
+    position: sticky;
+    left: 100px;
+    z-index: 1;
+  }
+  
+  #advance-table tbody td {
+    font-size: 7px;
+    font-weight: bold;
+  }
+  
+  #advance-table tbody td:nth-child(2) {
+    background-color: yellow;
+    color: red;
+    font-size: 10px;
+    font-weight: bold;
+    position: sticky;
+    left: 0;
+    z-index: ;
+  }
+
+  #advance-table td.sticky-1 {
+    background-color: yellow;
+    position: sticky;
+    left: 0;
+  }
+
+  #advance-table td.sticky-2 {
+    background-color: yellow;
+    position: sticky;
+    left: 100px;
+  }
+
+}
