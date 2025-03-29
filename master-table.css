@@ -234,6 +234,7 @@ font-weight: bold;
 .table-box table td {
   font-size: 15px;
   padding: 10px;
+  vertical-align: middle;
   border: 1px solid black;
 }
 
