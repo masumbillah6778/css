@@ -95,7 +95,39 @@ body {
   font-style: itali;
 }
 
+font-weight: bold;
+  position: absolute;
+  text-transform: capitalize;
+  transition: top .3s;
+  pointer-events: none;
+}
 
+.search-box input:focus ~ label,
+.search-box input:valid ~ label {
+  background: white;
+  color: green;
+  font-size: 15px;
+  font-weight: bold;
+  top:-9px;
+  border-left: 2px solid red;
+  border-right: 2px solid red;
+}
+
+.search-box input:focus,
+.search-box input:valid {
+  border: 2px solid green;
+  animation-name: example;
+  animation-duration: 4s linear infinite;
+}
+
+@keyframes colour-animate {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 500% 0;
+    }
+}
 
 
 /*================================== Table Scroll Bar ==================================*/
