@@ -405,18 +405,22 @@ font-weight: bold;
   
 .red {
   background: Red;
+  z-index: -1;
 }
-;
+
 .green::after {
   background: green;
+  z-index: -1;
 }
 
 .blue::after {
   background: blue;
+  z-index: -1;
 }
 
 .yellow::after {
   background: yellow;
+  z-index: -1;
 }
 
 
