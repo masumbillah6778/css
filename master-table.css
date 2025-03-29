@@ -403,7 +403,7 @@ font-weight: bold;
   border-radius: 50%;
 }
   
-.red::after {
+.red {
   background: Red;
 }
 ;
