@@ -224,6 +224,167 @@ body {
 }
 
 
+/*========= Multiple th sticky =========*/
+  
+#advance-table th {
+  padding: 0px;
+  border: 1px solid;
+  position: sticky;
+  top: 0; /* Don't forget this, required for the stickiness */
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+}
+  
+#advance-table tr.red th {
+  background: red;
+  color: white;
+  padding: 10px 0px;
+  font-size: 10px;
+  font-weight: bold;
+  text-align:center;
+}
+  
+#advance-table tr.green th {
+  background: green;
+  color: white;
+  padding: 10px 0px;
+  font-size: 10px;
+  font-weight: bold;
+  text-align:center;
+}
+  
+#advance-table tr.purple th {
+  background: purple;
+  color: white;
+  padding: 10px 0px;
+  font-size: 10px;
+  font-weight: bold;
+  text-align:center;
+}
+  
+#advance-table tr.blue th {
+  background: blue;
+  color: white;
+  padding: 10px 0px;
+  font-size: 10px;
+  font-weight: bold;
+  text-align:center;
+}
+
+/*========= tr th td image =========*/
+  
+.tr-img {
+  background-image: url('img_girl.jpg');
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+}
+  
+.th-img {
+  background-image: url('img_girl.jpg');
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+}
+  
+.td-img {
+  background-image: url('img_girl.jpg');
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+}
+  
+  
+  
+  
+  
+
+/*========= active row =========*/
+
+#active-row {
+  background-image: url('img_girl.jpg');
+  background-color: red;
+  background-size: cover;
+}
+  
+  
+
+/*========= Multiple color Column =========*/
+  
+.column-color td:nth-child(7n+1) {
+  background: Cyan;
+  color: Red;
+}
+  
+.column-color td:nth-child(7n+2) {
+  background: Yellow;
+  color: Red;
+}
+  
+.column-color td:nth-child(7n+3) {
+  background: Pink;
+  color: Red;
+}
+  
+.column-color td:nth-child(7n+4) {
+  background: Lime;
+  color: Red;
+}
+  
+.column-color td:nth-child(7n+5) {
+  background: Blue;
+  color: Red;
+}
+
+.column-color td:nth-child(7n+6) {
+  background: Orange;
+  color: Red;
+}
+  
+.column-color td:nth-child(7n+7) {
+  background: Orange;
+  color: Red;
+}
+  
+  
+  
+
+/*========= Color Mark td =========*/
+  
+.dot {
+  position: relative;
+  width: 65px;
+  margin: 0 auto;
+  font-size: 16px;
+  text-align: right;
+}
+
+.dot::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  margin-top: -4px;
+  top: 50%;
+  right: -16px;
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+}
+  
+.red::after {
+  background: Red;
+}
+;
+.green::after {
+  background: green;
+}
+
+.blue::after {
+  background: blue;
+}
+
+.yellow::after {
+  background: yellow;
+}
 
 
 /* ============================================= MOBILE VIEW ============================================= */
