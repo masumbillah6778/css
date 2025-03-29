@@ -98,7 +98,6 @@
   color: black;
   width: 100%;
   height: 100%;
-  margin-top: 20px;
   padding: 5px 0px 0px 10px;
   font-size: 18px;
   font-family: 'solaiman-lipi';
@@ -451,8 +450,8 @@
   /* ============================================= Sharch ============================================= */
 
   #myInput {
-    background: green;
-    color: White;
+    background: gree;
+    color: Whit;
     width: 75%;
     height: 50px;
     margin: 00 10px;
@@ -464,7 +463,7 @@
   }
   
   ::placeholder {
-  color: pink
+  color: pink;
   padding-left: 2px;
   font-size: 15px;
   font-style: itali;
