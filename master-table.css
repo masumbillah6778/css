@@ -273,21 +273,21 @@ body {
 /*========= tr th td image =========*/
   
 .tr-img {
-  background-image: url('img_girl.jpg');
+  background-image: url('https://github.com/masumbillah6778/images/raw/main/bg3.jpg');
   background-size: cover;
   width: 100px;
   height: 100px;
 }
   
 .th-img {
-  background-image: url('img_girl.jpg');
+  background-image: url('https://github.com/masumbillah6778/images/raw/main/bg3.jpg');
   background-size: cover;
   width: 100px;
   height: 100px;
 }
   
 .td-img {
-  background-image: url('img_girl.jpg');
+  background-image: url('https://github.com/masumbillah6778/images/raw/main/bg3.jpg');
   background-size: cover;
   width: 100px;
   height: 100px;
