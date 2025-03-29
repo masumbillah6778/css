@@ -64,6 +64,44 @@ body {
 
 
 
+
+
+/*================================== Table Scroll Bar ==================================*/
+  
+.table-box::-webkit-scrollbar {
+	width: 2px;
+	height: 5px;
+}
+  
+.table-box::-webkit-scrollbar-thumb {
+	background-image: linear-gradient(to top, red,orange,yellow,green,blue,indigo,violet);
+	visibility: hidden;
+	border-radius: 5px;
+  }
+  
+.table-box::-webkit-scrollbar-thumb { 
+	visibility: visible;
+}
+
+
+
+
+/* ============================================= Table Box ============================================= */
+.table-box {
+  background: ;
+  width: 99%;
+  height: 300px;
+  margin: 10px;
+  overflow: scroll;
+  border: 9px;
+  border-style: groove;
+  border-left-color: Blue;
+  border-top-color: Yellow;
+  border-right-color: Green;
+  border-bottom-color: Red;
+}
+
+
 /* ============================================= Sharch ============================================= */
 
 #myInput {
@@ -129,41 +167,7 @@ font-weight: bold;
     }
 }
 
-
-/*================================== Table Scroll Bar ==================================*/
-  
-.table-box::-webkit-scrollbar {
-	width: 2px;
-	height: 5px;
-}
-  
-.table-box::-webkit-scrollbar-thumb {
-	background-image: linear-gradient(to top, red,orange,yellow,green,blue,indigo,violet);
-	visibility: hidden;
-	border-radius: 5px;
-  }
-  
-.table-box::-webkit-scrollbar-thumb { 
-	visibility: visible;
-}
-
-
-
-
-/* ============================================= Table ============================================= */
-.table-box {
-  background: ;
-  width: 99%;
-  height: 300px;
-  margin: 10px;
-  overflow: scroll;
-  border: 9px;
-  border-style: groove;
-  border-left-color: Blue;
-  border-top-color: Yellow;
-  border-right-color: Green;
-  border-bottom-color: Red;
-}
+/*============== Table ==============*/
 
 #advance-table {
   width: 100%;
