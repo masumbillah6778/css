@@ -100,7 +100,7 @@ search-box {
   height: 100%;
   padding: 5px 0px 0px 10px;
   font-size: 18px;
-  font-family: 'bangla';
+  font-family: 'solaiman-lipi';
   font-weight: bold;
   outline: none;
   border: 2px solid red;
@@ -111,7 +111,7 @@ search-box {
   color: Yellow;
   padding-left: 2px;
   font-size: 15px;
-  font-family: "solaiman-lipi";
+  font-family: 'solaiman-lipi';
   font-style: itali;
 }
 
