@@ -187,7 +187,7 @@ font-weight: bold;
   font-size: 15px;
   text-align: center;
   position: sticky;
-  top: 0;
+  top: 40px;
 }
 
 .table-box table th {
