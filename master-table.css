@@ -49,7 +49,7 @@
 
 
 /*=============== Image Border===============*/
-.image-box {
+.border-box {
   margin: 0 auto;
   padding: 2em;
   width: 300px;
@@ -65,7 +65,7 @@
   inherits: false;
 }
 
-.image-box::after, .image-box::before {
+.border-box::after, .border-box::before {
   content: '';
   position: absolute;
   height: 100%;
@@ -79,7 +79,7 @@
   border-radius: 10px;
   animation: 3s spin linear infinite;
 }
-.image-box::before{
+.border-box::before{
   filter: blur(1.5rem);
   opacity: 0.5;
 }
