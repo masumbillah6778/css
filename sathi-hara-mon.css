@@ -41,6 +41,139 @@
   font-size: 15px;
 }
 
+.content .text-box p span {
+  color: Red;
+  font-weight: bold;
+}
+
+#read-more {
+  display: flex;
+  position: relative;
+  margin-top: 20px;
+}
+  
+  
+  
+  
+  
+  
+  
+  
+#read-more .previous {
+  background: Red;
+  width: 100px;
+  height: 40px;
+  padding: 0 10px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 50px 0px 0px 50px;
+}
+  
+.previous a i {
+  margin-left: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+ transition: all 0.3s;
+}
+  
+#read-more .previous .text {
+  color: Yellow;
+  width: 60px;
+  height: 100%;
+  padding-left: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+#read-more .previous .link {
+  background: Green;
+  color: White;
+  height: 100%;
+  width: 40px;
+  padding: 10px auto;
+  left: 0;
+  font-size: 20px;
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  text-transform: capitalize;
+}
+  
+  
+  
+  
+  
+  
+  
+.play {
+  background: black;
+  width: 20px;
+  height: 20px;
+  margin: 0px 30%;
+  padding: 10px;
+  text-align: center;
+  border-radius: 50px;
+}
+
+#read-more .next {
+  background: Red;
+  width: 100px;
+  height: 40px;
+  padding: 0 10px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  border-radius: 0px 50px 50px 0px;
+}
+
+#read-more .next .text {
+  color: Yellow;
+  width: 60px;
+  height: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.next a i {
+  margin-left: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+ transition: all 0.3s;
+}
+  
+#read-more .next .link {
+  background: Green;
+  color: White;
+  height: 100%;
+  width: 40px;
+  padding: 10px auto;
+  right: 0;
+  font-size: 20px;
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  text-transform: capitalize;
+}
+
+.advance {
+  background: #e5e4e2;
+  padding: 10px;
+  font-style: italic;
+  display: block;
+  border-left: 5px solid red;
+  border-radius: 30px 5px 30px 5px;
+}
+
+
 
 
 /*================================== Table Scroll Bar ==================================*/
@@ -60,7 +193,6 @@
 .content .row::-webkit-scrollbar-thumb { 
 	visibility: visible;
 }
-  
   
   
   
