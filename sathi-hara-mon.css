@@ -35,3 +35,52 @@
   border-radius: 20px;
   z-index: 2;
 }
+
+
+
+
+
+/*================================== Table Scroll Bar ==================================*/
+  
+.content .row::-webkit-scrollbar {
+  background-color: #a7af7c;
+  width: 10px;
+  height: 5px;
+}
+  
+.content .row::-webkit-scrollbar-thumb {
+	background-image: linear-gradient(to top, red,orange,yellow,green,blue,indigo,violet);
+	visibility: hidden;
+	border-radius: 5px;
+  }
+  
+.content .row::-webkit-scrollbar-thumb { 
+	visibility: visible;
+}
+  
+  
+  
+  
+  
+  
+  
+  
+/* ============================================= MOBILE VIEW ============================================= */
+@media only screen and (min-width: 300px) and (max-width: 576px) {
+  
+  .content table td img {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    border: 2px solid red;
+  }
+}
+
+
+
+
+
+
+
+
+
