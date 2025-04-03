@@ -106,7 +106,7 @@
 
 /*========================================================== Animation-Border 1 ===============================================================*/
 
-.gradient-border-1 {
+.animation-border-1 {
   margin: 10px;
   --angle: 0deg;
   text-align: center;
@@ -115,7 +115,7 @@
   animation: 4s rotate linear infinite;
 }
   
-gradient-border-1::before {
+.animation-border-1::before {
   filter: blur(40ox);
 }
 
