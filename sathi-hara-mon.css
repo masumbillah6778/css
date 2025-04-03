@@ -4,7 +4,7 @@
 .content {
   background: pink;
   width: 100%;
-  height: 800px;
+  height: 650px;
 }
 
 .content .bg-image {
@@ -24,10 +24,7 @@
   background-color: rgb(0,0,0);
   background-color: rgba(0,0,0, 0.7);
   width: 95%;
-  height: 550px;
   position: absolute;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -37,165 +34,92 @@
   z-index: 2;
 }
 
-.content .text-box p {
+.content .text p {
+  width: 100%;
+  height: 450px;
+  overflow-y: scroll;
   color: white;
-  padding: 0px 10px;
-  font-size: 15px;
+  padding: 5px 10px;
+  font-size: 20px;
   text-align: justify;
 }
 
-.content .text-box p span {
+.content .text p span {
   color: Red;
   font-weight: bold;
 }
-
-#read-more {
-  display: flex;
-  position: relative;
-  margin-top: 20px;
-}
   
   
+/*================== Play Button ===================*/
   
-  
-  
-  
-  
-  
-#read-more .previous {
-  background: Red;
-  width: 100px;
-  height: 40px;
-  padding: 0 10px;
-  display: flex;
-  position: relative;
-  align-items: center;
-  overflow: hidden;
-  border-radius: 50px 0px 0px 50px;
-}
-  
-.previous a i {
-  margin-left: 20px;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
- transition: all 0.3s;
-}
-  
-#read-more .previous .text {
-  color: Yellow;
-  width: 60px;
-  height: 100%;
-  padding-left: 40px;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 40px;
-}
-
-#read-more .previous .link {
-  background: Green;
-  color: White;
-  height: 100%;
-  width: 40px;
-  padding: 10px auto;
-  left: 0;
-  font-size: 20px;
-  position: absolute;
+.contant .sticky-button {
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  position: sticky;
+  float: right;
   cursor: pointer;
-  border: none;
-  text-transform: capitalize;
 }
-  
-  
-  
-  
-  
-  
   
 .play {
   background: black;
-  width: 20px;
-  height: 20px;
-  margin: 0px 30%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 300px;
+  margin-left: 800px;
   padding: 10px;
   text-align: center;
-  border-radius: 50px;
-}
-
-#read-more .next {
-  background: Red;
-  width: 100px;
-  height: 40px;
-  padding: 0 10px;
-  display: flex;
-  position: relative;
-  align-items: center;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  border-radius: 0px 50px 50px 0px;
-}
-
-#read-more .next .text {
-  color: Yellow;
-  width: 60px;
-  height: 100%;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 40px;
-}
-
-.next a i {
-  margin-left: 20px;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
- transition: all 0.3s;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
 }
   
-#read-more .next .link {
-  background: Green;
-  color: White;
-  height: 100%;
-  width: 40px;
-  padding: 10px auto;
-  right: 0;
-  font-size: 20px;
-  position: absolute;
-  cursor: pointer;
-  border: none;
-  text-transform: capitalize;
-}
-
-.advance {
-  background: #e5e4e2;
+.sticky-button a {
+  color: yellow;
   padding: 10px;
-  font-style: italic;
-  display: block;
-  border-left: 5px solid red;
-  border-radius: 30px 5px 30px 5px;
-}
-
-
-
-
-/*================================== Table Scroll Bar ==================================*/
-  
-.content .row::-webkit-scrollbar {
-  background-color: #a7af7c;
-  width: 10px;
-  height: 5px;
+  font-size: 20px;
 }
   
-.content .row::-webkit-scrollbar-thumb {
-	background-image: linear-gradient(to top, red,orange,yellow,green,blue,indigo,violet);
-	visibility: hidden;
-	border-radius: 5px;
-  }
   
-.content .row::-webkit-scrollbar-thumb { 
-	visibility: visible;
+  
+/*================= Next & Preview Button ==============*/
+  
+.topnav {
+  background: -webkit-linear-gradient(110deg, green 33%, rgba(0, 0, 0, 0) 33%), -webkit-linear-gradient(110deg, red 66%, green 66%);
+  overflow: hidden;
+  box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
+  border-radius: 50px;
+  z-index: 9999;
 }
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+  
+  
+.topnav a.left {
+  background-color: #04AA6D;
+  color: white;
+  float: left;
+}
+
+.topnav a.right {
+  background-color: #04AA6D;
+  color: white;
+  float: right;
+}
+  
+  
+  
+  
+  
+
+  
+  
   
   
   
@@ -212,13 +136,17 @@
     vertical-align: middle;
    overflow: scroll;
   }
+  
+  .content .text p {
+    width: 100%;
+    height: 400px;
+    font-size: 15px;
+  }
+  
+  .play {
+    background: black;
+    width: 100px;
+    height: 100px;
+    margin-left: 285px;
+  }
 }
-
-
-
-
-
-
-
-
-
