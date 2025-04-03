@@ -106,6 +106,45 @@
 
 /*========================================================== Animation-Border 1 ===============================================================*/
 
+.gradient-border-1 {
+  margin: 10px;
+  --angle: 0deg;
+  text-align: center;
+  border: 10px solid;
+  border-image: linear-gradient(var(--angle), Red, Red, Green, Green, Blue, Blue, Yellow, Yellow) 1;
+  animation: 4s rotate linear infinite;
+}
+  
+gradient-border-1::before {
+  filter: blur(40ox);
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+
+
+.img img {
+  text-align: center;
+  height: 100px;
+  width: 100px;
+}
+
+
+
+
+  
+
+
+  
 .animation-border-1 {
   width: 600px;
   height: 120px;
