@@ -117,10 +117,12 @@
 
 .highlight {
   background: #e5e4e2;
+  color: yellow;
   padding: 10px;
   font-style: italic;
   display: block;
   border-left: 5px solid red;
+  border: 2px solid red;
   border-radius: 30px 5px 30px 5px;
 }
   
