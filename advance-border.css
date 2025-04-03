@@ -63,4 +63,112 @@
 
 
 
+/*========================================================== Border 1 ===============================================================*/
+
+.border-1 {
+  width: 150px;
+  height: 150px;
+  text-align:center;
+  border-top: 5px solid;
+  border-image:   linear-gradient(to right, grey 25%, yellow 25%, yellow 50%,red 50%, red 75%, teal 75%) 5;
+}
+
+
+/*========================================================== Border 2 ===============================================================*/
+. {
+  width: 500px;
+  height: 100px;
+  background-color: #ccc;
+  position: relative;
+}
+
+.test:before,
+.test:after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  height: 10px;
+  background-image: -webkit-linear-gradient(0deg, red 20px, blue 20px, blue 40px, yellow 40px, yellow 60px, green 60px, green 80px);
+  background-image: -ms-linear-gradient(0deg, red 20px, blue 20px, blue 40px, yellow 40px, yellow 60px, green 60px, green 80px);
+  background-size: 80px;
+}
+
+.test:before {
+  top: 0px;
+}
+
+.test:after {
+  bot
+
+
+
+
+/*========================================================== Animation-Border 1 ===============================================================*/
+
+.animation-border-1 {
+  width: 600px;
+  height: 120px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: cambria;
+}
+
+.animation-examples.one {
+  color: #69D2E7;
+  outline: 10px dashed #E0E4CC;
+  box-shadow: 0 0 0 10px #69D2E7;
+  animation: 1s animateBorderOne ease infinite;
+}
+
+@keyframes animateBorderOne {
+  to {
+    outline-color: #69D2E7;
+    box-shadow: 0 0 0 10px #E0E4CC;
+  }
+}
+
+.animation-examples.two {
+  color: #FA2A00;
+  outline: 10px dashed #F2D694;
+  box-shadow: 0 0 0 10px #FA2A00;
+  animation: 2s animateBorderTwo ease infinite;
+}
+
+@keyframes animateBorderTwo {
+  to {
+    outline-color: #FA2A00;
+    box-shadow: 0 0 0 10px #F2D694;
+  }
+}
+
+.animation-examples.three {
+  color: #BEF202;
+  background: linear-gradient(to bottom, #BEF202 50%, #1B676B 50%);
+  background-size: auto 2px;
+  outline: 10px dashed #BEF202;
+  box-shadow: 0 0 0 10px #1B676B;
+  animation: 1s animateBorderThree ease infinite;
+}
+
+@keyframes animateBorderThree {
+  to {
+    outline-color: #1B676B;
+    box-shadow: 0 0 0 10px #BEF202;
+  }
+}
+
+#animation-examples{
+  margin: 20px 10px;
+}
+
+
+
+
+
+
+
 
