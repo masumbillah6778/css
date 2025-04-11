@@ -135,10 +135,10 @@
 
 
 
-.img img {
-  text-align: center;
-  height: auto;
+.gradient-border img {
   width: 100%;
+  height: auto;
+  diplay: block;
 }
 
 main {
