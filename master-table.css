@@ -312,6 +312,7 @@ main:hover {
 
 .table-box table th {
   background: teal;
+  color: white;
   width: 200p;
   min-width: 200p;
   padding: 10px;
