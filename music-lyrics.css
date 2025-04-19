@@ -251,7 +251,7 @@ background-color: red;
   .HTML_Audio_player {
     background: green;
     width: 93.5%;
-    height: 345px;
+    height: 320px;
     display: block;
     border: 2px solid red;
     flex-direction:row;
