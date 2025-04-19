@@ -1,12 +1,7 @@
-* {
-  box-sizing: border-box;
-}
-  
 .containers {
   background: ;
   width: 100%;
   min-height: 700px;
-  padding: 10px;
 }
 
 .main-thumbnail img {
