@@ -2,7 +2,7 @@
 @import url('https://masumbillah6778.github.io/fonts/english/english-custom-font.css');
 
 .animation-border {
-  margin: 10px;
+  margin-bottom: 20px;
   --angle: 0deg;
   text-align: center;
   border: 10px solid;
@@ -25,74 +25,81 @@
   inherits: false;
 }
 
-
-
 .animation-border img {
-  text-align: center;
   width: 300px;
-  margin-left: auto;
-  margin-right: auto;
   aspect-ratio: 12 / 9;
   display: block;
-}
-
-
-
-
-.content {
-  background: pink;
-  width: 100%;
-  height: 650px;
-}
-
-.content .bg-image {
-  background-image: url('https://github.com/masumbillah6778/image/raw/main/shirina.jpg');
-  background-image: url('https://github.com/masumbillah6778/image/raw/main/a4.jp');
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
   
-.content .text-box {
+  
+  
+  
+  
+  
+  
+.text-box {
+  background: Gray;
+  width: 100%;
+  height: 830px;
+}
+  
+#background {
+  background-image: url("https://github.com/masumbillah6778/image/raw/main/shirina.jpg");
+  width: 100%;
+  height: 750px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+  
+.text {
   background-color: rgb(0,0,0);
   background-color: rgba(0,0,0, 0.7);
-  width: 95%;
+  width: 90%;
+  height: 700px;
+  margin-top: 20px;
   position: absolute;
-  top: 50%;
+  top: 47%;
   left: 50%;
   transform: translate(-50%, -50%);
   border: px solid Red;
   box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
-  border-radius: 20px;
   z-index: 2;
 }
-
-.content .text p {
+  
+.text p {
   width: 100%;
-  height: 450px;
+  height: 610px;
   overflow-y: scroll;
   color: white;
-  padding: 5px 10px;
+  padding: 10px;
   font-size: 20px;
   text-align: justify;
 }
-
-.content .text p span {
+  
+.highlight {
+  background: ;
   color: yellow;
-  font-weight: bold;
+  padding: 10px;
+  font-style: italic;
+  display: block;
+  border-left: 5px solid red;
+  border-radius: 30px 5px 30px 5px;
+  box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
 }
+  
+  
   
   
 /*================== Play Button ===================*/
   
-.contant .sticky-button {
-  bottom: 20px;
-  right: 20px;
+.text .sticky-button {
+  bottom: 100px;
+  right: 100px;
   z-index: 9999;
   position: sticky;
   float: right;
@@ -104,7 +111,7 @@
   width: 100px;
   height: 100px;
   margin-bottom: 300px;
-  margin-left: 800px;
+  margin-left: 540px;
   padding: 10px;
   text-align: center;
   border-radius: 50%;
@@ -119,10 +126,17 @@
   
   
   
+  
+  
+  
+  
 /*================= Next & Preview Button ==============*/
   
 .topnav {
   background: -webkit-linear-gradient(110deg, green 33%, rgba(0, 0, 0, 0) 33%), -webkit-linear-gradient(110deg, red 66%, green 66%);
+  width: 93%;
+  height: 50px;
+  margin: 10px auto;
   overflow: hidden;
   box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
   border-radius: 50px;
@@ -151,50 +165,57 @@
   float: right;
 }
 
-/*================= highlight ==============*/
-
-.highlight {
-  background: ;
-  color: yellow;
-  padding: 10px;
-  font-style: italic;
-  display: block;
-  border-left: 5px solid red;
-  border-radius: 30px 5px 30px 5px;
-  box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
-}
   
   
-
+/* ==================== MOBILE SIZE ==================== */  
   
-  
-  
-  
-  
-  
-  
-  
-  
-/* ============================================= MOBILE VIEW ============================================= */
-@media only screen and (min-width: 300px) and (max-width: 576px) {
-  
-  .content {
+@media only screen and (max-width: 400px) {
+  .text-box {
+    background: Gray;
     width: 100%;
-    height: 600px;
-    vertical-align: middle;
-   overflow: scroll;
+    height: 470px;
   }
   
-  .content .text p {
-    width: 100%;
+  #background {
+    background-image: url("https://github.com/masumbillah6778/image/raw/main/shirina.jpg");
+    width: 350px;
     height: 400px;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+  }
+  
+  .text {
+    width: 320px;
+    height: 380px;
+    top: 48%;
+  }
+  
+  .text p {
+    width: 300px;
+    height: 290px;
     font-size: 15px;
   }
   
+  .text .sticky-button {
+    bottom: 230px;
+    left: 230px;
+    right: 230px;
+  }
+  
   .play {
-    background: black;
-    width: 100px;
-    height: 100px;
-    margin-left: 285px;
+    background: yellow;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 300px;
+    margin-left: 200px;
+  }
+  
+  .sticky-button a {
+    color: red;
+    padding: 5px;
+    font-size: 20px;
   }
 }
+
+
+
