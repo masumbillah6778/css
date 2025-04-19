@@ -184,11 +184,7 @@
     -webkit-filter: blur(3px);
   }
   
-  .text {
-    width: 320px;
-    height: 380px;
-    top: 48%;
-  }
+  
   
   .text p {
     width: 300px;
