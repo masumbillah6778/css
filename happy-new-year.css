@@ -20,10 +20,9 @@ background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvX
 }
 
 .countdown-box pp {
-color: white;
+  color: white;
   font-weight: bold;
-  margin: 20px; 
-padding: 30px;
+  margin: 20px;
 }
 
 .countdown-box .countdown-timer {
@@ -41,12 +40,12 @@ padding: 30px;
   color: yellow;
   margin-top: 20px;
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
 }
 
 .countdown-box .timer span {
-  color: red;
+  color: white;
   padding-top: 30px;
   font-size: 15px;
 }
