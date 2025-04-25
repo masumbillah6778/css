@@ -1,0 +1,119 @@
+.simple-player {
+  background: #f1f3f4;
+  width: 99.5%;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+  
+.simple-player h1 {
+  color: Red;
+  margin: 5px;
+  text-shadow: -1px 1px 1px rgba(0,0,0,.4), -1px -1px 0 rgba(255,255,255,1);
+  font-weight: bold;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+  
+.simple-player .img-box {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+  
+.simple-player .img-box img {
+  width: 99.3%;
+  padding: 3px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+  
+.simple-player audio {
+  width: 100%;
+  outline: none;
+}
+  
+/* ========== Audio Plaayer ========== */
+    
+.simple-player audio {
+  background-color: #f1f3f4;
+  width: 98%;
+  margin: 0px 6px;
+  border: 2px;
+  border-style: solid;
+  border-left-color: red;
+  border-top-color: yellow;
+  border-right-color: green;
+  border-bottom-color: blue;
+  border-radius: 0px 0px 10px 10px;
+}
+      
+.simple-player audio::-webkit-media-controls-play-button {
+  background-color: red;
+  border-radius: 50%;
+}
+      
+.simple-player  audio::-webkit-media-controls-play-button:hover {
+  background-color: cyan;
+}
+      
+.simple-player audio::-webkit-media-controls-current-time-display {
+  color: magenta;
+  font-size: 15px;
+  font-family: times;
+  font-weight: bold;
+}
+      
+.simple-player audio::-webkit-media-controls-time-remaining-display {
+  color: teal;
+  font-size: 15px;
+  font-family: times;
+  font-weight: bold;
+}
+      
+.simple-player audio::-webkit-media-controls-timeline {
+  background-color: Blue;
+  margin: 10px;
+  border-radius: 50px;
+}
+
+.simple-player audio::-webkit-media-controls-volume-slider  {
+  background-color: yellow;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 50px;
+}
+
+.simple-player audio::-webkit-media-controls-mute-button {
+  background-color: green;
+  border-radius: 50%;
+}
+  
+  
+/* ==================== Media Screen Size - 992px tablet, 600px mobile ==================== */
+  
+@media screen and (max-width: 992px) {
+  .simple-player {
+    background-color: blue;
+  }
+}
+  
+@media screen and (max-width: 600px) {
+  .simple-player {
+    background-color: olive;
+  }
+  
+  .simple-player .img-box img {
+    width: 98.3%;
+  }
+  
+  .simple-player audio {
+    background-color: silver;
+    width: 95.5%;
+  }
+}
