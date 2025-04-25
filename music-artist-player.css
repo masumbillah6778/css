@@ -116,4 +116,8 @@
     background-color: silver;
     width: 95.5%;
   }
+
+  .simple-player audio::-webkit-media-controls-panel {
+    background-color: #f1f3f4;
+  }
 }
