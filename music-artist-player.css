@@ -118,6 +118,6 @@
   }
 
   .simple-player audio::-webkit-media-controls-panel {
-    background-color: #f1f3f4;
+    background-color: silver;
   }
 }
