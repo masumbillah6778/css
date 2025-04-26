@@ -1,20 +1,34 @@
+.head-text {
+  background: linear-gradient(to right, #ff0000 , #008000 , #ffff00 , #0000ff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  border: 5px solid Magenta;
+  border-left: 15px solid blue;
+  border-right: 15px solid blue;
+  border-radius: 30px;
+}
+  
+.music-box {
+  width: 100%;
+  height: 625px;
+  overflow-y: scroll;
+}
+
 .simple-player {
   background: #f1f3f4;
-  width: 99.5%;
+  width: 48.3%;
+  margin: 5px;
+  padding: 0 6px;
+  float: left;
   justify-content: center;
   align-items: center;
   border: 2px solid black;
   border-radius: 20px;
-}
-  
-.simple-player h1 {
-  color: Red;
-  margin: 5px;
-  text-shadow: -1px 1px 1px rgba(0,0,0,.4), -1px -1px 0 rgba(255,255,255,1);
-  font-weight: bold;
-  text-align: center;
-  position: sticky;
-  top: 0;
+  box-sizing: border-box;
 }
   
 .simple-player .img-box {
@@ -30,6 +44,13 @@
   object-fit: cover;
   border-top-left-radius: 18px;
   border-top-right-radius: 18px;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
 }
   
 .simple-player audio {
@@ -104,20 +125,29 @@
 }
   
 @media screen and (max-width: 600px) {
+  .music-box {
+    height: 430px;
+  }
+  
   .simple-player {
     background-color: olive;
+    width: 48.5%;
+    margin: 2px;
   }
   
   .simple-player .img-box img {
     width: 98.3%;
   }
   
+  .text {
+    color: yellow;
+    font-size: 15px;
+    text-align: center;
+  }
+  
   .simple-player audio {
     background-color: silver;
     width: 95.5%;
   }
-
-  .simple-player audio::-webkit-media-controls-panel {
-    background-color: silver;
-  }
 }
+
