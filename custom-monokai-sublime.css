@@ -83,7 +83,7 @@
 }
   
 .K2_CBox pre {
-  background: #f6f6f6;/*#f6f6f6 yellow*/
+  background: green;/*#f6f6f6 yellow*/
   color: #08102b;
   margin: 0;
   padding: 15px;
@@ -137,7 +137,7 @@
 /*======================================= HTML COLOR CODE =======================================*/
   
 .hljs {
-  background-color: green;
+  background-color: #23241f;
   height: 300px;
   padding: 10px;
   display: block;
