@@ -165,6 +165,10 @@ span .hljs-name {
 span .hljs-string {
   color: blue;
 }
+
+.hljs-selector-tag {
+  color: cyan;
+}
   
 .hljs-ln-n {
   width: 50px;
