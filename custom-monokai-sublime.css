@@ -153,21 +153,29 @@ code .hljs.xml {
 .hljs, .hljs-tag, .hljs-subst {
   color: yellow;
 }
-  
-span .hljs-attr {
-  color: green;
+
+.hljs-link {
+  color: magenta;
+}
+
+.hljs-keyword {
+  color: olive;
+}
+
+.hljs-selector-tag {
+  color: cyan;
 }
   
 span .hljs-name {
   color: red;
 }
   
+span .hljs-attr {
+  color: green;
+}
+  
 span .hljs-string {
   color: blue;
-}
-
-.hljs-selector-tag {
-  color: cyan;
 }
   
 .hljs-ln-n {
