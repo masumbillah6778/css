@@ -1,0 +1,275 @@
+@import url('https://masumbillah6778.github.io/fonts/english/english-custom-font.css');
+@import url('https://masumbillah6778.github.io/fonts/bangla/bangla-custom-font.css');
+
+
+body {
+	margin: 30px;
+	padding: 0;
+	background: #ddd;
+}
+
+
+
+/*======================================= Original Monokai Sublime =======================================*/
+
+.hljs {display:block;overflow-x:auto;padding:0.5em;background:#23241f}
+.hljs,.hljs-tag,.hljs-subst {color:#f8f8f2}
+.hljs-strong,.hljs-emphasis {color:#a8a8a2}
+.hljs-bullet,.hljs-quote,.hljs-number,.hljs-regexp,.hljs-literal,.hljs-link {color:#ae81ff}
+.hljs-code,.hljs-title,.hljs-section,.hljs-selector-class {color:#a6e22e}
+.hljs-strong {font-weight:bold}
+.hljs-emphasis {font-style:italic}
+.hljs-keyword,.hljs-selector-tag,.hljs-name,.hljs-attr {color:#f92672}
+.hljs-symbol,.hljs-attribute {color:#66d9ef}
+.hljs-params,.hljs-class .hljs-title {color:#f8f8f2}
+.hljs-string,.hljs-type,.hljs-built_in,.hljs-builtin-name,.hljs-selector-id,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-addition,.hljs-variable,.hljs-template-variable {color:#e6db74}
+.hljs-comment,.hljs-deletion,.hljs-meta {color:#75715e}*/
+
+
+
+/*======================================= Customize Monokai Sublime =======================================*/
+
+.K2_CBox {
+  background: Gold;
+  width: 97%;
+  margin: 30px 0 30px;
+  padding: 10px;
+  position: relative;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+  
+.K2_CBox .CB_Heading {
+  margin-bottom: 15px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+  
+.K2_CBox .CB_Heading span {
+  color: Blue;
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: times;
+}
+  
+.K2_CBox .C_box_main {
+  background: Red;
+  padding: 12px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  outline: 0;
+  border: 0;
+  border-radius: 50%;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+}
+  
+.K2_CBox .C_box_main:hover {
+  opacity: .8;
+}
+  
+.K2_CBox .C_box_main .CBox_icn {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='%23fefefe' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' viewBox='0 0 24 24'><rect x='5.54615' y='5.54615' width='16.45385' height='16.45385' rx='4'/><path d='M171.33311,181.3216v-8.45385a4,4,0,0,1,4-4H183.787' transform='translate(-169.33311 -166.86775)'/></svg>");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  display: inline-block;
+}
+  
+.K2_CBox .C_box_main.copied {
+  background-color: Green;
+}
+  
+.K2_CBox .C_box_main.copied .CBox_icn {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='%23fefefe' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' viewBox='0 0 24 24'><path d='M22 11.07V12a10 10 0 1 1-5.93-9.14'/><polyline points='23 3 12 14 9 11'/></svg>");
+}
+  
+.K2_CBox pre {
+  background: yellow;/*#f6f6f6*/
+  color: #08102b;
+  margin: 0;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: .8rem;
+  font-family: monospace;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling:touch;
+  white-space: pre-wrap;
+}
+  
+.K2_CBox pre::before, .K2_CBox pre::after {
+  content:'';
+}
+
+.dark-Mode .K2_CBox {
+  background: #2d2d30;
+}
+  
+.dark-Mode .K2_CBox pre {
+  background: #252526;
+  color: #fffdfc;
+}
+  
+.tNtf span {
+  background: #323232;
+  color: rgba(255,255,255,.8);
+  margin-bottom: 20px;
+  padding: 13px 24px;
+  font-size: 14px;
+  font-family: inherit;
+  position: fixed;
+  left: 24px;
+  bottom: -70px;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  z-index: 99981;
+  border-radius: 3px;
+  box-shadow: 0 5px 35px rgba(149,157,165,.3);
+  opacity: 0;
+  transition: all .1s ease;
+  animation: slideinwards 2s ease forwards;
+  -webkit-animation: slideinwards 2s ease forwards;
+}
+  
+  
+  
+  
+  
+  
+/*======================================= HTML COLOR CODE =======================================*/
+  
+.hljs {
+  background: #23241f;
+  padding: 10px;
+  display: block;
+  overflow-x: auto;
+}
+  
+code .hljs.xml {
+  width: 96%;
+}
+  
+.hljs, .hljs-tag, .hljs-subst {
+  color: yellow;
+}
+  
+span .hljs-attr {
+  color: green;
+}
+  
+span .hljs-name {
+  color: red;
+}
+  
+span .hljs-string {
+  color: blue;
+}
+  
+.hljs-ln-n {
+  width: 50px;
+}
+  
+.hljs-ln-n:before {
+  content: attr(data-line-number);
+  color: cyan;
+  border-right: 2px solid Pink;
+  margin-right: 10px;
+  padding-right: 10px;
+}
+  
+  
+
+  
+  
+  
+  
+/*======================================= CSS COLOR CODE =======================================*/
+  
+.hljs-symbol, .hljs-attribute {
+  color: white;
+}
+  
+.hljs-bullet, .hljs-quote, .hljs-number, .hljs-regexp, .hljs-literal, .hljs-link {
+  color: magenta;
+}
+  
+  
+  
+  
+  
+  
+/*======================================= MOBILE SCREEN =======================================*/
+  
+  
+@media screen and (max-width:500px) {
+  .tNtf span {
+    margin-bottom: 20px;
+    left: 20px;
+    right: 20px;
+    font-size: 15px;
+  }
+}
+  
+  
+@keyframes slideinwards {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+    bottom: 0;
+  }
+  50% {
+    opacity: 1;
+    bottom: 0;
+  }
+  80% {
+    opacity: 1;
+    bottom: 0;
+  }
+  100% {
+    opacity: 0;
+    bottom: -70px;
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes slideinwards {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+    bottom: 0;
+  }
+  50% {
+    opacity: 1;
+    bottom: 0;
+  }
+  80% {
+    opacity: 1;
+    bottom: 0;
+  }
+  100% {
+    opacity: 0;
+    bottom: -70px;
+    visibility: hidden;
+  }
+}
+  
+.darkMode .tNtf span {
+  box-shadow:0 10px 40px rgba(0,0,0,.2);
+}
+
+
