@@ -145,7 +145,7 @@
   background: #23241f;
   padding: 10px;
   display: block;
-  overflow-x: auto;
+  overflow: auto;
 }
   
 code .hljs.xml {
