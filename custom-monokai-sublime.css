@@ -28,7 +28,7 @@
   padding: 10px;
   position: relative;
   border-radius: 6px;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
 }
   
 .K2_CBox .CB_Heading {
