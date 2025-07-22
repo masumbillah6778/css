@@ -143,6 +143,7 @@
   
 .hljs {
   background-color: #23241f;
+  height: 300px;
   padding: 10px;
   display: block;
   overflow-y: scroll;
