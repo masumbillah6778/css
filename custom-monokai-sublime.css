@@ -182,6 +182,8 @@ span .hljs-string {
   
 .hljs-ln-n:before {
   content: attr(data-line-number);
+  counter-increment: line;
+  content: counter(line);
   color: cyan;
   border-right: 2px solid Pink;
   margin-right: 10px;
