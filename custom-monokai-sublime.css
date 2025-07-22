@@ -90,11 +90,6 @@
   border-radius: 5px;
   font-size: .8rem;
   font-family: monospace;
-  overflow: scroll;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-  -ms-overflow-style: none;
-  -webkit-overflow-scrolling:touch;
   white-space: pre-wrap;
 }
   
@@ -147,6 +142,8 @@
   padding: 10px;
   display: block;
   overflow-y: scroll;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
   
 code .hljs.xml {
