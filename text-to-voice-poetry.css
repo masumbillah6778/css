@@ -3,6 +3,7 @@
   
 .text-to-audio p::first-line {
   color: red;
+  padding-top: 10px;
   font-size: 30px;
   font-weight: bold;
   text-decoration: nderline;
