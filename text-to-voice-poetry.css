@@ -1,18 +1,18 @@
 .text-to-voice {
-   padding-top: 10px;
+   
 }
   
 .text-to-voice p::first-line {
   color: red;
-  padding-top: 10px;
   font-size: 30px;
   font-weight: bold;
   text-decoration: nderline;
 }
   
 #paragraph {
-  height: 300px;
   color: Black;
+  height: 300px;
+  padding-top: 10px;
   font-size: 20px;
   text-align: center;
   overflow-y: auto;
