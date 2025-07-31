@@ -1,7 +1,8 @@
-.text-to-audio {
-  }
+.text-to-voice {
+   padding-top: 10px;
+}
   
-.text-to-audio p::first-line {
+.text-to-voice p::first-line {
   color: red;
   padding-top: 10px;
   font-size: 30px;
