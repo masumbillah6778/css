@@ -8,7 +8,7 @@
 }
   
 .text p {
-  color: white;
+  color: ;
   margin: 0;
   padding: 10px;
   font-size: 20px;
@@ -19,14 +19,14 @@
 }
 
 .text-to-voice p::first-line {
-  color: red;
+  color: yellow;
   font-size: 30px;
   font-weight: bold;
   text-decoration: nderline;
 }
   
 #paragraph {
-  color: Black;
+  color: white;
   height: 680px;
   padding-top: 10px;
   font-size: 20px;
