@@ -273,7 +273,7 @@
 .calendar-date li.note.red .popup-content a.close:hover {
   background-color: red;
   color: white;
-  width: 45px;
+  width: 10%;
   height: 45px;
 }
   
