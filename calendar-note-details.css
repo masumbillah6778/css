@@ -414,7 +414,7 @@ button {
     background-color: grey;
     width: 100%;
     height: 400px;
-    margin-top: 50px;
+    margin-top: 40px;
   }
 
   h2#calendar-years {
@@ -422,7 +422,7 @@ button {
   }
   
   .calendar-body {
-  background-image: linear-gradient(to bottom, pink, blue);
+  background-mage: linear-gradient(to bottom, pink, blue);
   }
 
   .calendar-body h2 {
