@@ -1,97 +1,292 @@
-.monthly-box table {
+@import url('https://masumbillah6778.github.io/fonts/english/english-custom-font.css');
+@import url('https://masumbillah6778.github.io/fonts/bangla/bangla-custom-font.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*======================================= calendar =======================================*/
+
+.calendar {
+  background-color: grey;
   width: 100%;
-  border: 4px solid black;
+  max-width: 934px;
+  height: 720px;
+  margin: 10px auto;
+  padding: 10px;
+  display: block;
+  border-radius: 10px;
 }
-  
-.monthly-box th {
-  background: #006699;
-  color: White;
+
+
+
+
+
+
+/*======================================= Next Prev Buttons =======================================*/
+
+#banner-text h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+#digital-clock {
+  font-size: 1.2em;
+}
+
+#calendar-month {
+  font-size: 2em;
+  margin: 20px;
+}
+
+.calendar-container {
   text-align: center;
-  border: 1px solid black;
 }
-  
-.monthly-box td {
-  text-align: center;
-  border: 1px solid black;
+
+.buttons {
+  background-color: blue;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid red;
 }
-  
-.monthly-box .null {
-  color: LightGray;
+
+#prev-month {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
 }
-  
-.monthly-box .holliday {
+
+#next-month {
   background-color: red;
   color: white;
-}
-  
-.monthly-box td a {
-  color: white;
-  display: block;
+  padding: 10px 20px;
+  border: none;
 }
 
-.monthly-box td:nth-child(7n+6) {
-  background: red;
-  color: Yellow;
-}
-  
-.monthly-box td:nth-child(7n+7) {
-  background: red;
-  color: Yellow;
-}
-  
-  
-  
-  
-  
-  
-  
-
-/*=================================== PopUp Table ===================================*/
-/*#popup-table {
-  counter-reset: serial-number;
-}
-  
-#popup-table tr {
-  counter-increment: row;
-}
-  
-#popup-table td {
-  color: black;
-}
-
-#popup-table td:first-child:before {
-  background: Red;
-  color: black;
-  min-width: 50px;
-  min-height: 50px;
+h2#calendar-month {
+  color: yellow;
+  font-size: 40px;
   padding: 5px;
-  border-radius: 50px;
-  counter-increment: serial-number;
-  content: counter(row, bengali) '. ';
-}*/
-  
-#popup-table td {
-  color: black;
+  font-family: 'solaiman-lipi';
+  animation: bannerAnimation 4s ease-in-out infinite;
 }
-  
-#popup-table td:nth-child(3n+3) {
-  color: red;
-  padding-right: 20px;
-  text-align: right;
+
+@keyframes bannerAnimation {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(360deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
 }
-  
-#popup-table tr:last-child {
-  background-color: yellow;
+
+
+
+
+
+/*======================================= Wrapper =======================================*/
+
+.wrapper {
+  width: 100%;
+  /*   height: 100vh; */
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  width: 100%;
+  height: 660px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid white;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: cente;
+}
+
+button {
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  font-weight: 600;
+  margin: 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*======================================= Calendar Body =======================================*/
+
+.calendar-body {
+  background-image: linear-gradient(to bottom, yellow, blue);
+  width: 100%;
+}
+
+.calendar-body h2 {
   color: red;
-  padding-right: 20px;
+  font-family: 'solaiman-lipi';
+  text-align: center;
+  padding: 0px 0;
+}
+
+.calendar-body ul {
+  width: 100%;
+  list-style: none;
+  display: grid;
+  column-gap: 4px;
+  row-gap: 4px;
+  grid-template-columns: repeat(7, 130px);
+}
+
+.calendar-body ul.calendar-days {
+  background-color: black;
+  width: 100%;
+}
+
+.calendar-days li.day {
+  background-color: green;
+  color: yellow;
+  width: 100px;
+  height: 50px;
+  margin: 5px;
+  padding: 5px 5px 0px;
+  font-size: 30px;
   font-weight: bold;
-  text-align: right;
+  font-family: 'solaiman-lipi';
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.calendar-date {
+  background-image: linear-gradient(to bottom, yellow, blue);
+  width: 100%;
+}
+
+.calendar-date li {
+  background-color: darkblue;
+  color: yellow;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  padding: 20px 5px 0px;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'times';
+  text-align: center;
+  border-radius: 50px;
+}
+
+
+
+/*=================================== Mixer ===================================*/
+
+.calendar-date li:nth-child(7n+6) {
+  background: red;
+  color: Yellow;
 }
   
-  
-  
-  
-  
+.calendar-date li:nth-child(7n+7) {
+  background: red;
+  color: Yellow;
+}
+
+.calendar-days li.day.hollyday {
+  background-color: red;
+}
+
+.calendar-date li.blank {
+  background-color: gray;
+  color: white;
+  padding-top: -20px;
+}
+
+.calendar-date li.active {
+  background-color: olive;
+  border: 2px solid yellow;
+}
+
+
+
+
+
+/*=================================== Note ===================================*/
+
+.calendar-date li.note {
+  display: block;
+  position: relative;
+}
+
+.calendar-date li.note.red {
+  background-color: gold;
+  margin: 5px;
+  padding: 20px 0px 0px;
+  border-radiu: 50px;
+  border: 2px solid blue;
+}
+
+.calendar-date li.note.red a {
+  color: red;
+  width: 100px;
+  height: 100px;
+  margin: 0px;
+  font-size: 50px;
+  font-weight: bold;
+  display: block;
+  border-radius: 50px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.calendar-date li.note.red span {
+  background-color: red;
+  color: white;
+  width: 30px;
+  height: 30px;
+  padding-top: 5px;
+  font-size: 20px;
+  font-family: 'times';
+  position: absolute;
+  top: -5px;
+  right: 0px;
+  border-radius: 50px;
+}
+
+
+
+
+
+
+
 /*=================================== PopUp Container ===================================*/
 .popup-container {
   background-color: rgba(21, 17, 17, 0.61);
@@ -114,18 +309,12 @@
   flex-wrap:wrap;
 }
 
-.popup-link a {
-  background: yellow;
-  color: green;
-  margin: 0px;
-  padding: 10px;
-  border-radius: 10px;
-  font-size: 20px;
-  font-weight: bold;
-  cursor: pointer;
-  text-decoration: none;
-}
-  
+
+
+
+
+
+
 /*=================================== PopUp Content ===================================*/
   
 .popup-content {
@@ -140,10 +329,12 @@
 .popup-container h3 {
   background-color: blue;
   color: white;
-  width: 685px;
+  width: 89%;
   margin: 0px 0px 5px;
   padding: 10px;
+  font-size: 20px;
   font-weight: bold;
+  font-family: 'solaiman-lipi';
   border-radius: 10px 0px 0px 0px;
 }
   
@@ -152,30 +343,37 @@
   color: red;
   padding: 10px;
   font-size: 17px;
+  font-family: 'solaiman-lipi';
   line-height: 20px;
   border: 1px solid;
   border-radius: 0px 0px 10px 10px;
 }
+
+.calendar-date li.note.red .popup-content a {
+  width: 45px;
+  height: 45px;
+  border-radius: 0px 10px 0px 0px;
+}
   
-.popup-content a.close {
+.calendar-date li.note.red .popup-content a.close {
   background-color: green;
   color: yellow;
-  width: 50px;
-  height: 50px;
-  padding: 0;
+  width: 10%;
+  height: 45px;
+  padding-top: 6px;
   margin: 0;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: bold;
   text-decoration: none;
   float: right;
   border-radius: 0px 10px 0px 0px;
 }
 
-.popup-content a.close:hover {
+.calendar-date li.note.red .popup-content a.close:hover {
   background-color: red;
   color: white;
-  width: 50px;
-  height: 50px;
+  width: 10%;
+  height: 45px;
 }
   
 .popup-content span:hover,
@@ -203,27 +401,155 @@
 }
   
 
-  
-  
-  
-/*=================================== Mobile Screen ===================================*/
-  
+
+
+
+
+
+
+
+
+
+
+/*======================================= Mobile Screen =======================================*/
+
 @media only screen and (max-width: 600px) {
-  .monthly-box {
-    width:;
-    height: 600px;
-    overflow-y: auto;
+  .calendar {
+    background-color: grey;
+    width: 100%;
+    height: 400px;
   }
   
-  table {
-    border-collapse: collapse;
+  .calendar-body {
+  background-image: linear-gradient(to bottom, pink, blue);
   }
   
+  .calendar-body ul {
+    list-style: none;
+    display: grid;
+    column-gap: 4px;
+    row-gap: 4px;
+    grid-template-columns: repeat(7, 50px);
+  }
+  
+  .calendar-days {
+    background-color: black;
+  }
+  
+  .calendar-days li.day {
+    background-color: green;
+    color: yellow;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    padding: 13px 5px 0px;
+    font-size: 10px;
+  }
+  .calendar-date li {
+    background-color: darkblue;
+    color: yellow;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    padding: 13px 5px 0px;
+    font-size: 10px;
+  }
+
+
+
+
+
+
+
+
+  
+  .calendar-days li.day.hollyday {
+    background-color: red;
+  }
+  
+  .calendar-date .blank {
+    background-color: gray;
+    color: white;
+  }
+  
+  .calendar-date li.active {
+    background-color: green;
+  }
+
+  .calendar-date li .note {
+    margin-top: 10px;
+    padding-top: 10px;
+    border: 2px solid re;
+  }
+  
+  .calendar-date li .note.red {
+    border: ;
+  }
+
+  .calendar-date li.note.red {
+    background-color: gold;
+  }
+  
+  .calendar-date li.note.red a {
+    color: red;
+    width: 40px;
+    height: 40px;
+    margin: -7px 0px 0px 0px;
+    font-size: 10px;
+    display: block;
+    border-radius: 0px 10px 0px 0px;
+  }
+  
+  .calendar-date li.note.red a span {
+    background-color: red;
+    color: white;
+    width: 15px;
+    height: 15px;
+    padding: -10px;
+    font-size: 7px;
+    top: -5px;
+    right: 0px;
+    border: 2px solid re;
+  }
+
+
+
+
+
+
+
+
+
+
   .popup-content {
     width: 80%;
   }
   
+  .popup-content a {
+    background-color: pink;
+    color: blue;
+  }
+  
   .popup-container h3 {
-    width: 240px;
+    width: 89%;
+    font-size: 15px;
+  }
+  
+  .calendar-date li.note.red .popup-content a.close {
+    background-color: green;
+    color: white;
+    width: 10%;
+    height: 40px;
+  }
+
+  .calendar-date li.note.red .popup-content a.close:hover {
+    background-color: red;
+    color: white;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .popup-container p {
+    font-size: 10px;
   }
 }
