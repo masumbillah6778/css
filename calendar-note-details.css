@@ -53,6 +53,7 @@
 #prev-month {
   background-color: green;
   color: white;
+  margin: 0px;
   padding: 10px 20px;
   border: none;
 }
@@ -60,6 +61,7 @@
 #next-month {
   background-color: red;
   color: white;
+  margin: 0px;
   padding: 10px 20px;
   border: none;
 }
