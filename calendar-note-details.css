@@ -413,8 +413,13 @@ button {
   .calendar {
     background-color: grey;
     width: 100%;
-    height: 400px;
+    height: 405px;
     margin-top: 40px;
+  }
+
+  .slider {
+    width: 100%;
+    height: 345px;
   }
 
   h2#calendar-years {
