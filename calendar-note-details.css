@@ -151,6 +151,7 @@ button {
 }
 
 .calendar-body h2 {
+  background-color: yellow;
   color: red;
   font-family: 'solaiman-lipi';
   text-align: center;
