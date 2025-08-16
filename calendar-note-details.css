@@ -144,7 +144,7 @@ button {
 /*======================================= Calendar Body =======================================*/
 
 .calendar-body {
-  background-image: linear-gradient(to bottom, yellow, blue);
+  background-mage: linear-gradient(to bottom, yellow, blue);
   width: 100%;
 }
 
