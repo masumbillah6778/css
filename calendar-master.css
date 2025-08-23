@@ -1,0 +1,440 @@
+@import url('https://masumbillah6778.github.io/fonts/english/english-custom-font.css');
+@import url('https://masumbillah6778.github.io/fonts/bangla/bangla-custom-font.css');
+
+*,
+*::before,
+*::after {
+  margin: 10px;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.calendar-box {
+  background: #FFF;
+  width: 100%;
+  height: 650px;
+  margin: auto;
+  user-select: none;
+  border-radius: 10px;
+  border: px solid;
+  box-shadow: 0 1em 2em hsla(0, 0%, 0%, .25);
+}
+
+.calendar-box h2 {
+  color: blue;
+  margin: 0;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'solaiman-lipi';
+  text-align: center;
+}
+
+.calendar-week {
+  padding: 10px;
+  font-size: 20px;
+  list-style: none;
+  display: grid;
+  column-gap: 4px;
+  row-gap: 20px;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 8px 0;
+}
+
+.calendar-week .day {
+  background-color: green;
+  color: yellow;
+  width: 100p;
+  height: 50px;
+  margin: 1px;
+  padding: 5px 5px 0px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'solaiman-lipi';
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.calendar-date {
+  padding: 10px;
+  list-style: none;
+  display: grid;
+  column-gap: 1px;
+  row-gap: 50px;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 8p 0;
+}
+
+.ay:first-child {
+  grid-column-start: 4; 
+}
+
+.calendar-date .day {
+  color: red;
+  margin: 0;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+  
+.calendar-date .day::before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  margin: auto;
+}
+
+div.day[data-selected="start"]::before {
+  background-color: red;
+  border-radius: 10px 0px 0px 10px;
+}
+
+div[data-selected] ~ .day::before {
+  background-color: blue;
+}
+
+div.day[data-selected="start"] ~ .day:not([data-selected="end"])::before {
+  opacity: 0.2;
+}
+
+div.day[data-selected="end"]::before {
+  background-color: green;
+  border-radius: 0px 10px 10px 0px;
+}
+
+div.day[data-selected="end"] ~ .day::before {
+  background-color: transparent;
+}
+
+div.day[data-selected],
+div.day[data-selected] ~ .day {
+  color: white;
+}
+
+div.day[data-selected="end"] ~ .day {
+  color: green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=================================== Mixer ===================================*/
+
+.calendar-date .da:nth-child(7n+6) {
+  background: red;
+  color: Yellow;
+}
+  
+.calendar-date .da:nth-child(7n+7) {
+  background: red;
+  color: Yellow;
+}
+
+.calendar-days .day.hollyday {
+  background-color: red;
+}
+
+.calendar-date .day.blank {
+  background-color: gray;
+  color: white;
+  padding-top: -20px;
+}
+
+.calendar-date .day.active {
+  background-color: olive;
+  border: 2px solid yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=================================== Note ===================================*/
+.day.circle {
+  border: 2px solid orange;
+}
+
+.day.circle.orange number {
+  background-color: orange;
+  color: white;
+  width: 30px;
+  height: 30px;
+  padding-top: 10px;
+  font-size: 10px;
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  border-radius: 50px;
+}
+
+.day.circle.orange a {
+  color: red;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+/*=================================== PopUp Container ===================================*/
+.popup-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 98.7%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.3);
+  z-index: 1;
+}
+  
+.popup-link {
+  display:flex;
+  flex-wrap:wrap;
+}
+
+
+
+
+
+
+
+/*=================================== PopUp Content ===================================*/
+  
+.popup-content {
+  background-color: white;
+  width: 70%;
+  margin: auto;
+  padding: 10px;
+  border: 5px solid red;
+  border-radius: 20px;
+}
+
+.popup-container h3 {
+  background-color: blue;
+  color: white;
+  width: 94.5%;
+  height: 50px;
+  margin: 0px 0px 5px;
+  padding: 10px;
+  font-size: 20px;
+  font-family: "solaiman-lipi";
+  font-weight: bold;
+  border-radius: 10px 0px 0px 0px;
+}
+  
+.popup-content p {
+  background-color: yellow;
+  color: red;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  font-size: 17px;
+  font-family: "solaiman-lipi";
+  text-align: left;
+  line-height: 20px;
+  border: 1px solid;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.day.circle.orange .popup-content a {
+  width: 45px;
+  height: 45px;
+  border-radius: 0px 10px 0px 0px;
+}
+  
+.day.circle.orange .popup-content a.close {
+  background-color: green;
+  color: yellow;
+  width: 5%;
+  height: 50px;
+  padding-top: 6px;
+  margin: 0;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  float: right;
+  border-radius: 0px 10px 0px 0px;
+}
+
+.day.circle.orange .popup-content a.close:hover {
+  background-color: red;
+  color: white;
+  width: 5%;
+  height: 50px;
+}
+  
+.popup-content span:hover,
+.popup-content span:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.popup-container:target {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+  
+  
+/*=================================== PopUp Style ===================================*/
+  
+.popup-style-1 {
+  transform: rotate(180deg);
+}
+
+.popup-style-1:target {
+  transform: rotate(0deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*======================================= Mobile Screen =======================================*/
+
+@media only screen and (max-width: 600px) {
+  .calendar-date .day {
+    color: red;
+    font-size: 20px;
+  }
+
+  .popup-content {
+    width: 80%;
+  }
+  
+  .popup-content a {
+    background-color: pink;
+    color: blue;
+  }
+  
+  .popup-container h3 {
+    width: 89%;
+    font-size: 15px;
+  }
+  
+  .day.circle.orange .popup-content a.close {
+    background-color: green;
+    color: white;
+    width: 10%;
+    height: 50px;
+  }
+
+  .day.circle.orange .popup-content a.close:hover {
+    background-color: red;
+    color: white;
+    width: 10%;
+    height: 50px;
+  }
+  
+  .popup-container p {
+    font-size: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+/*=================================== Note ===================================*
+
+
+#open-overlay {
+  text-decoration: none;
+  display: block;
+}
+
+#overlay {
+  background-color: white;
+  color: black;
+  width: 100%;
+  height: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  z-index: 1000;
+  display: none;
+}
+
+#mask {
+  background: rgba(0,0,0,0.9);
+  width: 99%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 500;
+}
+
+#overlay:target, #overlay:target + #mask{
+  display:block;
+  opacity:1;
+}
+
+.close {
+  background-color: red;
+  color: white;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  display: block;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+}
