@@ -148,7 +148,7 @@ div.day[data-selected="end"] ~ .day {
 }
 
 .calendar-date .day.blank {
-  background-color: gray;
+  background-color: rgba(0, 0, 0, 0.3);
   color: white;
   padding-top: -20px;
 }
