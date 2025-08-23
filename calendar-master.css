@@ -60,7 +60,7 @@
   padding: 10px;
   list-style: none;
   display: grid;
-  column-gap: 1px;
+  column-gap: 2px;
   row-gap: 50px;
   grid-template-columns: repeat(7, 1fr);
   grid-gap: 8p 0;
