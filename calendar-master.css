@@ -1,30 +1,158 @@
 @import url('https://masumbillah6778.github.io/fonts/english/english-custom-font.css');
 @import url('https://masumbillah6778.github.io/fonts/bangla/bangla-custom-font.css');
 
-*,
-*::before,
-*::after {
-  margin: 10px;
+* {
+  margin: 0;
   padding: 0;
   position: relative;
   box-sizing: border-box;
 }
 
+
+  
+
+
+
+/*======================================= Calendar-box =======================================*/
 .calendar-box {
   background: #FFF;
   width: 100%;
   height: 650px;
-  margin: auto;
+  margin: 5px;
   user-select: none;
   border-radius: 10px;
-  border: px solid;
+  border: 1px solid;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  --angle: 0deg;
+  width: auto;
+  height: 100%;
+  border: 5px solid;
+  border-image: linear-gradient(var(--angle), red, green, blue, yellow) 1;
+  animation: 5s rotate linear infinite;
 }
 
-.calendar-box h2 {
+@keyframes rotate {
+  to {
+      --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+
+.wrapper {
+  margin: 10px;
+}
+
+
+
+/*======================================= Next Prev Buttons =======================================*/
+
+.buttons {
+  background-color: yellow;
+  width: 100%;
+  height: 40px;
+  margin: 0px;
+  padding: 5px 0px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border: 2px solid blue;
+}
+
+#prev-month {
+  background-color: green;
+  color: white;
+  margin: 0px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+#next-month {
+  background-color: red;
+  color: white;
+  margin: 0px;
+  padding: 10px;
+  right: 0;
+  border: none;
+  cursor: pointer;
+}
+
+h2#calendar-years {
+  color: blue;
+  font-size: 30px;
+  margin: 0px;
+  padding: 5px;
+  font-family: 'solaiman-lipi';
+  animation: bannerAnimation 4s ease-in-out infinite;
+}
+
+@keyframes bannerAnimation {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(360deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+
+
+
+/*======================================= Slider =======================================*/
+.slider {
+  width: 100%;
+  height: 660px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid white;
+}
+
+.slider.slider-one {
+  margin: 0;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  margin: 10px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: cente;
+}
+
+/*======================================= Calendar Body =======================================*/
+
+.calendar-body {
+  background-color: white;
+  background-mage: linear-gradient(to bottom left, yellow 50%, green 50%);
+  background-mage: linear-gradient(45deg, red, yellow, green);
+  width: 100%;
+  width: 100%;
+}
+
+
+/*======================================= Calendar Box h2 =======================================*/
+
+.calendar-body h2 {
   color: blue;
   margin: 0;
-  padding: 10px;
+  padding: 0px;
   font-size: 30px;
   font-weight: bold;
   font-family: 'solaiman-lipi';
@@ -32,7 +160,7 @@
 }
 
 .calendar-week {
-  padding: 10px;
+  padding: 0px;
   font-size: 20px;
   list-style: none;
   display: grid;
@@ -57,11 +185,12 @@
 }
 
 .calendar-date {
-  padding: 10px;
+  margin-top: 5px;
+  padding: 0px;
   list-style: none;
   display: grid;
   column-gap: 2px;
-  row-gap: 50px;
+  row-gap: 30px;
   grid-template-columns: repeat(7, 1fr);
   grid-gap: 8p 0;
 }
@@ -96,7 +225,7 @@ div[data-selected] ~ .day::before {
 }
 
 div.day[data-selected="start"] ~ .day:not([data-selected="end"])::before {
-  opacity: 0.2;
+  opacity: 0.4;
 }
 
 div.day[data-selected="end"]::before {
@@ -123,14 +252,6 @@ div.day[data-selected="end"] ~ .day {
 
 
 
-
-
-
-
-
-
-
-
 /*=================================== Mixer ===================================*/
 
 .calendar-date .da:nth-child(7n+6) {
@@ -148,22 +269,15 @@ div.day[data-selected="end"] ~ .day {
 }
 
 .calendar-date .day.blank {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.1);
   color: white;
   padding-top: -20px;
 }
 
 .calendar-date .day.active {
-  background-color: olive;
-  border: 2px solid yellow;
+  background-color: yellow;
+  border: 2px solid blue;
 }
-
-
-
-
-
-
-
 
 
 
@@ -183,8 +297,8 @@ div.day[data-selected="end"] ~ .day {
   padding-top: 10px;
   font-size: 10px;
   position: absolute;
-  top: -25px;
-  right: -25px;
+  top: -15px;
+  right: -15px;
   border-radius: 50px;
 }
 
@@ -207,7 +321,7 @@ div.day[data-selected="end"] ~ .day {
 /*=================================== PopUp Container ===================================*/
 .popup-container {
   background-color: rgba(0, 0, 0, 0.8);
-  width: 98.7%;
+  width: 100%;
   height: 100%;
   left: 0;
   top: 0;
@@ -323,8 +437,39 @@ div.day[data-selected="end"] ~ .day {
 
 
 
+/*=================================== Ribbon ===================================*/
+.ribbon-box {
+	background-color: red;
+  width: 100%;
+  margin: 0 10px;
+	border: 1px solid #CCC;
+	padding: 40px 25px;
+	position: relative;
+	border-radius: 3px;
+  margin: 30px auto;
+}
 
+.ribbon-box.ribbon {
+  width: 10%;
+  overflow: hidden;
+}
 
+.ribbon-text {
+  background: #EA4335;
+  color: #FFF;
+  height: 60px;
+  width: 60px;
+  text-align: left;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  position: absolute;
+  left: -1px;
+  bottom: -1px;
+  flex-direction: row;
+  border-radius: 0 100% 0 0;
+  border: 1px dashed #FFF;
+  box-shadow: 0 0 0 3px #EA4335;
+}
 
 
 
@@ -339,13 +484,49 @@ div.day[data-selected="end"] ~ .day {
 /*======================================= Mobile Screen =======================================*/
 
 @media only screen and (max-width: 600px) {
+  *,
+  *::before,
+  *::after {
+    margin: 5px;
+  }
+  
+  .calendar-box {
+  background: #FFF;
+  width: 100%;
+  height: 725px;
+  }
+  
+  .calendar-week .day {
+    height: 35px;
+    font-size: 15px;
+  }
+  
   .calendar-date .day {
     color: red;
-    font-size: 20px;
+    font-size: 12px;
+  }
+  
+  .day.circle {
+    border: 2px solid black;
   }
 
-  .popup-content {
-    width: 80%;
+  .day.circle.orange number {
+    background-color: black;
+    color: white;
+    width: 20px;
+    height: 20px;
+    padding-top: 7px;
+    font-size: 5px;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    border-radius: 50px;
+  }
+
+  .popup-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 97.5%;
+    height: 98.5%;
   }
   
   .popup-content a {
@@ -375,66 +556,24 @@ div.day[data-selected="end"] ~ .day {
   .popup-container p {
     font-size: 10px;
   }
+  
+  .box {
+	  padding: 5px 2px;
+	  background: #FFF;
+	  max-width: 400px;
+	  position: relative;
+	  border-radius: 3px;
+    margin: 0px auto;
+}
+  
+  .half-circle-ribbon {
+    background: #EA4335;
+    color: #FFF;
+    height: 10px;
+    width: 10px;
+    font-size: 5px;
+    position: absolute;
+    bottom: 0;
+  }
 }
 
-
-
-
-
-
-
-
-
-/*=================================== Note ===================================*
-
-
-#open-overlay {
-  text-decoration: none;
-  display: block;
-}
-
-#overlay {
-  background-color: white;
-  color: black;
-  width: 100%;
-  height: 80%;
-  margin: 0 auto;
-  padding: 10px;
-  position: absolute;
-  top: 5%;
-  left: 10%;
-  z-index: 1000;
-  display: none;
-}
-
-#mask {
-  background: rgba(0,0,0,0.9);
-  width: 99%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: none;
-  z-index: 500;
-}
-
-#overlay:target, #overlay:target + #mask{
-  display:block;
-  opacity:1;
-}
-
-.close {
-  background-color: red;
-  color: white;
-  height: 40px;
-  width: 40px;
-  line-height: 40px;
-  font-size: 20px;
-  display: block;
-  position: absolute;
-  top: -20px;
-  right: -20px;
-  text-decoration: none;
-  text-align: center;
-  font-weight: bold;
-}
