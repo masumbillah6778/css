@@ -534,18 +534,20 @@ div.day[data-selected="end"] ~ .day {
   #prev-month {
     background-color: green;
     color: white;
-    padding: 5px;
+    font-size: 7px;
+    padding: 10px 5px;
   }
 
   #next-month {
     background-color: red;
     color: white;
-    padding: 5px;
+    font-size: 7px;
+    padding: 10px 5px;
   }
 
   h2#calendar-years {
     color: blue;
-    font-size: 30px;
+    font-size: 20px;
     padding: 5px;
   }
 
