@@ -150,14 +150,24 @@ h2#calendar-years {
 /*======================================= Calendar Box h2 =======================================*/
 
 .calendar-body h2 {
-  color: blue;
+  background-color: #565656;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+	color: transparent;
   margin: 0;
   padding: 0px;
   font-size: 30px;
   font-weight: bold;
   font-family: 'solaiman-lipi';
   text-align: center;
+	text-shadow: rgba(255, 255, 255, 0.5) 0px 3px 3px;
+  text-shado: 2px 2px 3px rgba(255,255,255,0.1);
+  text-shado: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shado: -1px -1px 1px #fff, 1px 1px 1px #000;
+  text-shado: -1px -1px 1px #fff, 1px 1px 2px #111;
 }
+
 
 .calendar-week {
   padding: 0px;
@@ -206,6 +216,7 @@ h2#calendar-years {
   font-size: 30px;
   font-weight: bold;
   text-align: center;
+  border: 1px solid;
 }
   
 .calendar-date .day::before {
@@ -248,18 +259,14 @@ div.day[data-selected="end"] ~ .day {
 
 
 
-
-
-
-
 /*=================================== Mixer ===================================*/
 
-.calendar-date .da:nth-child(7n+6) {
+.calendar-date .day:nth-child(7n+6) {
   background: red;
   color: Yellow;
 }
   
-.calendar-date .da:nth-child(7n+7) {
+.calendar-date .day:nth-child(7n+7) {
   background: red;
   color: Yellow;
 }
@@ -272,6 +279,7 @@ div.day[data-selected="end"] ~ .day {
   background-color: rgba(0, 0, 0, 0.1);
   color: white;
   padding-top: -20px;
+  border: 1px solid black;
 }
 
 .calendar-date .day.active {
@@ -299,20 +307,46 @@ div.day[data-selected="end"] ~ .day {
   position: absolute;
   top: -15px;
   right: -15px;
+  z-index: 1;
   border-radius: 50px;
 }
 
 .day.circle.orange a {
-  color: red;
+  color: blue;
   margin: 0px;
   padding: 0px;
   font-weight: bold;
   display: block;
   cursor: pointer;
   text-decoration: none;
+  animation: 2s animation ease infinite;
 }
 
-
+@keyframes animation {
+  0% {
+    color: black;
+    transform: scale(0);
+    opacity: 0;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  25% {
+    color: red;
+    transform: scale(2);
+    opacity: 1;
+    text-shadow: 3px 10px 5px rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    color: black;
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+  }
+}
 
 
 
@@ -388,6 +422,7 @@ div.day[data-selected="end"] ~ .day {
   width: 45px;
   height: 45px;
   border-radius: 0px 10px 0px 0px;
+  animation: none;
 }
   
 .day.circle.orange .popup-content a.close {
@@ -491,9 +526,32 @@ div.day[data-selected="end"] ~ .day {
   }
   
   .calendar-box {
-  background: #FFF;
-  width: 100%;
-  height: 725px;
+    background: #FFF;
+    width: 100%;
+    height: 725px;
+  }
+
+  #prev-month {
+    background-color: green;
+    color: white;
+    padding: 5px;
+  }
+
+  #next-month {
+    background-color: red;
+    color: white;
+    padding: 5px;
+  }
+
+  h2#calendar-years {
+    color: blue;
+    font-size: 30px;
+    padding: 5px;
+  }
+
+  .calendar-body h2 {
+    color: red;
+    font-size: 20px;
   }
   
   .calendar-week .day {
