@@ -22,6 +22,7 @@
   margin: 5px;
   user-select: none;
   border-radius: 10px;
+  border: 5px solid;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   --angle: 0deg;
   border-image: linear-gradient(var(--angle), red, green, blue, yellow) 1;
@@ -385,6 +386,7 @@ div.day[data-selected="end"] ~ .day {
   margin: auto;
   padding: 10px;
   --angle: 0deg;
+  border: 5px solid;
   border-image: linear-gradient(var(--angle), red, green, blue, yellow) 1;
   animation: 5s rotate linear infinite;
 }
