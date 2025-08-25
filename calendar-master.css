@@ -666,6 +666,7 @@ div.day[data-selected="end"] ~ .day {
   
   .popup-container p {
     font-size: 10px;
+	word-break: break-all;
     scrollbar-width: thin;
     scrollbar-color: transparent transparent;
   }
