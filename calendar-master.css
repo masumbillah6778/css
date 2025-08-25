@@ -566,6 +566,10 @@ div.day[data-selected="end"] ~ .day {
     height: 35px;
     font-size: 15px;
   }
+
+  .calendar-date {
+	row-gap: 10px;
+  }
   
   .calendar-date .day {
     color: red;
