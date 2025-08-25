@@ -563,6 +563,7 @@ div.day[data-selected="end"] ~ .day {
   *::before,
   *::after {
     margin: 1px;
+	box-sizing: border-box;
   }
   
   .calendar-box {
