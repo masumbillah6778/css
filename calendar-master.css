@@ -385,8 +385,8 @@ div.day[data-selected="end"] ~ .day {
   width: 70%;
   margin: auto;
   padding: 10px;
-  --angle: 0deg;
   border: 5px solid;
+  --angle: 0deg;
   border-image: linear-gradient(var(--angle), red, green, blue, yellow) 1;
   animation: 5s rotate linear infinite;
 }
@@ -624,13 +624,13 @@ div.day[data-selected="end"] ~ .day {
   .day.circle.orange number {
     background-color: black;
     color: white;
-    width: 20px;
-    height: 20px;
-    padding-top: 7px;
+    width: 15px;
+    height: 15px;
+    padding-top: 5px;
     font-size: 5px;
     position: absolute;
-    top: -15px;
-    right: -15px;
+    top: -8px;
+    right: -8px;
     border-radius: 50px;
   }
 
@@ -666,34 +666,37 @@ div.day[data-selected="end"] ~ .day {
   
   .popup-container p {
     font-size: 10px;
-	word-break: break-all;
+    word-break: break-all;
     scrollbar-width: thin;
     scrollbar-color: transparent transparent;
   }
 
-  .popup-content p:hover {
+  .popup-container p:hover {
     scrollbar-color: blue transparent;
   }
 
-  .popup-content p:not(:hover)::-webkit-scrollbar-thumb {
+  .popup-container p::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .popup-container p:not(:hover)::-webkit-scrollbar-thumb {
     background: transparent;
   }
 
-  .popup-content p::-webkit-scrollbar {
-    width: 5px;
-  }
-
-  .popup-content p::-webkit-scrollbar-track {
-    background-color: #F5F5F5;
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
-  }
-
-  .popup-content p::-webkit-scrollbar-thumb {
-    background-color: #F55;
-    border-radius: 10px;
+  .popup-container p::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 50px;
     transition: background 0.3s;
   }
+
+
+
+
+
+
+
+
+
 
 
 
