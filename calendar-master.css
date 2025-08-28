@@ -295,6 +295,14 @@ div.day[data-selected="end"] ~ .day {
   border: 2px solid orange;
 }
 
+.day.circle.orange.fb:hover {
+  background-image: url('https://github.com/masumbillah6778/image/raw/main/master-calendar-fb.jpg');
+  background-size: cover;
+  background-position: center;
+   transition: background 0.5s, transform 0.5s, opacity 0.5s ease-in;
+  animation: none;
+}
+
 .day.circle.orange number {
   background-color: orange;
   color: white;
