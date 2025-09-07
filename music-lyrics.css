@@ -125,6 +125,7 @@
 .Audio_Player_image img:hover {
   width: 113px;
   height: 113px;
+  margin-top: 15px;
   border: 2px solid Yellow;
   border-radius: 50%;
   animation:rotating 3s linear infinite
@@ -278,6 +279,7 @@ background-color: red;
   .Audio_Player_image img:hover {
     width: 150px;
     height: 150px;
+    margin-top: 0px;
     border: 2px solid Yellow;
     border-radius: 50%;
     animation:rotating 3s linear infinite
@@ -330,3 +332,4 @@ background-color: red;
     display: ;
   } 
 }
+
