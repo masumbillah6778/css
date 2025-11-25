@@ -35,3 +35,20 @@
   display: block;
   text-deciration: none;
 }
+
+
+
+
+
+/*========= MOBILE SCREEN =========*/
+@media only screen and (max-width: 600px) {
+  .content .box .profile {
+    width: calc(100% / 1);
+  }
+
+  .content .box .profile img {
+    margin: auto;
+    display: block;
+  }
+  
+}
