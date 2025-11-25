@@ -1,4 +1,6 @@
 .content {
+  height: 600px;
+  overflow-y: scroll;
   border: 2px solid red;
 }
 
@@ -15,7 +17,7 @@
   transition: all 0.2s ease-in-out;
   transform-origin: center center;
   box-sizing: border-box;
-  border: 2px solid red;
+  border: 2px solid green;
 }
 
 .content .box .profile img {
