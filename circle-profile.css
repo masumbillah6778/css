@@ -47,8 +47,10 @@
   }
 
   .content .box .profile img {
+    width: 330px;
+    height: 330px;
     margin: auto;
     display: block;
+    border: none;
   }
-  
 }
