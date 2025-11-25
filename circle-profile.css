@@ -8,7 +8,7 @@
   border: 2px solid gold;
 }
 
-.content {
+.content .box .profile {
   width: calc(96% / 4);
   margin: .5%;
   display: inline-block;
@@ -16,4 +16,22 @@
   transform-origin: center center;
   box-sizing: border-box;
   border: 2px solid red;
+}
+
+.content .box .profile img {
+  width: 290px;
+  height: 290px;
+  margin: 10px;
+  padding: 5px 0px;
+  display: block;
+  border: 2px solid red;
+}
+
+.content .box .profile a {
+  background-color: blue;
+  color: white;
+  margin: 0px 0px;
+  text-align: center;
+  display: block;
+  text-deciration: none;
 }
