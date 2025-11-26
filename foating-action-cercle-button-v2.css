@@ -175,26 +175,83 @@
   }
 }
 
-
+.profile ul li:before {
+  content: "";
+  margin-right: 0px;
+}
+  
+  
+  
+  
+  
+  
+  
+  
 /*======================================= BLOGGER 6778 =======================================*/
 
-@media only screen and (max-width: 900px) {
+@media (min-width: 1275px) {
   .content {
-    background-color: blue;
-    width: 800px;
-    height: 575px;
+    background-image: linear-gradient(to right, red, orange, green);
+    width: ;
+    height: 500px;
     overflow-y: scroll;
     border: 2px solid red;
   }
   
   .content .sub-content .box {
     width: calc(96% / 2);
-    height: 385px;
-    margin: .5%;
+    height: 335px;
+    margin: 1%;
     border-radius: 20px;
+    border: 2px solid blue;
+  }
+  
+.content .sub-content .box .profile {
+  background-color: magenta;
+    min-width: 250px;
+    min-height: 300px;
+    border-radius: 20px 20px 0px 0px;
+    border-bottom: 2px solid blue;
+  .triggerButton {
+    border-radius: 18px 18px 0px 0px;
+    img {
+      width: 290px;
+      border-radius: 18px 18px 0px 0px;
+    }
+  }
+
+  .sub-profile {
+    --width: 290px;
+  }
+  
+  .radialItem {
+    list-style: none;
+    a img {
+      color: #fff;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  &.active {
+    .triggerButton {
+      img {
+        width: 140px;
+        height: 140px;
+      }
+    }
+    .radialItem {
+      --angle: 0deg;
+      --star-angle: 0deg;
+      --point-size: 60px;
+      --countItem: 8;
+      }
+    }
   }
 }
-
+  
+  
+  
 
 
 
@@ -214,7 +271,7 @@
 
   .content .sub-content .box {
     width: calc(96% / 1);
-    height: 385px;
+    height: 335px;
     margin: .5%;
     border-radius: 20px;
   }
@@ -232,13 +289,44 @@
   }
   
   .content .sub-content .box .profile {
+    min-width: 250px;
+    min-height: 300px;
     border-radius: 18px 18px 0px 0px;
     border-bottom: 2px solid blue;
-    .triggerButton {
-      border-radius: 18px 18px 0px 0px;
+  .triggerButton {
+    border-radius: 18px 18px 0px 0px;
     img {
+      width: 290px;
       border-radius: 18px 18px 0px 0px;
     }
+  }
+
+  .sub-profile {
+    --width: 290px;
+  }
+  
+  .radialItem {
+    list-style: none;
+    a img {
+      color: #fff;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  &.active {
+    .triggerButton {
+      img {
+        width: 140px;
+        height: 140px;
+      }
+    }
+    .radialItem {
+      --angle: 0deg;
+      --star-angle: 0deg;
+      --point-size: 60px;
+      --countItem: 8;
+      }
     }
   }
 }
