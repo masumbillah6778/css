@@ -1,0 +1,244 @@
+@import url('https://masumbillah6778.github.io/fonts/english/english-custom-font.css');
+@import url('https://masumbillah6778.github.io/fonts/bangla/bangla-custom-font.css');
+.content {
+  background-color: #232E50;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  box-sizing: border-box;
+  border: 2px solid red;
+}
+
+.content .sub-content {
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid gold;
+}
+
+.content .sub-content .box {
+  background-color: red;
+  width: calc(96% / 4);
+  height: ;
+  margin: .5%;
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+  transform-origin: center center;
+  box-sizing: border-box;
+  border: 2px solid yellow;
+}
+
+.content .sub-content .box a {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: times;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.content .sub-content .box .profile {
+  background-color: green;
+  min-width: 350px;
+  min-height: 350px;
+  position: relative;
+  border-bottom: 2px solid yellow;
+  .triggerButton {
+    background-color: transparent;
+    width: 340px;
+    height: 340px;
+    position: absolute;
+    z-index: 9;
+    left: 50%;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 0%;
+    text-decoration: none;
+    ox-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
+    transition: all 0.15s ease-in-out;
+    transform: translate(-50%, -50%);
+    img {
+      width: 340px;
+      transition: all 0.2s ease-in-out;
+      border-radius: 0%;
+    }
+  }
+
+  .sub-profile {
+    --width: 340px;
+    width: var(--width);
+    height: var(--width);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 0;
+    margin: 0;
+    transform: translate(-50%, -50%);
+  }
+  
+  .radialItem {
+    list-style: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    transition: all .3s ease;
+    a img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      color: #fff;
+      border-radius: 50%;
+      background-color: #232E50;
+      box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
+      text-decoration: none;
+      transition: .25s;
+      &:hover {
+        transition-delay: 0s;
+        background-color: darken(#232E50, 5);
+        text-decoration: none;
+      }
+    }
+  }
+  &.active {
+    .triggerButton {
+      img {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        transform: rotateZ(360deg) translate(-1px, 1px);
+        box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
+      }
+    }
+    .radialItem {
+      --angle: 0deg;
+      --star-angle: 0deg;
+      --point-size: 60px;
+      --countItem: 8;
+      
+
+
+      --radius: calc((var(--width) / 2) - (var(--point-size) / 2));
+      --x: calc(var(--radius) * cos(var(--angle) + var(--star-angle)));
+        --y: calc(var(--radius) * sin(var(--angle) + var(--star-angle)));
+
+
+
+      top: calc(var(--radius) + var(--y) + (var(--point-size) / 2));
+      left: calc(var(--radius) + var(--x) + (var(--point-size) / 2));
+      
+      // Style
+      width: var(--point-size);
+      height: var(--point-size);
+      &:nth-child(1) {
+        --angle: calc((360deg / var(--countItem)) * 0);
+        transition-delay: 0.05s;
+      }
+      &:nth-child(2) {
+        --angle: calc((360deg / var(--countItem)) * 1);
+        transition-delay: 0.1s;
+      }
+      &:nth-child(3) {
+        --angle: calc((360deg / var(--countItem)) * 2);
+        transition-delay: 0.15s;
+      }
+      &:nth-child(4) {
+        --angle: calc((360deg / var(--countItem)) * 3);
+        transition-delay: 0.20s;
+      }
+      &:nth-child(5) {
+        --angle: calc((360deg / var(--countItem)) * 4);
+        transition-delay: 0.25s;
+      }
+      &:nth-child(6) {
+        --angle: calc((360deg / var(--countItem)) * 5);
+        transition-delay: 0.30s;
+      }
+      &:nth-child(7) {
+        --angle: calc((360deg / var(--countItem)) * 6);
+        transition-delay: 0.35s;
+      }
+      &:nth-child(8) {
+        --angle: calc((360deg / var(--countItem)) * 7);
+        transition-delay: 0.40s;
+      }
+    }
+  }
+}
+
+
+/*======================================= BLOGGER 6778 =======================================*/
+
+@media only screen and (max-width: 900px) {
+  .content {
+    background-color: blue;
+    width: 800px;
+    height: 575px;
+    overflow-y: scroll;
+    border: 2px solid red;
+  }
+  
+  .content .sub-content .box {
+    width: calc(96% / 2);
+    height: 385px;
+    margin: .5%;
+    border-radius: 20px;
+  }
+}
+
+
+
+
+
+
+
+/*=================================== MOBILE SCREEN ===================================*/
+
+@media only screen and (max-width: 600px) {
+  .content {
+    background-color: pink;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    border: 2px solid red;
+  }
+
+  .content .sub-content .box {
+    width: calc(96% / 1);
+    height: 385px;
+    margin: .5%;
+    border-radius: 20px;
+  }
+  
+  .content .sub-content {
+    width: ;
+    height: ;
+  }
+  
+  .content .sub-content .box {
+    margin: 5px auto;
+    padding: 0px;
+    display: block;
+    border: 2px solid blue;
+  }
+  
+  .content .sub-content .box .profile {
+    border-radius: 18px 18px 0px 0px;
+    border-bottom: 2px solid blue;
+    .triggerButton {
+      border-radius: 18px 18px 0px 0px;
+    img {
+      border-radius: 18px 18px 0px 0px;
+    }
+    }
+  }
+}
