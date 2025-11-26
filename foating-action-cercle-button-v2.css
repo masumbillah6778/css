@@ -1,5 +1,6 @@
 @import url('https://masumbillah6778.github.io/fonts/english/english-custom-font.css');
 @import url('https://masumbillah6778.github.io/fonts/bangla/bangla-custom-font.css');
+@media (min-width: 1281px) {
 .content {
   background-color: #232E50;
   width: 100%;
@@ -179,7 +180,7 @@
   content: "";
   margin-right: 0px;
 }
-  
+}
   
   
   
@@ -189,7 +190,7 @@
   
 /*======================================= BLOGGER 6778 =======================================*/
 
-@media (min-width: 1275px) {
+@media (min-width: 1125px) {
   .content {
     background-image: linear-gradient(to right, red, orange, green);
     width: ;
