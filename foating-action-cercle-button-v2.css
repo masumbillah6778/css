@@ -1,6 +1,5 @@
 @import url('https://masumbillah6778.github.io/fonts/english/english-custom-font.css');
 @import url('https://masumbillah6778.github.io/fonts/bangla/bangla-custom-font.css');
-@media (min-width: 1281px) {
 .content {
   background-color: #232E50;
   width: 100%;
@@ -46,8 +45,8 @@
   border-bottom: 2px solid yellow;
   .triggerButton {
     background-color: transparent;
-    width: 340px;
-    height: 340px;
+    width: 140px;
+    height: 100px;
     position: absolute;
     z-index: 9;
     left: 50%;
@@ -180,7 +179,7 @@
   content: "";
   margin-right: 0px;
 }
-}
+  
   
   
   
@@ -190,7 +189,7 @@
   
 /*======================================= BLOGGER 6778 =======================================*/
 
-@media (min-width: 1125px) {
+@media (min-width: 1275px) {
   .content {
     background-image: linear-gradient(to right, red, orange, green);
     width: ;
