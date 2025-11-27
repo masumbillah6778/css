@@ -190,9 +190,10 @@
   
   
   
-/*======================================= BLOGGER 6778 =======================================*/
+/*======================================= BLOGGER 6778 =======================================
 
-@media (min-width: 669px) and (max-width: 1281px)  {
+@media (min-width: 669px) and (max-width: 1281px)  {*/
+@media (min-width: 1275px) {
   .content {
     background-image: linear-gradient(to right, red, orange, green);
     width: ;
