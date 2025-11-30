@@ -1,0 +1,60 @@
+.content-box {
+  height: 400px;
+  overflow-y: scroll;
+}
+  
+.content {
+  background-color: red;
+  padding: 10px;  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-rows: max-content;
+  grid-gap: 15px;
+  gap: 15px;
+  justify-items: center;
+  
+  /*grid-template-columns: 1fr 1fr;
+  row-gap: 50px;
+  column-count: 3;
+  column-gap: 40px;*/
+}
+  
+.box {
+  background-color: green;
+  width: 100%;
+  gap: 10px;
+  border-bottom: 3px solid #ff0000;
+}
+  
+.bo {
+  padding: 0px;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-rows: max-content;
+  grid-gap: 1px;
+}
+  
+.bo i {
+  background-color: red;
+  margin: 5px;
+}
+  
+.bo i.fa.fa-envelope, i.fa-solid.fa-key, i.fa-brands.fa-square-facebook {
+  color: yellow;
+  padding: 5px;
+}
+  
+.bo input {
+  background-color: green;
+  color: yellow;
+  width: 60%;
+  margin-top: -5px;
+  padding: 5px;
+}
+  
+.bo button.copy-Btn {
+  background-color: blue;
+  color: yellow;
+  margin: 5px;
+  padding: 5px;
+  float: right;
+}
