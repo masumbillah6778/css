@@ -1,0 +1,200 @@
+@import url('https://masumbillah6778.github.io/fonts/bangla/bangla-custom-font.css');
+@import url('https://masumbillah6778.github.io/fonts/bangla/english-custom-font.css');
+
+body {
+  margin:0; 
+  padding:0;
+  background-image: url("https://images.pexels.com/photos/1407305/pexels-photo-1407305.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+h1 {
+    background-color: red;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: times;
+    text-align: center;
+}
+
+.content {
+  padding: 10px;  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-rows: max-content;
+  grid-gap: 30px; 
+  justify-items: center;
+  border: 3px solid blue;
+  border-radius: 10px;
+}
+
+.content .box {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+.content .box.green {
+  background-color: green;
+  border: 2px solid yellow;
+}
+
+.content .box.red {
+  background-color: red;
+  border: 2px solid yellow;
+}
+
+.content .box.green, .box.red {
+  color: yellow;
+  padding: 5px;
+}
+
+.content .box name {
+  background-color: blue;
+  color: white;
+  margin-bottom: 10px;
+  padding: 10px 0px;
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid yellow;
+}
+
+.content .box name {
+    margin-bottom: 10px;
+}
+
+.content .box name:last-child {
+  margin-bottom: 0;
+}
+
+
+
+
+
+.content-box {
+  margin-bottom: 10px;
+  display: flex;
+  border-radius: 10px;
+}
+
+.content-box .box2:first-child {
+  margin-right: 10px;
+}
+
+.content-box .box2 {
+  padding: 10px;
+  flex: 1;
+  border-radius: 10px;
+}
+
+.content-box .box2.green {
+  background-color: green;
+  border: 2px solid yellow;
+}
+
+.content-box .box2.red {
+  background-color: red;
+  border: 2px solid yellow;
+}
+
+
+
+
+
+
+.gmail-facebook {
+    background-color: qua;
+    width: 100%;
+    border: 2px solid re;
+}
+
+.gmail-facebook i {
+    background-color: blue;
+    color: yellow;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.gmail-facebook input {
+    background-color: green;
+    color: green;
+    width: 234px;
+    padding: 5px;
+    font-size: 15px;
+    pointer-events: none;
+}
+
+.gmail-facebook button {
+    background-color: aqua;
+    color: blue;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: times;
+    float: right;
+}
+
+.content .box pin {
+  background-color: blue;
+  color: white;
+  padding: 5px 10px;
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  border-radius: 10px;
+  border: 2px solid yellow;
+}
+
+.content .box pin i {
+    background-color: red;
+}
+
+.content .box pin input {
+    background-color: green;
+    color: green;
+    width: 610px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+::-moz-selection {
+    background-color: green;
+    color: green;
+}
+
+::selection {
+    background-color: green;
+    color: green;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    h1 {
+        padding: 10px 0px;
+        font-size: 20px;
+    }
+
+    .gmail-facebook input {
+        width: 40px;
+    }
+
+    .content .box pin input {
+        width: 225px;
+    }
+}
+
+
