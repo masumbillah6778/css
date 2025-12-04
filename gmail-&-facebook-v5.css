@@ -1,0 +1,375 @@
+@import url('https://masumbillah6778.github.io/fonts/bangla/bangla-custom-font.css');
+@import url('https://masumbillah6778.github.io/fonts/bangla/english-custom-font.css');
+
+body {
+  margin:0; 
+  padding:0;
+  background-image: url("https://images.pexels.com/photos/1407305/pexels-photo-1407305.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.content {
+  width: 99%;
+  height: 99vh;
+  margin: auto;
+  display: block;
+  border: 3px solid blue;
+}
+
+.content h1 {
+  background-color: red;
+  color: white;
+  margin: 5px;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: times;
+  text-align: center;
+}
+
+.content .main-content-box {
+  height: 600px;
+  margin: 0px 5px;
+  overflow-y: scroll;
+  border: 5px solid yellow;
+}
+
+.content .main-content-box .gmail-facebook {
+  width: 99%;
+  margin: 5px;
+  padding: 0px;
+  list-style: none;
+  display: grid;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.content .main-content-box .gmail-facebook .slide {
+  border: 2px solid yellow;
+  border-radius: 10px;
+}
+
+
+
+/*================================================= GREEN SLIDER =================================================*/
+.content .main-content-box .gmail-facebook .slide.green {
+  background-color: green;
+}
+
+.content .main-content-box .gmail-facebook .slide .box {
+  margin: 5px;
+  border: px solid yellow;
+}
+
+.content .main-content-box .gmail-facebook .slide .box.name {
+  background-color:  brown;
+  color: yellow;
+  padding: 5px 0px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid yellow;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.content .main-content-box .gmail-facebook .slide .flex-box {
+  margin: 10px;
+  list-style: none;
+  display: grid;
+  column-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.content .main-content-box .gmail-facebook .slide .flex-box .sub-box {
+  width: %;
+  border: 2px solid yellow;
+}
+
+
+
+/*================================================= GREEN SLIDER SUB GREEN =================================================*/
+
+.content .main-content-box .gmail-facebook .slide.green .flex-box .sub-box.green {
+  background-color: blue;
+  margin-left: -5px;
+  padding: 10px;
+}
+
+.content .main-content-box .gmail-facebook .slide.green .flex-box .sub-box.green i {
+  background-color: red;
+  color: yellow;
+  padding: 9px;
+}
+
+.content .main-content-box .gmail-facebook .slide.green .flex-box .sub-box.green input {
+  background-color: green;
+  color: yellow;
+  width: 210px;
+  padding: 8px;
+  pointer-events: none;
+}
+
+.content .main-content-box .gmail-facebook .slide.green .flex-box .sub-box.green button {
+  background-color: red;
+  color: white;
+  padding: 8px;
+  font-weight: bold;
+  font-family: times;
+  float: right;
+  cursor: pointer;
+}
+
+
+
+/*================================================= GREEN SLIDER SUB RED =================================================*/
+
+.content .main-content-box .gmail-facebook .slide.green .flex-box .sub-box.red {
+  background-color: red;
+  margin-left: -5px;
+  padding: 10px;
+}
+
+.content .main-content-box .gmail-facebook .slide.green .flex-box .sub-box.red i {
+  background-color: red;
+  color: yellow;
+  padding: 9px;
+}
+
+.content .main-content-box .gmail-facebook .slide.green .flex-box .sub-box.red input {
+  background-color: gold;
+  color: yellow;
+  width: 210px;
+  padding: 8px;
+  pointer-events: none;
+}
+
+.content .main-content-box .gmail-facebook .slide.green .flex-box .sub-box.red button {
+  background-color: blue;
+  color: white;
+  padding: 8px;
+  font-weight: bold;
+  font-family: times;
+  float: right;
+  cursor: pointer;
+}
+
+
+
+
+/*================================================= GREEN SLIDER PIN =================================================*/
+
+.content .main-content-box .gmail-facebook .slide .box.pin {
+  background-color:  red;
+  padding: 10px;
+  border: 2px solid yellow;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.content .main-content-box .gmail-facebook .slide .box.pin i {
+  background-color:  yellow;
+  color: red;
+  padding: 9px;
+  border-radius: 0px 0px 0px 7px;
+}
+
+.content .main-content-box .gmail-facebook .slide .box.pin input {
+  background-color:  green;
+  width: 570px;
+  padding: 8px;
+  pointer-events: none;
+}
+
+.content .main-content-box .gmail-facebook .slide .box.pin button {
+  background-color:  yellow;
+  padding: 8px;
+  float: right;
+  border-radius: 0px 0px 7px 0px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+/*================================================= RED SLIDER =================================================*/
+
+.content .main-content-box .gmail-facebook .slide.red {
+  background-color: red;
+}
+
+
+
+
+
+/*================================================= RED SLIDER SUB GREEN =================================================*/
+
+.content .main-content-box .gmail-facebook .slide.red .flex-box .sub-box.green {
+  background-color: green;
+  margin-left: -5px;
+  padding: 10px;
+}
+
+.content .main-content-box .gmail-facebook .slide.red .flex-box .sub-box.green i {
+  background-color: red;
+  color: yellow;
+  padding: 9px;
+}
+
+.content .main-content-box .gmail-facebook .slide.red .flex-box .sub-box.green input {
+  background-color: blue;
+  color: yellow;
+  width: 210px;
+  padding: 8px;
+  pointer-events: none;
+}
+
+.content .main-content-box .gmail-facebook .slide.red .flex-box .sub-box.green button.copy-Btn {
+  background-color: gold;
+  color: white;
+  padding: 8px;
+  font-weight: bold;
+  font-family: times;
+  float: right;
+  cursor: pointer;
+}
+
+
+
+/*================================================= RED SLIDER SUB RED =================================================*/
+
+.content .main-content-box .gmail-facebook .slide.red .flex-box .sub-box.red {
+  background-color: red;
+}
+
+.content .main-content-box .gmail-facebook .slide.red .flex-box .sub-box.red {
+  background-color: gold;
+  margin-left: -5px;
+  padding: 10px;
+}
+
+.content .main-content-box .gmail-facebook .slide.red .flex-box .sub-box.red i {
+  background-color: red;
+  color: yellow;
+  padding: 9px;
+}
+
+.content .main-content-box .gmail-facebook .slide.red .flex-box .sub-box.red input {
+  background-color: red;
+  color: yellow;
+  width: 210px;
+  padding: 8px;
+  pointer-events: none;
+}
+
+.content .main-content-box .gmail-facebook .slide.red .flex-box .sub-box.red button.copy-Btn {
+  background-color: blue;
+  color: white;
+  padding: 8px;
+  font-weight: bold;
+  font-family: times;
+  float: right;
+  cursor: pointer;
+}
+
+
+
+
+
+
+/*================================================= RED SLIDER PIN =================================================*/
+
+.content .main-content-box .gmail-facebook .slide.red .box.pin {
+  background-color:  green;
+  padding: 10px;
+  border: 2px solid yellow;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.content .main-content-box .gmail-facebook .slide.red .box.pin i {
+  background-color:  yellow;
+  color: red;
+  padding: 9px;
+  border-radius: 0px 0px 0px 7px;
+}
+
+.content .main-content-box .gmail-facebook .slide.red .box.pin input {
+  background-color:  red;
+  width: 570px;
+  padding: 8px;
+  pointer-events: none;
+}
+
+.content .main-content-box .gmail-facebook .slide.red .box.pin button {
+  background-color:  yellow;
+  padding: 8px;
+  float: right;
+  border-radius: 0px 0px 7px 0px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+::-moz-selection {
+    background-color: red;
+    color: red;
+}
+
+::selection {
+    background-color: red;
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*================================================= MOBILE SCREEN =================================================*/
+
+@media only screen and (max-width: 600px) {
+  .content .main-content-box .gmail-facebook {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .content .main-content-box .gmail-facebook .slide.green .flex-box .sub-box.green input {
+    width: 110px;
+  }
+
+  .content .main-content-box .gmail-facebook .slide.green .flex-box .sub-box.red input {
+    width: 110px;
+  }
+
+  .content .main-content-box .gmail-facebook .slide .box.pin input {
+    width: 380px;
+  }
+
+  .content .main-content-box .gmail-facebook .slide.red .flex-box .sub-box.green input {
+    width: 110px;
+  }
+
+  .content .main-content-box .gmail-facebook .slide.red .flex-box .sub-box.red input {
+    width: 110px;
+  }
+
+  .content .main-content-box .gmail-facebook .slide.red .box.pin input {
+    width: 380px;
+  }
+}
