@@ -52,6 +52,33 @@ body {
 
 
 
+::-moz-selection {
+    background-color: red;
+    color: red;
+}
+
+::selection {
+    background-color: red;
+    color: red;
+}
+
+
+
+
+ i {
+  animation: horizontal-rotate 3s infinite linear;
+}
+
+@keyframes horizontal-rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+
 /*================================================= GREEN SLIDER =================================================*/
 .content .main-content-box .gmail-facebook .slide.green {
   background-color: green;
@@ -68,6 +95,7 @@ body {
   padding: 5px 0px;
   font-size: 20px;
   font-weight: bold;
+  font-family: times;
   text-align: center;
   border: 2px solid yellow;
   border-radius: 5px 5px 0px 0px;
@@ -131,7 +159,7 @@ body {
 }
 
 .content .main-content-box .gmail-facebook .slide.green .flex-box .sub-box.red i {
-  background-color: red;
+  background-color: green;
   color: yellow;
   padding: 9px;
 }
@@ -145,7 +173,7 @@ body {
 }
 
 .content .main-content-box .gmail-facebook .slide.green .flex-box .sub-box.red button {
-  background-color: blue;
+  background-color: green;
   color: white;
   padding: 8px;
   font-weight: bold;
@@ -175,8 +203,10 @@ body {
 
 .content .main-content-box .gmail-facebook .slide .box.pin input {
   background-color:  green;
+  color: yellow;
   width: 570px;
   padding: 8px;
+  font-weight: bold;
   pointer-events: none;
 }
 
@@ -216,7 +246,7 @@ body {
 }
 
 .content .main-content-box .gmail-facebook .slide.red .flex-box .sub-box.green i {
-  background-color: red;
+  background-color: gold;
   color: yellow;
   padding: 9px;
 }
@@ -229,7 +259,7 @@ body {
   pointer-events: none;
 }
 
-.content .main-content-box .gmail-facebook .slide.red .flex-box .sub-box.green button.copy-Btn {
+.content .main-content-box .gmail-facebook .slide.red .flex-box .sub-box.green button {
   background-color: gold;
   color: white;
   padding: 8px;
@@ -254,7 +284,7 @@ body {
 }
 
 .content .main-content-box .gmail-facebook .slide.red .flex-box .sub-box.red i {
-  background-color: red;
+  background-color: blue;
   color: yellow;
   padding: 9px;
 }
@@ -267,7 +297,7 @@ body {
   pointer-events: none;
 }
 
-.content .main-content-box .gmail-facebook .slide.red .flex-box .sub-box.red button.copy-Btn {
+.content .main-content-box .gmail-facebook .slide.red .flex-box .sub-box.red button {
   background-color: blue;
   color: white;
   padding: 8px;
@@ -319,15 +349,7 @@ body {
 
 
 
-::-moz-selection {
-    background-color: red;
-    color: red;
-}
 
-::selection {
-    background-color: red;
-    color: red;
-}
 
 
 
@@ -345,31 +367,168 @@ body {
 /*================================================= MOBILE SCREEN =================================================*/
 
 @media only screen and (max-width: 600px) {
-  .content .main-content-box .gmail-facebook {
-    grid-template-columns: repeat(1, 1fr);
+  .content h1 {
+    font-size: 20px;
+    padding: 10px;
   }
-
+  
+  .content .main-content-box {
+  height: 670px;
+    
+  }
+  
+  .content .main-content-box .gmail-facebook {
+    margin: 2px;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 5px;
+    row-gap: 20px;
+  }
+  
+  
+  /*========== Slide Green Sub Box Green ==========*/
+  .content .main-content-box .gmail-facebook .slide.green .flex-box .sub-box.green {
+    padding: 3px;
+  }
+  
+  .content .main-content-box .gmail-facebook .slide.green .flex-box .sub-box.green i {
+    padding: 5px;
+    font-size: 15px;
+    border-bottom: 2px solid yellow;
+  }
+  
   .content .main-content-box .gmail-facebook .slide.green .flex-box .sub-box.green input {
-    width: 110px;
+    width: 65px;
+    padding: 5px;
+    font-size: 10px;
+  }
+  
+  .content .main-content-box .gmail-facebook .slide.green .flex-box .sub-box.green button {
+    font-size: 10px;
+    padding: 5px;
+  }
+  
+  
+  /*========== Slide Green Sub Box Red ==========*/
+  .content .main-content-box .gmail-facebook .slide.green .flex-box .sub-box.red {
+    padding: 3px;
+  }
+  
+  .content .main-content-box .gmail-facebook .slide.green .flex-box .sub-box.red i {
+    padding: 5px;
+    font-size: 15px;
+    border-bottom: 2px solid yellow;
   }
 
   .content .main-content-box .gmail-facebook .slide.green .flex-box .sub-box.red input {
-    width: 110px;
+    width: 65px;
+    padding: 5px;
+    font-size: 10px;
   }
 
-  .content .main-content-box .gmail-facebook .slide .box.pin input {
-    width: 380px;
+  .content .main-content-box .gmail-facebook .slide.green .flex-box .sub-box.red button {
+    font-size: 10px;
+    padding: 5px;
+  }
+  
+  
+  /* Pin */
+  .content .main-content-box .gmail-facebook .slide.green .box.pin {
+    padding: 3px;
+  }
+  
+  .content .main-content-box .gmail-facebook .slide.green .box.pin i {
+    padding: 5px;
+    font-size: 10px;
+    border-bottom: 2px solid blue;
+  }
+  
+  .content .main-content-box .gmail-facebook .slide.green .box.pin input {
+    width: 255px;
+    padding: 5px;
+    font-size: 10px;
+  }
+  
+  .content .main-content-box .gmail-facebook .slide.green .box.pin button {
+    padding: 5px;
+    font-size: 10px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /*========== Slide Red Sub Box Green ==========*/
+  .content .main-content-box .gmail-facebook .slide.red .flex-box .sub-box.green {
+    padding: 3px;
+  }
+  
+  .content .main-content-box .gmail-facebook .slide.red .flex-box .sub-box.green i {
+    padding: 5px;
+    font-size: 15px;
+    border-bottom: 2px solid yellow;
   }
 
   .content .main-content-box .gmail-facebook .slide.red .flex-box .sub-box.green input {
-    width: 110px;
+    width: 65px;
+    padding: 5px;
+    font-size: 10px;
+  }
+  
+  .content .main-content-box .gmail-facebook .slide.red .flex-box .sub-box.green button {
+    font-size: 10px;
+    padding: 5px;
+  }
+  
+  /*========== Slide Green Sub Box Red ==========*/
+  .content .main-content-box .gmail-facebook .slide.red .flex-box .sub-box.red {
+    padding: 3px;
+  }
+  
+  .content .main-content-box .gmail-facebook .slide.red .flex-box .sub-box.red i {
+    padding: 5px;
+    font-size: 15px;
+    border-bottom: 2px solid yellow;
   }
 
   .content .main-content-box .gmail-facebook .slide.red .flex-box .sub-box.red input {
-    width: 110px;
+    width: 65px;
+    padding: 5px;
+    font-size: 10px;
   }
 
+  .content .main-content-box .gmail-facebook .slide.red .flex-box .sub-box.red button {
+    font-size: 10px;
+    padding: 5px;
+  }
+  
+  
+  
+  /* Pin */
+  .content .main-content-box .gmail-facebook .slide.red .box.pin {
+    padding: 3px;
+  }
+  
+  .content .main-content-box .gmail-facebook .slide.red .box.pin i {
+    padding: 5px;
+    font-size: 10px;
+    border-bottom: 2px solid red;
+  }
+  
   .content .main-content-box .gmail-facebook .slide.red .box.pin input {
-    width: 380px;
+    width: 255px;
+    padding: 5px;
+    font-size: 10px;
+  }
+  
+  .content .main-content-box .gmail-facebook .slide.red .box.pin button {
+    padding: 5px;
+    font-size: 10px;
   }
 }
