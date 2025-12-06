@@ -1,20 +1,110 @@
+/*=========================================================== Scrollbar 1 ===========================================================*/
 #scrollbar {
   scrollbar-color: yellow green;
   scrollbar-width: auto; /*thin;*/
 }
 
+
+/*=========================================================== Scrollbar 2 ===========================================================*/
 #scrollbar-1::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 
 #scrollbar-1::-webkit-scrollbar-track {
-    background-color: green;
-    border-radius: 10px;
-    border: 2px solid white;
+   background-color: green;
+   border-radius: 10px;
+  border: 2px solid white;
 }
 
 #scrollbar-1::-webkit-scrollbar-thumb {
-    background-color: red;
-    border-radius: 10px;
-    border: 2px solid yellow;
+  background-color: red;
+  height: 100px;
+   border-radius: 10px;
+   border: 2px solid yellow;
 }
+
+
+/*=========================================================== Scrollbar 3 ===========================================================*/
+#scrollbar-3::-webkit-scrollbar {
+	width: 10px;
+	background-color: white;
+}
+
+#scrollbar-3::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.8);
+	background-color: white;
+  border-radius: 10px;
+}
+
+#scrollbar-3::-webkit-scrollbar-thumb {
+	background-color: blue;
+  height: 100px;
+  border-radius: 10px;
+}
+
+
+/*=========================================================== Scrollbar 4 ===========================================================*/
+#scrollbar-4::-webkit-scrollbar {
+	width: 10px;
+	background-color: white;
+}
+
+#scrollbar-4::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.8);
+	background-color: white;
+}
+
+#scrollbar-4::-webkit-scrollbar-thumb {
+	background-color: red;
+  height: 100px;
+	background-image: -webkit-linear-gradient(45deg, green 25%, transparent 25%, transparent 50%, green 50%, green 75%, transparent 75%, transparent);
+  border-radius: 10px;
+}
+
+
+/*=========================================================== Scrollbar 5 ===========================================================*/
+#scrollbar-5::-webkit-scrollbar {
+	width: 10px;
+	background-color: white;
+}
+
+#scrollbar-5::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.8);
+	background-color: white;
+}
+
+#scrollbar-5::-webkit-scrollbar-thumb {
+	background-color: red;
+    height: 100px;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(.5, Green), color-stop(.5, transparent), to(transparent));
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
