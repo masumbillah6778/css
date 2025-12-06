@@ -143,6 +143,25 @@
 
 
 /*=========================================================== Scrollbar 9 ===========================================================*/
+#scrollbar-9::-webkit-scrollbar {
+	width: 10px;
+	background-color: white;
+}
+
+#scrollbar-9::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.8);
+	background-color: white;
+}
+
+#scrollbar-9::-webkit-scrollbar-thumb {
+	background-color: blue;
+	background-image: -webkit-linear-gradient(90deg, orange 0%, orange 25%, transparent 100%, orange 75%, transparent);
+    height: 100px;
+    border-radius: 10px;
+}
+
+
+
 /*=========================================================== Scrollbar 10 ===========================================================*/
 /*=========================================================== Scrollbar 11 ===========================================================*/
 /*=========================================================== Scrollbar 12 ===========================================================*/
