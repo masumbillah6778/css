@@ -3,17 +3,17 @@
   scrollbar-width: thin;
 }
 
-.content #scrollbar-1::-webkit-scrollbar {
+.content#scrollbar-1::-webkit-scrollbar {
     width: 10px;
 }
 
-.content #scrollbar-1::-webkit-scrollbar-track {
+.content#scrollbar-1::-webkit-scrollbar-track {
     background-color: green;
     border-radius: 10px;
     border: 2px solid white;
 }
 
-.content #scrollbar-1::-webkit-scrollbar-thumb {
+.content#scrollbar-1::-webkit-scrollbar-thumb {
     background-color: red;
     border-radius: 10px;
     border: 2px solid yellow;
