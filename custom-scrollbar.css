@@ -1,0 +1,19 @@
+.content #scrollbar-1 {
+  scrollbar-color: red white;
+  scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: green;
+    border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: red;
+    border-radius: 10px;
+    border: 3px groove gold;
+}
