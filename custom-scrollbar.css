@@ -1,6 +1,6 @@
 #scrollbar {
   scrollbar-color: yellow green;
-  scrollbar-width: thin;
+  scrollbar-width: auto; /*thin;*/
 }
 
 #scrollbar-1::-webkit-scrollbar {
