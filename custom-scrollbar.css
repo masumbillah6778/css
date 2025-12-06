@@ -1,19 +1,20 @@
-.content #scrollbar-1 {
-  scrollbar-color: red white;
+* {
+  scrollbar-color: yellow green;
   scrollbar-width: thin;
 }
 
-*::-webkit-scrollbar {
+.content #scrollbar-1::-webkit-scrollbar {
     width: 10px;
 }
 
-*::-webkit-scrollbar-track {
+.content #scrollbar-1::-webkit-scrollbar-track {
     background-color: green;
     border-radius: 10px;
+    border: 2px solid white;
 }
 
-*::-webkit-scrollbar-thumb {
+.content #scrollbar-1::-webkit-scrollbar-thumb {
     background-color: red;
     border-radius: 10px;
-    border: 3px groove gold;
+    border: 2px solid yellow;
 }
