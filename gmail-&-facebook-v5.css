@@ -335,6 +335,9 @@ body {
   background-color:  red;
   width: 570px;
   padding: 8px;
+  color: yellow;
+  font-family: times;
+  font-weight: bold;
   pointer-events: none;
 }
 
@@ -539,3 +542,4 @@ body {
   }
 
 }
+
