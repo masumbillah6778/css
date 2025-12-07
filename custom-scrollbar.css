@@ -163,8 +163,93 @@
 
 
 /*=========================================================== Scrollbar 10 ===========================================================*/
+#scrollbar-10::-webkit-scrollbar {
+	background-color: white;
+    height: 10px;
+}
+
+#scrollbar-10::-webkit-scrollbar-track {
+    background-image: repeating-linear-gradient(45deg, red 0, red 2px, transparent 0, transparent 50%);
+    background-size: 10px 10px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+#scrollbar-10::-webkit-scrollbar-thumb {
+	background-color: blue;
+	background-image: -webkit-linear-gradient(90deg, orange 0%, orange 25%, transparent 100%, orange 75%, transparent);
+    height: 100px;
+    border-radius: 10px;
+}
+
+
+
 /*=========================================================== Scrollbar 11 ===========================================================*/
+#scrollbar-22 {
+  scrollbar-width: 10px;
+  scrollbar-color: transparent transparent;
+
+  &:hover {
+    scrollbar-color: blue transparent;
+  }
+
+  &:not(:hover)::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    transition: background 0.3s;
+    background-color: blue;
+	box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+  }
+}
+
+
+
 /*=========================================================== Scrollbar 12 ===========================================================*/
+@supports not selector(::-webkit-scrollbar) {
+  #scrollbar-12 {
+    scrollbar-width: auto;
+    scrollbar-color: ;
+  }
+}
+#scrollbar-12::-webkit-scrollbar {
+    width: 15px;
+}
+
+#scrollbar-12::-webkit-scrollbar-thumb {
+    background-color: red;
+    border-radius: 10px;
+    border: 1px solid blue;
+}
+#scrollbar-12::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+#scrollbar-12::-webkit-scrollbar-button {
+    background-color: red;
+    background-repeat: no-repeat;   
+    background-size: 100%;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 10px;
+ }
+
+#scrollbar-12::-webkit-scrollbar-button:decrement {
+    background-image: url("https://omjsblog.wordpress.com/wp-content/uploads/2024/05/rocket-up.png");
+ }
+
+#scrollbar-12::-webkit-scrollbar-button:increment {
+    background-image: url("https://omjsblog.wordpress.com/wp-content/uploads/2024/05/rocket-down.png"); 
+}
+
+
+
 /*=========================================================== Scrollbar 13 ===========================================================*/
 
 
