@@ -185,7 +185,7 @@
 
 
 /*=========================================================== Scrollbar 11 ===========================================================*/
-#scrollbar-22 {
+#scrollbar-11 {
   scrollbar-width: 10px;
   scrollbar-color: transparent transparent;
 
@@ -250,9 +250,144 @@
 
 
 
-/*=========================================================== Scrollbar 13 ===========================================================*/
+/*=========================================================== Scrollbar 14 ===========================================================*/
+#scrollbar-13::-webkit-scrollbar {
+  width: 10px;
+}
+
+#scrollbar-13::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.8);
+}
+
+#scrollbar-13::-webkit-scrollbar-thumb {
+  background-color: green;
+  height: 100px;
+  border-top: 10px solid red;
+  border-bottom: 10px solid red;
+  border-radius: 10px;
+}
 
 
+
+/*=========================================================== Scrollbar 15 ===========================================================*/
+#scrollbar-14::-webkit-scrollbar {
+  width: 10px;
+}
+
+#scrollbar-14::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.8);
+}
+
+#scrollbar-14::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(
+    90deg,
+    transparent,
+    magenta,
+    red,
+    yellow,
+    limegreen,
+    turquoise,
+    blue,
+    magenta,
+    transparent
+  );
+  border-radius: 50px;
+}
+
+
+
+/*=========================================================== Scrollbar 16 ===========================================================*/
+#scrollbar-15::-webkit-scrollbar {
+    width: 10px;
+}
+
+#scrollbar-15::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.8);
+}
+
+#scrollbar-15::-webkit-scrollbar-thumb {
+    background-image: url("https://masumbillah6778.github.io/images/music-thumbnail-10.jpg"),
+    linear-gradient(100deg, transparent, transparent);
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover;
+    height: 100px;
+    border-radius: 10px;
+}
+
+
+
+/*=========================================================== Scrollbar 17 ===========================================================*/
+#scrollbar-17::-webkit-scrollbar {
+    width: 10px;
+}
+
+#scrollbar-17::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.8);
+}
+
+#scrollbar-17::-webkit-scrollbar-thumb {
+    background-image: url("https://i.pinimg.com/originals/b5/2e/1b/b52e1bff41122d66aac6133d5718b6fb.gif"),
+    linear-gradient(100deg, transparent, transparent);
+    background-position: center bottom, center -40px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
+    height: 100px;
+    border-radius: 10px;
+}
+
+
+
+/*=========================================================== Scrollbar 18 ===========================================================*/
+#scrollbar-18::-webkit-scrollbar {
+    width: 10px;
+}
+
+#scrollbar-18::-webkit-scrollbar-track {
+ background-color: #ddd;
+ border: 10px solid #ccc;
+}
+
+#scrollbar-18::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom right, magenta 0%, gold 60%, gold 100%);
+  border: 2px solid blue;
+  border-radius: 5px;
+}
+
+#scrollbar-18::-webkit-scrollbar-track-piece:vertical:start {
+  background-color: red;
+}
+
+#scrollbar-18::-webkit-scrollbar-track-piece:vertical:end {
+  background-color: green;
+}
+
+#scrollbar-18::-webkit-scrollbar-button:vertical {
+ background-color: blue;
+ background-repeat: no-repeat;   
+ background-size: 50%;
+ background-position: center;
+ border: 2px solid red;
+}
+
+.container::-webkit-scrollbar-button:vertical:decrement {
+ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' fill='%23000000' viewBox='0 0 256 256'%3E%3Cpath d='M213.66,165.66a8,8,0,0,1-11.32,0L128,91.31,53.66,165.66a8,8,0,0,1-11.32-11.32l80-80a8,8,0,0,1,11.32,0l80,80A8,8,0,0,1,213.66,165.66Z'%3E%3C/path%3E%3C/svg%3E");   
+}
+
+.container::-webkit-scrollbar-button:vertical:increment {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' fill='%23000000' viewBox='0 0 256 256'%3E%3Cpath d='M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z'%3E%3C/path%3E%3C/svg%3E"); 
+}
+
+#scrollbar-18::-webkit-scrollbar-button:hover {
+  background-color: red;
+}
+
+
+
+/*=========================================================== Scrollbar 19 ===========================================================*/
+/*=========================================================== Scrollbar 20 ===========================================================*/
+/*=========================================================== Scrollbar 21 ===========================================================*/
+/*=========================================================== Scrollbar 22 ===========================================================*/
 
 
 
