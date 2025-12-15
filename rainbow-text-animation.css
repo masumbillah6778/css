@@ -1,0 +1,100 @@
+/*================================================== Text Animation ==================================================*/
+
+@import url('https://fonts.googleapis.com/css?family=Nosifer');
+
+#text-animation-1 {
+  /*font-family: 'Nosifer';*/
+  font-size: 80px;
+  text-align: center;
+  transition: text-shadow 2s;
+  color: red;
+  text-shadow: 
+  1px -1px 0 red, 
+  -1px 2px 1px orange, 
+  -2px 4px 1px yellow,
+  -3px 6px 1px green, 
+  -4px 8px 1px blue, 
+  -5px 10px 1px indigo; 
+  animation: colorChange 3s linear infinite;
+}
+
+
+
+@keyframes colorChange {
+  0% {  
+    color: red;
+    text-shadow: 
+    2px -2px 0 red, 
+    -2px 2px 2px orange, 
+    -4px 4px 2px yellow,
+    -6px 6px 2px green, 
+    -8px 8px 2px blue, 
+    -10px 20px 2px indigo; 
+  }
+
+  18% {  
+    color: indigo;
+    text-shadow: 
+    2px -2px 0 indigo, 
+    -2px 2px 2px red, 
+    -4px 4px 2px orange,
+    -6px 6px 2px yellow, 
+    -8px 8px 2px green, 
+    -10px 20px 2px blue; 
+  }
+
+  36% {  
+    color: blue;
+    text-shadow: 
+    2px -2px 0 blue, 
+    -2px 2px 2px indigo, 
+    -4px 4px 2px red,
+    -6px 6px 2px orange, 
+    -8px 8px 2px yellow, 
+    -10px 20px 2px green; 
+  }
+
+  54% {  
+    color: green;
+    text-shadow: 
+    2px -2px 0 green, 
+    -2px 2px 2px blue, 
+    -4px 4px 2px indigo,
+    -6px 6px 2px red, 
+    -8px 8px 2px orange, 
+    -10px 20px 2px yellow;  
+  }
+  
+  72% {  
+    color: yellow;
+    text-shadow: 
+    2px -2px 0 yellow, 
+    -2px 2px 2px green, 
+    -4px 4px 2px blue,
+    -6px 6px 2px indigo, 
+    -8px 8px 2px red, 
+    -10px 20px 2px orange;  
+  }
+
+  90% {  
+    color: orange;
+    text-shadow: 
+    2px -2px 0 orange, 
+    -2px 2px 2px yellow, 
+    -4px 4px 2px green,
+    -6px 6px 2px blue, 
+    -8px 8px 2px indigo, 
+    -10px 20px 2px red;    
+  }
+  
+  100% {  
+    color: red;
+    text-shadow: 
+    2px -2px 0 red, 
+    -2px 2px 2px orange, 
+    -4px 4px 2px yellow,
+    -6px 6px 2px green, 
+    -8px 8px 2px blue, 
+    -10px 20px 2px indigo; 
+  }
+}
