@@ -104,7 +104,7 @@
 
 /*================================================== Text Animation 2 ==================================================*/
 #text-animation-2 {
-  font-size: 7rem;
+  font-size: 20px;
   text-transform: uppercase;
   font-weight: 900;
   background: linear-gradient(to right, #fdde5c, #f8ab5e, #f56a62, #a176c8, #759beb, #65beb3, #70db96);
@@ -126,7 +126,7 @@
 
 /*================================================== Text Animation 3 ==================================================*/
 #text-animation-3 {
-  font-size: 7rem;
+  font-size: 20px;
   text-transform: uppercase;
   font-weight: 900;
   background: linear-gradient(to right, #fdde5c, #f8ab5e, #f56a62, #a176c8, #759beb, #65beb3, #70db96);
