@@ -152,6 +152,38 @@
 
   
 /*================================================== Text Animation 4 ==================================================*/
+#text-animation-4 {
+  color: transparent;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: ;
+  text-align: center;
+  display: block;
+	-webkit-text-fill-color: #fff;
+	-webkit-background-clip: text;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #FF0000;
+	-webkit-animation: animated 2s infinite alternate;
+}
+
+@keyframes animated {
+	0% {-webkit-text-stroke-color: #FFA53A}
+	10% {-webkit-text-stroke-color: #FFE53A}
+	20% {-webkit-text-stroke-color: #E8FF3A}
+	30% {-webkit-text-stroke-color: #A5FF3A}
+	40% {-webkit-text-stroke-color: #3AFF4E}
+	50% {-webkit-text-stroke-color: #3AFFAE}
+	60% {-webkit-text-stroke-color: #3AF3FF}
+	70% {-webkit-text-stroke-color: #3AA2FF}
+	80% {-webkit-text-stroke-color: #4B3AFF}
+	90% {-webkit-text-stroke-color: #B43AFF}
+	100% {-webkit-text-stroke-color: #FF3AEE}
+}
+
+
+
+
+
 /*================================================== Text Animation 5 ==================================================*/
 /*================================================== Text Animation 6 ==================================================*/
 /*================================================== Text Animation 7 ==================================================*/
