@@ -1,0 +1,111 @@
+@import url('https://masumbillah6778.github.io/fonts/bangla/bangla-custom-font.css');
+@import url('https://masumbillah6778.github.io/fonts/bangla/english-custom-font.css');
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  
+}
+
+.content {
+  width: 100%;
+  height: 100vh;
+  border: 2px solid red;
+}
+
+.content h1 {
+  background-color: blue;
+  text-align: center;
+}
+
+.content .main-content {
+  height: 600px;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  overflow-y: scroll;
+  border: 2px solid blue;
+}
+
+.content .main-content .box {
+  background-color: red;
+  height: 250px;
+  margin: 10px;
+  border: 2px solid;
+  border-radius: 10px;
+}
+
+.content .main-content .box img {
+  background-color: black;
+  width: 215px;
+  margin: auto;
+  display: block;
+  transition: z-index .5s ease,transform .6s ease;
+  cursor: pointer;
+  border: 2px solid red;
+  border-radius: 10px;
+}
+
+.content .main-content .box .boximg {
+  position: relative;
+}
+
+.content .main-content .box .first {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: z-index .5s ease,transform .6s ease;
+  z-index: -1;
+}
+
+.content .main-content .box .boximg:hover .first {
+  background-color: red;
+  transform: scale(1.05);
+  z-index: 0;
+}
+
+.content .main-content .box span {
+  color: yellow;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: ;
+  text-align: center;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*====================================== SIDEBAR ======================================*/>
+
+@media screen and (max-width: 600px) {
+    .content #scroll .main-content .box {
+      width: 100%;
+      display: block;
+    }
+
+    .gmail-facebook input {
+        width: 40px;
+    }
+
+    .content .box pin input {
+        width: 225px;
+    }
+}
