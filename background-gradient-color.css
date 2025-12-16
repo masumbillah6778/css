@@ -50,17 +50,56 @@
 }
 
 
-/*=================================================== Background Color 9 ===================================================*/
+//*=================================================== Background Color 9 ===================================================*/
+#background-color-9 {
+  background-color: #fff;
+  background-image: linear-gradient(
+      45deg,
+      #333 25%,
+      transparent 25%,
+      transparent 75%,
+      #333 75%,
+      #333
+    ),
+    linear-gradient(
+      -45deg,
+      #333 25%,
+      transparent 25%,
+      transparent 75%,
+      #333 75%,
+      #333
+    );
+  background-size: 50px 50px;
+  height: 100vh;
+}
+  
+  
 /*=================================================== Background Color 10 ===================================================*/
+#background-color-10 {
+  background: linear-gradient(135deg, #333 25%, transparent 25%) -50px 0,
+    linear-gradient(225deg, #333 25%, transparent 25%) -50px 0,
+    linear-gradient(315deg, #333 25%, transparent 25%),
+    linear-gradient(45deg, #333 25%, transparent 25%);
+  background-size: 100px 100px;
+  background-color: #ff8a00;
+  height: 100vh;
+}
 
   
 /*=================================================== Background Color 11 ===================================================*/
 #background-color-11 {
+  background-image: radial-gradient(#ff8a00 35%, transparent 35%);
+  background-size: 8px 8px;
+  border-radius: 16px;
+  padding: 35px;
+}
+  
+/*=================================================== Background Color 12 ===================================================*/
+#background-color-12 {
   background: linear-gradient(45deg, darkred 20%, crimson, darkorange 60%, gold, bisque);
 }
 
-  
-/*=================================================== Background Color 12 ===================================================*/
+
 /*=================================================== Background Color 13 ===================================================*/
 /*=================================================== Background Color 14 ===================================================*/
 /*=================================================== Background Color 15 ===================================================*/
@@ -69,6 +108,8 @@
 /*=================================================== Background Color 18 ===================================================*/
 /*=================================================== Background Color 19 ===================================================*/
 /*=================================================== Background Color 20 ===================================================*/
+
+
 
 
 
@@ -161,100 +202,101 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-/*=================================================== Background Color 29 ===================================================*/
-#background-color-29 {
-	
-}
-
-
-/*=================================================== Background Color 30 ===================================================*/
-#background-color-1 {
-
-  
-/*=================================================== Background Color 31 ===================================================*/
-#background-color-31 {
-  background-color: #fff;
-  background-image: linear-gradient(
-      45deg,
-      #333 25%,
-      transparent 25%,
-      transparent 75%,
-      #333 75%,
-      #333
-    ),
-    linear-gradient(
-      -45deg,
-      #333 25%,
-      transparent 25%,
-      transparent 75%,
-      #333 75%,
-      #333
-    );
-  background-size: 50px 50px;
-  height: 100vh;
-}
-  
-  
 /*=================================================== Background Color 32 ===================================================*/
 #background-color-32 {
-  background: linear-gradient(135deg, #333 25%, transparent 25%) -50px 0,
-    linear-gradient(225deg, #333 25%, transparent 25%) -50px 0,
-    linear-gradient(315deg, #333 25%, transparent 25%),
-    linear-gradient(45deg, #333 25%, transparent 25%);
-  background-size: 100px 100px;
-  background-color: #ff8a00;
-  height: 100vh;
+  
 }
 
-  
+
 /*=================================================== Background Color 33 ===================================================*/
 #background-color-33 {
-  background-color: #eaeaea;
-  background-size: 20px 20px;
-  background-image: repeating-linear-gradient(
-      45deg,
-      rgba(0, 191, 255, 0.5),
-      rgba(0, 191, 255, 0.5) 1px,
-      transparent 1px,
-      transparent 15px
-    ),
-    repeating-linear-gradient(
-      -45deg,
-      rgba(255, 105, 180, 0.5),
-      rgba(255, 105, 180, 0.5) 1px,
-      transparent 1px,
-      transparent 15px
-    );
-  height: 250px;
+  
 }
 
-  
+
 /*=================================================== Background Color 34 ===================================================*/
 #background-color-34 {
-  background-image: radial-gradient(#ff8a00 35%, transparent 35%);
-  background-size: 8px 8px;
-  border-radius: 16px;
-  padding: 35px;
+  
 }
 
-  
-/*=================================================== Background Color 35 ===================================================*/
-/*=================================================== Background Color 36 ===================================================*/
-/*=================================================== Background Color 37 ===================================================*/
-/*=================================================== Background Color 38 ===================================================*/
-/*=================================================== Background Color 39 ===================================================*/
-/*=================================================== Background Color 40 ===================================================*/
 
+/*=================================================== Background Color 35 ===================================================*/
+#background-color-35 {
+  
+}
+
+
+/*=================================================== Background Color 36 ===================================================*/
+#background-color-36 {
+  
+}
+
+
+/*=================================================== Background Color 37 ===================================================*/
+#background-color-37 {
+  
+}
+
+
+/*=================================================== Background Color 38 ===================================================*/
+#background-color-38 {
+  
+}
+
+
+/*=================================================== Background Color 39 ===================================================*/
+#background-color-39 {
+  
+}
+
+
+/*=================================================== Background Color 40 ===================================================*/
+#background-color-40 {
+  
+}
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+	
+/*=================================================== Background Color 61 ===================================================*/
+#background-color-61 {
+	background-image: conic-gradient(red, yellow, green);
+}
+
+
+/*=================================================== Background Color 62 ===================================================*/
+#background-color-61 {
+  background-image: conic-gradient(red, yellow, green, blue, black);
+/*=================================================== Background Color 63 ===================================================*/
+#background-color-61 {
+  background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg);
+/*=================================================== Background Color 64 ===================================================*/
+#background-color-61 {
+  background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+/*=================================================== Background Color 65 ===================================================*/
+#background-color-61 {
+  background-image: conic-gradient(from 90deg, red, yellow, green);
+/*=================================================== Background Color 66 ===================================================*/
+#background-color-61 {
+  background-image: conic-gradient(red, yellow, lime, aqua, blue, magenta, red);
+/*=================================================== Background Color 67 ===================================================*/
+#background-color-61 {
+  background-image: conic-gradient(lime 33%, yellow 0 66%, red 0);
 
 
 
@@ -446,7 +488,26 @@
 }
 
 
-
+/*=================================================== Background Color 58 ===================================================*/
+#background-color-58 {
+  background-color: #eaeaea;
+  background-size: 20px 20px;
+  background-image: repeating-linear-gradient(
+      45deg,
+      rgba(0, 191, 255, 0.5),
+      rgba(0, 191, 255, 0.5) 1px,
+      transparent 1px,
+      transparent 15px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      rgba(255, 105, 180, 0.5),
+      rgba(255, 105, 180, 0.5) 1px,
+      transparent 1px,
+      transparent 15px
+    );
+  height: 250px;
+}
 
 
 
