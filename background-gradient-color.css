@@ -658,5 +658,33 @@
 
 
 
+/*=================================================== Background Images 101 ===================================================*/
+#background-color-101 {
+  text-align: center;
+  width: calc(1.85 * 90vh);
+  height: 90vh;
+  margin: auto;
+  background: url(https://wallpapercave.com/download/avengers-infinity-war-hd-wallpapers-wp2302361?nocache=1),
+    linear-gradient(45deg, black, gray);
+  background-repeat: no-repeat;
+  animation: 30s ease-out infinite alternate moving;
+}
+
+
+@keyframes moving {
+  0% {
+    background-size: 300%;
+    background-position: 60% 80%;
+  }
+  50% {
+    background-size: 100%;
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 10% 40%;
+    background-size: 200%;
+  }
+}
+
 
 
