@@ -69,6 +69,14 @@
 /*=================================================== Background Color 18 ===================================================*/
 /*=================================================== Background Color 19 ===================================================*/
 /*=================================================== Background Color 20 ===================================================*/
+
+
+
+
+
+
+
+
 /*=================================================== Background Color 21 ===================================================*/
 #background-color-21 {
 	background: radial-gradient(darkred 20%, crimson, darkorange 60%, gold, bisque);
@@ -137,7 +145,35 @@
 
 /*=================================================== Background Color 29 ===================================================*/
 #background-color-29 {
-	background-image: repeating-radial-gradient(orange, purple 20px, orange 40px);
+	background-image: radial-gradient(#ff8a00, #e52e71);
+}
+
+	
+/*=================================================== Background Color 30 ===================================================*/
+#background-color-30 {
+  background-image: radial-gradient(circle at top right, #ff8a00, red, #e52e71);
+}
+
+
+/*=================================================== Background Color 31 ===================================================*/
+#background-color-31 {
+  background-image: radial-gradient(circle at top right, red, blue);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*=================================================== Background Color 29 ===================================================*/
+#background-color-29 {
+	
 }
 
 
@@ -219,6 +255,21 @@
 /*=================================================== Background Color 39 ===================================================*/
 /*=================================================== Background Color 40 ===================================================*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
 /*=================================================== Background Color 51 ===================================================*/
 #background-color-51 {
   background:
@@ -388,7 +439,11 @@
   background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
 }
 
-
+	
+/*=================================================== Background Color 57 ===================================================*/
+#background-color-57 {
+	background-image: repeating-radial-gradient(orange, purple 20px, orange 40px);
+}
 
 
 
