@@ -280,23 +280,117 @@
 
 
 /*=================================================== Background Color 62 ===================================================*/
-#background-color-61 {
+#background-color-62 {
   background-image: conic-gradient(red, yellow, green, blue, black);
+}
+
+
 /*=================================================== Background Color 63 ===================================================*/
-#background-color-61 {
+#background-color-63 {
   background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg);
+}
+
+
 /*=================================================== Background Color 64 ===================================================*/
-#background-color-61 {
+#background-color-64 {
   background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+}
+
+
 /*=================================================== Background Color 65 ===================================================*/
-#background-color-61 {
+#background-color-65 {
   background-image: conic-gradient(from 90deg, red, yellow, green);
+}
+
+	
 /*=================================================== Background Color 66 ===================================================*/
-#background-color-61 {
+#background-color-66 {
   background-image: conic-gradient(red, yellow, lime, aqua, blue, magenta, red);
+}
+
+	
 /*=================================================== Background Color 67 ===================================================*/
-#background-color-61 {
+#background-color-67 {
   background-image: conic-gradient(lime 33%, yellow 0 66%, red 0);
+}
+
+	
+/*=================================================== Background Color 68 ===================================================*/
+#background-color-68 {
+  
+}
+
+	
+/*=================================================== Background Color 69 ===================================================*/
+#background-color-69 {
+  
+}
+
+	
+/*=================================================== Background Color 70 ===================================================*/
+#background-color-70 {
+  
+}
+
+	
+/*=================================================== Background Color 71 ===================================================*/
+#background-color-71 {
+  
+}
+
+	
+/*=================================================== Background Color 72 ===================================================*/
+#background-color-72 {
+  
+}
+
+	
+/*=================================================== Background Color 73 ===================================================*/
+#background-color-73 {
+  
+}
+
+	
+/*=================================================== Background Color 74 ===================================================*/
+#background-color-74 {
+  
+}
+
+	
+/*=================================================== Background Color 75 ===================================================*/
+#background-color-75 {
+  
+}
+
+	
+/*=================================================== Background Color 76 ===================================================*/
+#background-color-76 {
+  
+}
+
+	
+/*=================================================== Background Color 77 ===================================================*/
+#background-color-77 {
+  
+}
+
+	
+/*=================================================== Background Color 78 ===================================================*/
+#background-color-78 {
+  
+}
+
+	
+/*=================================================== Background Color 79 ===================================================*/
+#background-color-79 {
+  
+}
+
+	
+/*=================================================== Background Color 80 ===================================================*/
+#background-color-80 {
+  
+}
 
 
 
@@ -312,8 +406,8 @@
 
 
 	
-/*=================================================== Background Color 51 ===================================================*/
-#background-color-51 {
+/*=================================================== Background Color 81 ===================================================*/
+#background-color-81 {
   background:
     repeating-linear-gradient(
       190deg,
@@ -352,8 +446,8 @@
 
 
 
-/*=================================================== Background Color 52 ===================================================*/
-#background-color-52 {
+/*=================================================== Background Color 82 ===================================================*/
+#background-color-82 {
   background:
     repeating-linear-gradient(
       90deg,
@@ -433,8 +527,8 @@
 
 
 
-/*=================================================== Background Color 53 ===================================================*/
-#background-color-53 {
+/*=================================================== Background Color 83 ===================================================*/
+#background-color-83 {
   background:
     repeating-conic-gradient(
       from 0deg at 80% 50%,
@@ -458,38 +552,38 @@
 
 
 
-/*=================================================== Background Color 54 ===================================================*/
-#background-color-53 {
+/*=================================================== Background Color 84 ===================================================*/
+#background-color-84 {
 	background-image: repeating-linear-gradient(45deg, orange, orange 10px, red 10px, red 20px);
 }
 
 	
-/*=================================================== Background Color 53 ===================================================*/
-#background-color-54 {
+/*=================================================== Background Color 85 ===================================================*/
+#background-color-85 {
   background-image: repeating-radial-gradient(circle at 0 0, orange, orange 10px, red 10px, red 20px);
 }
 
 	
-/*=================================================== Background Color 55 ===================================================*/
-#background-color-55 {
+/*=================================================== Background Color 86 ===================================================*/
+#background-color-86 {
   background-image: repeating-conic-gradient(red 10%, yellow 20%);
 }
 
 	
-/*=================================================== Background Color 56 ===================================================*/
-#background-color-56 {
+/*=================================================== Background Color 87 ===================================================*/
+#background-color-87 {
   background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
 }
 
 	
-/*=================================================== Background Color 57 ===================================================*/
-#background-color-57 {
+/*=================================================== Background Color 88 ===================================================*/
+#background-color-88 {
 	background-image: repeating-radial-gradient(orange, purple 20px, orange 40px);
 }
 
 
-/*=================================================== Background Color 58 ===================================================*/
-#background-color-58 {
+/*=================================================== Background Color 89 ===================================================*/
+#background-color-89 {
   background-color: #eaeaea;
   background-size: 20px 20px;
   background-image: repeating-linear-gradient(
