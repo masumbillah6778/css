@@ -101,15 +101,65 @@
 
 
 /*=================================================== Background Color 13 ===================================================*/
+#background-color-13 {
+	background: linear-gradient(red 0% 30%, blue 35% 45%, gold 50% 60%, green 65%);
+}
+
+
 /*=================================================== Background Color 14 ===================================================*/
+#background-color-14 {
+	 background: linear-gradient(217deg, rgb(255 0 0 / 0.8), transparent 70.71%),
+              linear-gradient(127deg, rgb(0 255 0 / 0.8), transparent 70.71%),
+              linear-gradient(336deg, rgb(0 0 255 / 0.8), transparent 70.71%);
+}
+
+
 /*=================================================== Background Color 15 ===================================================*/
+#background-color-15 {
+	background: linear-gradient(
+    to right,
+    red 20%,
+    orange 20% 40%,
+    magenta 40% 60%,
+    green 60% 80%,
+    blue 80%
+  );
+}
+
+
 /*=================================================== Background Color 16 ===================================================*/
+#background-color-16 {
+	background: linear-gradient(90deg in hsl longer hue, red, blue);
+}
+
+
 /*=================================================== Background Color 17 ===================================================*/
+#background-color-17 {
+	 background: linear-gradient(90deg in hsl shorter hue, red, blue);
+}
+
+
 /*=================================================== Background Color 18 ===================================================*/
+#background-color-18 {
+	background-image: linear-gradient(to right, red, orange, blue, green);
+}
+
+
 /*=================================================== Background Color 19 ===================================================*/
+#background-color-19 {
+}
 /*=================================================== Background Color 20 ===================================================*/
+#background-color-20 {
+}
 
+ 
+  
 
+  
+
+ 
+
+  
 
 
 
