@@ -1,1 +1,7 @@
-#
+@import url('https://fonts.maateen.me/bangla/font.css');
+
+@font-face {
+    font-family: 'bangla';
+    src: url('https://fonts.maateen.me/bangla/font.css');
+}
+
