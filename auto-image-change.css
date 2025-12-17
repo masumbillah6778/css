@@ -10,12 +10,15 @@ body {
   border: 2px solid green;
 }
 
-.background-container {
+.background-images-change {
   background-color: tomato;
   background-size: cover;
   background-position: center;
-  height: 100%;
-  min-height: 400px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  /*height: 100%;
+  min-height: 400px;*/
   transition: background 5s ease-in-out;
   border: 2px solid red;
 }
