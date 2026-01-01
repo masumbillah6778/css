@@ -154,8 +154,7 @@ body:hover::-webkit-scrollbar-thumb { background-color: var(--surface-variant); 
 
 
 
-/*=======================================
- TOP BAR =======================================*/
+/*======================================= TOP BAR =======================================*/
 
 .top-bar {
   position: fixed;
@@ -193,8 +192,7 @@ body:hover::-webkit-scrollbar-thumb { background-color: var(--surface-variant); 
   font-family: 'Times';
 }
 
-/*=======================================
- MUSIC CONTAINE =======================================*/
+/*======================================= MUSIC CONTAINE =======================================*/
 
 .player .player-container {
   background-color: pink;
@@ -211,8 +209,7 @@ body:hover::-webkit-scrollbar-thumb { background-color: var(--surface-variant); 
 }
 
 
-/*=======================================
- PLAYER =======================================*/
+/*======================================= PLAYER =======================================*/
 
 .player {
   background-image: var(--gradient);
@@ -254,8 +251,7 @@ body:hover::-webkit-scrollbar-thumb { background-color: var(--surface-variant); 
 
 
 
-/*=======================================
- MUSIC DITLIS =======================================*/
+/*======================================= MUSIC DITLIS =======================================*/
 
 .music-headline {
   background-color: black;
@@ -327,8 +323,7 @@ body:hover::-webkit-scrollbar-thumb { background-color: var(--surface-variant); 
 
 
 
-/*=======================================
- SLIDE & VOLUME RENGE =======================================*/
+/*======================================= SLIDE & VOLUME RENGE =======================================*/
 .seek-control { margin-block-end: 20px; }
 
 .range-wrapper { position: relative; }
@@ -340,10 +335,10 @@ body:hover::-webkit-scrollbar-thumb { background-color: var(--surface-variant); 
 
 .range::-webkit-slider-runnable-track {
   appearance: none;
-  background-color: var(--surface-variant);
+  background-color: ;
   height: 6px;
   width: 100%;
-  border-radius: var(--radius-pill);
+  border-radius: ;
 }
 
 .range-fill {
@@ -393,10 +388,8 @@ body:hover::-webkit-scrollbar-thumb { background-color: var(--surface-variant); 
 
 
 
-/*=======================================
- TIMES =======================================*/
- .duration-label {
-  color: red;
+/*======================================= TIMES =======================================*/
+ .duration-label.wrapper {
   margin: 10px;
   font-size: 20px;
   font-weight: bold;
@@ -405,19 +398,26 @@ body:hover::-webkit-scrollbar-thumb { background-color: var(--surface-variant); 
   margin-block-start: 12px;
 }
  
-.label-md [data-running-time] {
+span.label-md[data-running-time] {
+  background-color: ;
   color: red;
+  padding: 5px;
+  border: 2px solid;
+  border-radius: 0 10px;
 }
   
-.label-md [data-duration] {
+span.label-md[data-duration] {
+  background-color: lue;
   color: green;
+  padding: 5px;
+  border: 2px solid;
+  border-radius: 0 10px;
 }
   
 
 
 
-/*=======================================
- PLAUER CONTROL BUTTON =======================================*/
+/*======================================= PLAUER CONTROL BUTTON =======================================*/
  
 input {
   background: none;
@@ -505,8 +505,7 @@ button {
 
 
 
-/*=======================================
- PLAYLIST =======================================*/
+/*======================================= PLAYLIST =======================================*/
 
 .playlist {
   background-color: blue;
@@ -627,8 +626,7 @@ button {
 \*-----------------------------------*/
 
 
-/*=======================================
- LARGE THAN 1200px SCREEN =======================================*/
+/*======================================= LARGE THAN 1200px SCREEN =======================================*/
 
 @media (min-width: 1200px) {
 
@@ -648,8 +646,7 @@ button {
 
 
 
-/*=======================================
- LARGE THAN 992PX =======================================*/
+/*======================================= LARGE THAN 992PX =======================================*/
 
 @media (min-width: 992px) {
 
@@ -696,19 +693,17 @@ button {
 
 
 
-/*=======================================
- TOP BAR =======================================*/
+/*======================================= TOP BAR =======================================*/
 
   .top-bar-actions {
     display: none; }
 
 
 
-/*=======================================
- PLAYER =======================================*/
+/*======================================= PLAYER =======================================*/
 
   .player {
-    --padding: 48px;
+    padding: 48px;
     text-align: left;
     flex-grow: 1;
     align-items: center;
@@ -739,7 +734,7 @@ button {
   }
 
   .music-content :is(.headline-sm, .label-lg, .label-md) {
-    max-width: 85%;
+    max-width: 100%;
   }
 
   .label-wrapper {
@@ -778,8 +773,7 @@ button {
 
 
 
-/*=======================================
- PLAYLIST =======================================*/
+/*======================================= PLAYLIST =======================================*/
 
   .overlay { display: none; }
 
@@ -794,7 +788,7 @@ button {
   .playlist.active { transform: unset; }
 
   .music-item:is(:hover, :focus-visible, :active, .playing) {
-    outline: 2px solid var(--primary);
+    outline: 2px solid;
   }
 
   .music-item .item-icon .material-symbols-rounded {
@@ -821,8 +815,7 @@ button {
 
 
 
-/*=======================================
- LARGH THIN 575px =======================================*/
+/*======================================= LARGH THIN 575px =======================================*/
 
 @media (min-width: 575px) {
 
