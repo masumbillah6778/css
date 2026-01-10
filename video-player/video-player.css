@@ -1,0 +1,47 @@
+.container {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    text-transform: capitalize;
+    border: 4px solid red;
+}
+
+.container video {
+    width: 100%;
+    height: 100%;
+    border: 2px solid blue;
+}
+
+.container #playlist {
+    background-color: #0a0057;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    list-style: none;
+    border: 2px solid blue;
+}
+
+.container #playlist a {
+  text-decoration: none;
+}
+
+.container #playlist li a {
+    background-color: green;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    display: block;
+}
+
+.container #playlist li a:hover {
+  text-decoration: none;
+}
+
+.container #playlist .active a {
+    background-color: red;
+    color: white;
+    text-decoration: none;
+}
