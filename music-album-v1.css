@@ -176,6 +176,7 @@ body {}
 .mhn-player .play-list {
   background: rgba(0,0,0,.4);
   width: auto!important;
+  padding: 10px 0px;
   top: 15px;
   left: 15px;
   right: 15px;
@@ -183,7 +184,6 @@ body {}
   bottom: 245px;
   overflow-y: auto;
   position: absolute;
-  padding-right: 1px!important;
 }
 
 .mhn-player .play-list a {
