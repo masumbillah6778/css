@@ -4,6 +4,17 @@
   scrollbar-width: auto; /*thin;*/
 }
 
+#scrollbar:hover {
+  scrollbar-color: red green;
+  scrollbar-width: auto; /*thin;*/
+}
+
+@media screen and (max-width: 768px) {
+	::-webkit-scrollbar-thumb {
+		background-image: linear-gradient(to top, red, green);
+	}
+}
+
 
 /*=========================================================== Scrollbar 2 ===========================================================*/
 #scrollbar-1::-webkit-scrollbar {
