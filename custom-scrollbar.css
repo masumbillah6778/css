@@ -12,6 +12,7 @@
 @media screen and (max-width: 768px) {
 	::-webkit-scrollbar-thumb {
 		background-image: linear-gradient(to top, red, green);
+		height: 100px;
 	}
 }
 
