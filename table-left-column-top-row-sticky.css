@@ -86,3 +86,54 @@
 .table-box table td:hover{
   border: 2px solid Red;
 }
+
+
+
+
+
+
+
+@media only screen and (min-width: 300px) and (max-width: 576px) {
+  .page .table-box table {
+    border-collapse: collapse;
+  }
+  
+  .page .table-box th {
+    background: green;
+    width: 100px;
+    min-width: 100px;
+    font-size: 15px;
+    border: 1px solid black;
+    box-shadow: 0 5px 5px -5px #333;
+  }
+  
+  .page .table-box th.sticky {
+    background: yellow;
+    color: red;
+  }
+  
+  .page .table-box td {
+    width: 100px;
+    min-width: 100px;
+    font-size: 15px;
+    text-align: center;
+    border: 1px solid black;
+  }
+  
+  .table-box table .sticky {
+    background: red;
+    box-shadow: 5px 0 5px -5px #333;
+  }
+  
+  .table-box table td spn {
+    color: green;
+    padding-left: 10px;
+    font-size: 30px;
+    font-weight: normal;
+    word-spacing: normal;
+  }
+  
+  .red::after {
+    background: green;
+  }
+}
