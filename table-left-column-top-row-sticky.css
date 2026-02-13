@@ -35,6 +35,34 @@
 } 
 
 
+
+
+.text {
+  background: Yellow;
+  color: Blue;
+  font-size: 25px;
+  text-align: center;
+  padding: 10px;
+  font-family: times;
+  font-weight: bold;
+  font-style: italic;
+  
+}
+
+.text a {
+  color: Red;
+  font-size: 30px;
+  text-align: center;
+  
+}
+  
+.text a:hover {
+  color: green;
+  font-size: 30px;
+  text-align: center;
+  
+}
+
 /*================================== Table Box ==================================*/
   
 .table-box {
