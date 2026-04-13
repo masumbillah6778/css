@@ -1,0 +1,125 @@
+@import url('https://masumbillah6778.github.io/fonts/bangla/bangla-custom-font.css');
+@import url('https://masumbillah6778.github.io/fonts/bangla/english-custom-font.css');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  
+}
+
+
+/*============================== D ==============================*/
+
+.main-content {
+  background-image: radial-gradient(circle farthest-corner at 50% 50%, hsl(187 20% 88%) 30%, hsl(149 20% 94%) 100%);
+  color: hsl(180 68% 5%);
+  heigh: 100vh;
+  margin: 0;
+  overflow: hidden;
+  border: 2px solid red;
+  font-family: solaiman-lipi;
+}
+
+.main-content h1 {
+  color: red;
+  padding: 10px;
+}
+
+.main-content p {
+  color: black;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.main-content p span {
+  color: red;
+  padding: 10px;
+  font-weight: bold;
+}
+  
+table th {
+  background-color: teal;
+}
+  
+table, th, td {
+  padding: 5px;
+  font-size: 20px;
+  border: 1px solid black;
+  /*border-collapse: collapse;*/
+  text-align: center;
+  vertical-align: middle;
+}
+  
+table td {
+  cursor: pointer;
+}
+  
+table td:nth-child(1):hover {
+  background-color: red;
+}
+  
+table td:nth-child(2):hover {
+  background-color: green;
+}
+  
+table td:nth-child(3):hover {
+  background-color: yellow;
+}
+  
+table td:nth-child(4):hover {
+  background-color: blue;
+}
+
+table td:nth-child(5):hover {
+  background-color: magenta;
+}
+  
+table td:nth-child(6):hover {
+  background-color: orange;
+}
+  
+table td:nth-child(7):hover {
+  background-color: brown;
+}
+  
+table td:nth-child(8):hover {
+  background-color: gold;
+}
+
+.columns-main-content table tr:last-child {
+  ackground-color: red;
+}
+
+.columns-main-content table tfoot {
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.row-main-content table td:nth-last-child(2) {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  text-align: right;
+} 
+
+/* ===================================================== MOBIL SCRN ===================================================== */
+  
+@media screen and (max-width: 600px) {
+  .main-content {
+    display: lex;
+  }
+
+  .main-content table, th, td {
+    font-size: 20px;
+    border-collapse: collapse;
+  }
+}
+
+
