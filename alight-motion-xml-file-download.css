@@ -1,0 +1,133 @@
+.main-container {
+  width: auto;
+  height: 450px;
+  margin: px;
+  ox-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
+}
+
+.main-container .slide {
+  height: 450px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 20px;
+  overflow-y: scroll;
+  order: 2px solid green;
+  border-radius: 10px;
+}
+  
+  
+    
+  
+
+  
+  
+
+  
+.main-video-container {
+  background-color: orange;
+  margin: 10px;
+  padding: 10px;
+  lex: 1 1 700px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
+}
+
+.main-video-container video.main-video {
+  width: 100%;
+  margin-bottom: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+  
+.main-video-container video.main-video h3.main-video-title {
+  color: White;
+  font-size: 20px;
+}
+  
+  
+  
+  
+  
+  
+.details {
+  background-color: orange;
+  padding: 10px;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px red, -2px -2px 5px green;
+}
+  
+.details a,.details .file-type {
+  background-color: red;
+  color: white;
+  width: 50px;
+  height: 50px;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: times;
+  letter-spacing: px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+  
+.details .file-name {
+  background-color: magenta;
+  color: white;
+  width: 88%;
+  margin: ;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: times;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border-radius: 10px;
+}
+  
+.details a {
+  background-color: blue;
+  color: white;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  float: right;
+}
+  
+  
+/*======================================= Mobile Screen =======================================*
+
+@media only screen and (max-width: 767px) {*/
+
+@media screen and (max-width: 768px) {
+  .main-container {
+    height: 650px;
+  }
+  
+  .main-container .slide {
+    width: auto;
+    height: 640px;
+    padding: 5px;
+    grid-template-columns: repeat(1, 1fr);
+    overflow-y: scroll;
+  }
+  
+  .main-video-container {
+    background-color: green;
+    margin: 0px;
+    box-shadow: 2px 2px 5px red, -2px -2px 5px blue;
+  }
+  
+  .main-video__title {
+    font-size: 15px;
+    text-align: center;
+  }
+}
