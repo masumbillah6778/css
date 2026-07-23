@@ -1,0 +1,223 @@
+.data-local-storage {
+
+}
+
+.data-local-storage .data-local-storage-box {
+  
+}
+
+.data-local-storage .data-local-storage-box h1 {
+  color: red;
+  font-family: solaiman-lipi;
+  font-weight: bold;
+  text-align: center;
+}
+
+.data-local-storage .data-local-storage-box h4 {
+  color: red;
+  font-family: solaiman-lipi;
+  font-weight: bold;
+  text-align: center;
+}
+
+.data-local-storage .form-row {
+  background-color: blueviolet;
+  width: 100%;
+  padding: 10px;
+}
+
+.data-local-storage .form-row .col-md-3 {
+  background-color: yellow;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.data-local-storage .form-row .col-md-3 .col-sm-6 {
+  background-color: aqua;
+}
+
+.data-local-storage .form-row .col-md-3 .col-sm-6 .col-6 {
+  background-color: blue;
+}
+
+.data-local-storage .form-row .col-md-3 label {
+  color: blue;
+  padding-left: 10px;
+  font-family: solaiman-lipi;
+  font-weight: bold;
+  text-align: center;
+}
+
+.data-local-storage .form-row .col-md-3 input {
+  color: black;
+  font-family: solaiman-lipi;
+  font-weight: bold;
+  text-align: left;
+  border: 2px solid magenta;
+}
+
+.data-local-storage .form-row .col-md-3 input:hover {
+  color: black;
+  font-family: solaiman-lipi;
+  font-weight: bold;
+  text-align: left;
+  border: 2px solid black;
+}
+
+.data-local-storage .form-row .col-md-3 input::placeholder {
+  color: red;
+  font-family: solaiman-lipi;
+  font-weight: bold;
+  opacity: .2;
+}
+
+.data-local-storage .form-row .col-md-6 {
+  background-color: aqua;
+  color: red;
+  padding: 10px;
+  font-family: solaiman-lipi;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.data-local-storage .form-row .col-md-6.col-sm-7 {
+  background-color: black;
+}
+
+.data-local-storage .form-row .col-md-6.col-sm-7 label {
+  color: yellow;
+  padding: 10px;
+  font-family: solaiman-lipi;
+  font-weight: bold;
+}
+
+.data-local-storage .form-row .col-md-6.col-sm-7 textarea {
+  background-color: ;
+  border: 2px solid yellow;
+}
+
+.data-local-storage .form-row .col-md-6.col-sm-7 textarea#txtAddress.form-control.txt.txtAddress::placeholder {
+  color: blue;
+  font-family: solaiman-lipi;
+  font-weight: bold;
+  opacity: .3;
+}
+
+.data-local-storage .form-row .col-md-6.col-sm-7 textarea#txtAddress.form-control.txt.txtAddress {
+  color: black;
+  font-family: solaiman-lipi;
+  font-weight: bold;
+}
+
+.data-local-storage .row.pt-2 {
+  background-color: pink;
+  padding: 10px;
+}
+
+.data-local-storage .row.pt-2 .col-md-2 {
+  background-color: ;
+  margin: 10px;
+}
+
+.data-local-storage .row.pt-2 .col-md-2 button {
+  padding: 10px;
+  border: 2px solid yellow;
+}
+
+.data-local-storage .row.pt-2 .col-md-2 button#btnSave.btn.btn-success {
+  background-color: green;
+  color: yellow;
+  font-family: times;
+  font-weight: bold;
+}
+
+.data-local-storage .row.pt-2 .col-md-2 button#btnClear.btn.btn-secondary {
+  background-color: red;
+  color: yellow;
+  font-family: times;
+  font-weight: bold;
+}
+
+.data-local-storage .row.pt-3 {
+  background-color: magenta;
+}
+
+.data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 {
+  background-color: cyan;
+}
+
+.data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 h1 {
+  color: blue;
+  font-family: solaiman-lipi;
+  font-weight: bold;
+  text-align: center;
+}
+
+.data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table {
+  background-color: white;
+  font-family: solaiman-lipi;
+  border: 2px solid black;
+}
+
+.data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table thead {
+  background-color: teal;
+  color: yellow;
+  font-weight: bold;
+}
+
+.data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table th {
+  border: 2px solid black;
+  font-style: italic;
+}
+
+.data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table td {
+  color: blue;
+  border: 2px solid black;
+}
+
+.data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table td:nth-child(9n+3) {
+  color: red;
+}
+
+.data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table td:nth-child(9n+8) {
+  color: red;
+}
+
+
+
+
+@media (min-width: 576px) {
+      .jumbotron {
+        padding: 1rem 2rem;
+      }
+    }
+    .errdiv {
+      color: red;
+      font-weight: bold;
+    }
+
+    label {
+      
+    }
+
+    .tdaction {
+      width: 15%;
+    }
+
+    .tdSr {
+      width: 7%;
+    }
+
+    .jumbotron {
+      margin-bottom: 0.5rem;
+    }
+
+    strong {
+      font-size: 24px !important;
+    }
+
+    input.largerCheckbox {
+      width: 20px;
+      height: 20px;
+    }
