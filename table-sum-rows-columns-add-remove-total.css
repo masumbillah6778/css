@@ -1,0 +1,57 @@
+* {
+    
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body {
+  background-color: #0093E9;
+background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+}
+.tableContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* tablas */
+
+table thead tr th {
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+    background-color: #FF9A8B;
+background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+
+    overflow-x: scroll;
+    color: var(--global-grey);
+    max-width: 800px;
+}
+
+table th, table td {
+    text-align: left;
+    font-size: 15px;
+    padding: 10px;
+}
+
+table th {
+    background-color: black;
+    color: white;
+border-radius: 0;
+}
+
+input {
+    border: rgb(122, 122, 122);
+    border-radius: 6px;
+    width: 330px ;
+    min-width: 30px ;
+    padding: 5px 8px;
+    margin: 0;
+    text-align:center
+}
+
+.slipTitle {
+  background-color: red;
+  color: yellow;
+  padding: 5px;
+}
