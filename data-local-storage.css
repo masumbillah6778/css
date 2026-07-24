@@ -188,6 +188,8 @@ form label {
   background-color: teal;
   color: yellow;
   font-weight: bold;
+  position: sticky;
+  top: 0;
 }
 
 .data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table th {
