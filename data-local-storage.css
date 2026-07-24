@@ -1,9 +1,26 @@
-.data-local-storage {
+@import url('https://masumbillah6778.github.io/fonts/bangla/bangla-custom-font.css');
+@import url('https://masumbillah6778.github.io/fonts/english/english-custom-font.css');
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+  border: 2px solid red;
+}
+
+.data-local-storage {
+  width: 100%;
 }
 
 .data-local-storage .data-local-storage-box {
-  
+  padding: 5px;
+  border: 5px solid black;
 }
 
 .data-local-storage .data-local-storage-box h1 {
@@ -24,11 +41,16 @@
   background-color: blueviolet;
   width: 100%;
   padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 5px solid red;
 }
+
 
 .data-local-storage .form-row .col-md-3 {
   background-color: yellow;
-  margin-bottom: 10px;
+  width: 23.5%;
+  margin: 10px;
   padding: 10px;
   border-radius: 5px;
 }
@@ -43,30 +65,31 @@
 
 .data-local-storage .form-row .col-md-3 label {
   color: blue;
-  padding-left: 10px;
+  margin-bottom: 10px;
+  padding: 0px;
+  display: block;
+  font-size: 20px;
   font-family: solaiman-lipi;
   font-weight: bold;
-  text-align: center;
 }
 
 .data-local-storage .form-row .col-md-3 input {
+  width: 100%;
   color: black;
+  padding: 10px;
   font-family: solaiman-lipi;
   font-weight: bold;
   text-align: left;
-  border: 2px solid magenta;
+  border: 2px solid red;
 }
 
 .data-local-storage .form-row .col-md-3 input:hover {
-  color: black;
-  font-family: solaiman-lipi;
-  font-weight: bold;
-  text-align: left;
   border: 2px solid black;
 }
 
 .data-local-storage .form-row .col-md-3 input::placeholder {
   color: red;
+  font-size: 20px;
   font-family: solaiman-lipi;
   font-weight: bold;
   opacity: .2;
@@ -83,104 +106,126 @@
 
 .data-local-storage .form-row .col-md-6.col-sm-7 {
   background-color: black;
+  width: 100%;
 }
 
 .data-local-storage .form-row .col-md-6.col-sm-7 label {
   color: yellow;
-  padding: 10px;
+  margin-bottom: 10px;
+  display: block;
+  font-size: 20px;
   font-family: solaiman-lipi;
   font-weight: bold;
 }
 
 .data-local-storage .form-row .col-md-6.col-sm-7 textarea {
   background-color: ;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  font-family: solaiman-lipi;
+  font-weight: bold;
   border: 2px solid yellow;
 }
 
-.data-local-storage .form-row .col-md-6.col-sm-7 textarea#txtAddress.form-control.txt.txtAddress::placeholder {
+.data-local-storage .form-row .col-md-6.col-sm-7 textarea#txtMemorandum.form-control.txt.txtMemorandum::placeholder {
   color: blue;
-  font-family: solaiman-lipi;
-  font-weight: bold;
   opacity: .3;
 }
 
-.data-local-storage .form-row .col-md-6.col-sm-7 textarea#txtAddress.form-control.txt.txtAddress {
-  color: black;
-  font-family: solaiman-lipi;
-  font-weight: bold;
+.data-local-storage .form-row .col-md-6.col-sm-7 textarea#txtMemorandum.form-control.txt.txtMemorandum {
+  color: red;
 }
+
+
+
+
+
+
 
 .data-local-storage .row.pt-2 {
   background-color: pink;
-  padding: 10px;
+  margin: 5px 0px;
+  border: 2px solid black;
 }
 
 .data-local-storage .row.pt-2 .col-md-2 {
   background-color: ;
-  margin: 10px;
+  margin: 10px 0px;
 }
 
 .data-local-storage .row.pt-2 .col-md-2 button {
-  padding: 10px;
-  border: 2px solid yellow;
+  color: yellow;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  font-size: 20px;
+  font-family: "FontAwesome";
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .data-local-storage .row.pt-2 .col-md-2 button#btnSave.btn.btn-success {
   background-color: green;
-  color: yellow;
-  font-family: times;
-  font-weight: bold;
 }
 
 .data-local-storage .row.pt-2 .col-md-2 button#btnClear.btn.btn-secondary {
   background-color: red;
-  color: yellow;
-  font-family: times;
-  font-weight: bold;
 }
+
+
+
+
+
+
+
 
 .data-local-storage .row.pt-3 {
-  background-color: magenta;
+  background-color: green;
+  margin: 5px 0px;
+  padding: 10px;
+  border: 2px solid black;
 }
 
-.data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 {
-  background-color: cyan;
-}
-
-.data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 h1 {
-  color: blue;
+.data-local-storage .row.pt-3 h1 {
+  color: white;
+  padding-bottom: 5px;
   font-family: solaiman-lipi;
   font-weight: bold;
   text-align: center;
 }
 
-
-
-
-
-
-form label {
-  cursor: pointer;
+.data-local-storage .row.pt-3 .form-input {
+  background-color: red;
+  position: sticky;
+  top: 0;
 }
 
-.table-searchable .is-hidden {
-  display: none;
+.data-local-storage .row.pt-3 .form-input input {
+  background-color: red;
+  color: white;
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 20px;
+  font-family: solaiman-lipi;
+  font-weight: bold;
 }
 
-.table-searchable .is-match {
-  background-color: lawngreen;
-  transition: background-color .5s ease-in;
+.data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 .form-input input::placeholder {
+  color: yellow;
+  opacity: .3;
 }
 
-.table-searchable td[data-searchable="false"] {
-  background-color: lightcoral;
+.data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 {
+  background-color: cyan;
+  height: 300px;
+  overflow-y: scroll;
+  border: 5px solid black;
 }
-
-
 
 .data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table {
   background-color: white;
-  height: 300px;
   font-family: solaiman-lipi;
   border: 2px solid black;
 }
@@ -195,22 +240,77 @@ form label {
 
 .data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table th {
   width: 160px;
-  border: 2px solid black;
+  padding: 10px;
   font-style: italic;
+  border: 2px solid black;
 }
 
 .data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table td {
   color: blue;
+  padding: 10px;
   border: 2px solid black;
 }
 
-.data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table td:nth-child(9n+3) {
+.data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table td:nth-child(10n+1) {
+  text-align: center;
+  font-weight: bold;
+}
+
+.data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table td:nth-child(10n+3) {
   color: red;
 }
 
-.data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table td:nth-child(9n+8) {
+.data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table td:nth-child(10n+8) {
   color: red;
 }
+
+.data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table td:nth-child(10n+10) {
+  background-color: yellow;
+}
+
+button.btn.btn-sm.btn-success.btn-edit,
+button.btn.btn-sm.btn-danger.btn-delete {
+  color: white;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  font-size: 20px;
+  font-family: "FontAwesome";
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button.btn.btn-sm.btn-success.btn-edit {
+  background-color: green;
+}
+
+button.btn.btn-sm.btn-danger.btn-delete {
+  background-color: red;
+}
+
+button.btn.btn-sm.btn-success.btn-edit::after {
+  content: "\f044";
+}
+
+button.btn.btn-sm.btn-danger.btn-delete::after {
+  content: "\f1f8";
+}
+
+
+
+.data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table td.text-center {
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+
+
+
+
+
 
 
 
