@@ -194,6 +194,7 @@ form label {
 }
 
 .data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table th {
+  width: 160px;
   border: 2px solid black;
   font-style: italic;
 }
