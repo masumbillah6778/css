@@ -37,13 +37,18 @@ body {
   text-align: center;
 }
 
+
+
+
+/*================================== PaRT 1 ==================================*/
+
 .data-local-storage .form-row {
-  background-color: blueviolet;
+  background-color: red;
   width: 100%;
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
-  border: 5px solid red;
+  border: 5px solid yellow;
 }
 
 
@@ -140,29 +145,32 @@ body {
 
 
 
-
-
+/*================================== PART 2 ==================================*/
 
 .data-local-storage .row.pt-2 {
-  background-color: pink;
-  margin: 5px 0px;
+  background-color: blue;
+  margin: 15px 0px;
+  display: flex;
   border: 2px solid black;
 }
 
 .data-local-storage .row.pt-2 .col-md-2 {
-  background-color: ;
-  margin: 10px 0px;
+  background-color: lack;
+  width: 50%;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .data-local-storage .row.pt-2 .col-md-2 button {
+  width: 100%;
   color: yellow;
-  margin: 10px;
   padding: 10px;
   font-size: 20px;
   font-family: times;
   font-weight: bold;
   letter-spacing: 1px;
-  border: 2px solid black;
+  border: 2px solid yellow;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -180,7 +188,7 @@ body {
 
 
 
-
+/*================================== PART 3 ==================================*/
 
 .data-local-storage .row.pt-3 {
   background-color: green;
@@ -204,7 +212,7 @@ body {
 }
 
 .data-local-storage .row.pt-3 .form-input input {
-  background-color: red;
+  background-color: black;
   color: white;
   width: 100%;
   padding: 5px 10px;
@@ -213,16 +221,21 @@ body {
   font-weight: bold;
 }
 
-.data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 .form-input input::placeholder {
+.data-local-storage .row.pt-3 .form-input input::placeholder {
   color: yellow;
-  opacity: .3;
+  opacity: .2;
 }
 
 .data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 {
   background-color: cyan;
   height: 300px;
   overflow-y: scroll;
-  border: 5px solid black;
+  border: 9px;
+  border-style: groove;
+  border-top-color: blue;
+  border-right-color: yellow;
+  border-bottom-color: red;
+  border-left-color: yellow;
 }
 
 .data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table {
