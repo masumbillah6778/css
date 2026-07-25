@@ -80,6 +80,10 @@ body {
   font-weight: bold;
 }
 
+.data-local-storage .form-row .col-md-3 label span.errdiv {
+  color: red;
+}
+
 .data-local-storage .form-row .col-md-3 input {
   width: 100%;
   color: black;
