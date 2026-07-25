@@ -16,6 +16,8 @@ body {
 
 .data-local-storage {
   width: 100%;
+  height: 100%;
+  overflow-y: scroll;
 }
 
 .data-local-storage .data-local-storage-box {
