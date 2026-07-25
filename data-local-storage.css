@@ -282,6 +282,18 @@ body {
   background-color: yellow;
 }
 
+.data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table td:nth-child(10n+9) {
+  background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+  width: 160px;
+  min-width: 160px;
+  padding: 10px;
+  line-height: 50px;
+  overflow: hidden;
+  display: flex;
+  white-space: nowrap;
+  
+}
+
 button.btn.btn-sm.btn-success.btn-edit,
 button.btn.btn-sm.btn-danger.btn-delete {
   color: white;
